@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c36bdbfe-35e8-4871-a289-0d8396e03107" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reservation/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/back-end.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/back-end.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/fin_reports/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/fin_reports/models_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9226da7-4731-4521-8cef-8820aaf653ea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a9226da7-4731-4521-8cef-8820aaf653ea.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fin_reports/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/fin_reports/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation/serializers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +55,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bitcamp\winter-django-react\back-end\api" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="back-end" type="Python.DjangoServer" factoryName="Django server">
       <module name="back-end" />
@@ -104,6 +95,8 @@
       <updated>1636532947502</updated>
       <workItem from="1636532950362" duration="1029000" />
       <workItem from="1636536162306" duration="5869000" />
+      <workItem from="1636623450953" duration="1074000" />
+      <workItem from="1636624545300" duration="4098000" />
     </task>
     <servers />
   </component>
@@ -120,5 +113,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
