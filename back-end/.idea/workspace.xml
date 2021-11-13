@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c36bdbfe-35e8-4871-a289-0d8396e03107" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chatbot/data/chatbot_data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot/data/nvmc.model" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot/tests_chatbot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot/tests_lstm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot/tests_mnist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/data/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot/tests_ner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,29 +58,7 @@
       <recent name="C:\Users\bitcamp\winter-django-react\back-end\api" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.tests_lstm">
-    <configuration name="tests (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="back-end" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/reservation" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reservation/tests.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.tests_ner">
     <configuration name="tests (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="back-end" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,6 +147,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tests_ner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="back-end" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chatbot" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chatbot/tests_ner.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="back-end" type="Python.DjangoServer" factoryName="Django server">
       <module name="back-end" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -198,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tests_ner" />
         <item itemvalue="Python.tests_lstm" />
         <item itemvalue="Python.tests_chatbot" />
         <item itemvalue="Python.tests_mnist" />
         <item itemvalue="Python.tests (2)" />
-        <item itemvalue="Python.tests (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +219,7 @@
       <workItem from="1636778054463" duration="24000" />
       <workItem from="1636778154745" duration="1495000" />
       <workItem from="1636779675300" duration="932000" />
-      <workItem from="1636780861386" duration="6426000" />
+      <workItem from="1636780861386" duration="8536000" />
     </task>
     <servers />
   </component>
@@ -249,5 +245,6 @@
     <SUITE FILE_PATH="coverage/back_end$tests_lstm.coverage" NAME="tests_lstm Coverage Results" MODIFIED="1636791266911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chatbot" />
     <SUITE FILE_PATH="coverage/back_end$tests_mnist.coverage" NAME="tests_mnist Coverage Results" MODIFIED="1636789227133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chatbot" />
     <SUITE FILE_PATH="coverage/back_end$tests__1_.coverage" NAME="tests (1) Coverage Results" MODIFIED="1636777458669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reservation" />
+    <SUITE FILE_PATH="coverage/back_end$tests_ner.coverage" NAME="tests_ner Coverage Results" MODIFIED="1636793012908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chatbot" />
   </component>
 </project>
