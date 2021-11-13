@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'api',
     'fin_reports',
     'reservation',
+    'rest-framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -81,8 +82,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mariadb',
         'USER': 'root',
-        'PASSWORD':'root',
-        'HOST':'127.0.0.1',
+        'PASSWORD': 'root',
+        'HOST': '127.0.0.1',
         'PORT': '3306'
     }
 }
