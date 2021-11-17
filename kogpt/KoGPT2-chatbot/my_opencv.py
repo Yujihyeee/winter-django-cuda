@@ -13,7 +13,7 @@ class MyOpenCV:
 
         # 이미지 불러오기
         # '샘플이미지경로': 얼굴을 검출하고싶은 이미지 경로를 작성해주세요
-        img = cv2.imread('C:\\Users\\bitcamp\\Downloads\\sample_image')
+        img = cv2.imread('C:\\Users\\bitcamp\\Downloads\\sample_image.jpg')
 
         # 이미지 전처리
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

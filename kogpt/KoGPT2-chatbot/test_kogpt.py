@@ -58,5 +58,5 @@ class KoGpt3Class:
 
 
 if __name__ == "__main__":
-    k = KoGpt3Class()
+    k = KoGpt2Class()
     k.execute()
