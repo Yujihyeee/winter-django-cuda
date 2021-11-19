@@ -1,10 +1,7 @@
 from django.db import models
 
-# Create your models here.
-
 
 class FinReports(models.Model):
-    factory = models.TextField()
     category = models.TextField()
     price = models.IntegerField()
 
