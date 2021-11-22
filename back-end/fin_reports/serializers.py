@@ -3,7 +3,7 @@ from .models import FinReports as finReports
 
 
 class FinReportsSerializer(serializers.Serializer):
-    factory = serializers.CharField()
+    year = serializers.IntegerField()
     category = serializers.CharField()
     price = serializers.IntegerField()
 

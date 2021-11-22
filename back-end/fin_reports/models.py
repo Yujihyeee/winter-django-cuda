@@ -2,6 +2,7 @@ from django.db import models
 
 
 class FinReports(models.Model):
+    year = models.IntegerField()
     category = models.TextField()
     price = models.IntegerField()
 

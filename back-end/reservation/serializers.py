@@ -2,7 +2,7 @@ from rest_framework import serializers
 from .models import Reservation as reservation
 
 
-class FinReportsSerializer(serializers.Serializer):
+class ReservationSerializer(serializers.Serializer):
     schedule = serializers.CharField()
     voucher = serializers.CharField()
     caution = serializers.CharField()

@@ -1,12 +1,11 @@
 from django.db import models
 
+from brevity.models import Brevity
+
 
 class Reservation(models.Model):
-    schedule = models.TextField()
-    voucher = models.TextField()
-    caution = models.TextField()
     fees = models.IntegerField()
-    client = models.TextField()
+    brevity = models.ForeignKey(Brevity, on_delete=models.CASCADE)
 
     class Meta:
         db_table = 'reservation'
