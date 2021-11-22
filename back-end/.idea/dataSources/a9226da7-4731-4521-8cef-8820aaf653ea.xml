@@ -1632,26 +1632,31 @@ model</ColNames>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="446" parent="344" name="fees">
+    <column id="446" parent="344" name="total_price">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="447" parent="344" name="brevity_id">
+    <column id="447" parent="344" name="fees">
       <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="448" parent="344" name="brevity_id">
+      <Position>4</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="448" parent="344" name="reservation_brevity_id_74c33ace_fk_brevity_id">
+    <index id="449" parent="344" name="reservation_brevity_id_74c33ace_fk_brevity_id">
       <ColNames>brevity_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="449" parent="344" name="PRIMARY">
+    <key id="450" parent="344" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="450" parent="344" name="reservation_brevity_id_74c33ace_fk_brevity_id">
+    <foreign-key id="451" parent="344" name="reservation_brevity_id_74c33ace_fk_brevity_id">
       <ColNames>brevity_id</ColNames>
       <RefTableName>brevity</RefTableName>
       <RefColNames>id</RefColNames>

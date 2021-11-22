@@ -4,6 +4,7 @@ from brevity.models import Brevity
 
 
 class Reservation(models.Model):
+    total_price = models.IntegerField()
     fees = models.IntegerField()
     brevity = models.ForeignKey(Brevity, on_delete=models.CASCADE)
 
