@@ -2,7 +2,6 @@ import os
 import django
 import csv
 import sys
-
 import pandas as pd
 from icecream import ic
 from common.models import ValueObject, Printer, Reader
