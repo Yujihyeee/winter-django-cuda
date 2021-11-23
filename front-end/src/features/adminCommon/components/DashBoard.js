@@ -12,79 +12,79 @@ export default function Dashboard() {
       <Helmet>
         <title>Dashboard | TripN Admin</title>
       </Helmet>
-        <div className='container' >
-          <Navigation/>
-          <Container maxWidth={false} className='item1' >
+      <div className='container' >
+        <Navigation />
+        <Container maxWidth={false} className='item1' >
+          <Grid
+            container
+            spacing={1}
+          >
             <Grid
-              container
-              spacing={1}
+              item
+              lg={3}
+              sm={6}
+              xl={3}
+              xs={12}
             >
-              <Grid
-                item
-                lg={3}
-                sm={6}
-                xl={3}
-                xs={12}
-              >
-                <Budget />
-              </Grid>
-              <Grid
-                item
-                lg={3}
-                sm={6}
-                xl={3}
-                xs={12}
-              >
-                <TotalProfit2 />
-              </Grid>
-              <Grid
-                item
-                lg={3}
-                sm={6}
-                xl={3}
-                xs={12}
-              >
-                <TotalCustomers />
-              </Grid>
-              <Grid
-                item
-                lg={3}
-                sm={6}
-                xl={3}
-                xs={12}
-              >
-                <TotalProfit sx={{ height: '100%' }} />
-              </Grid>
-              <Grid
-                item
-                lg={8}
-                md={12}
-                xl={9}
-                xs={12}
-              >
-                <LatestSales />
-              </Grid>
-              <Grid
-                item
-                lg={4}
-                md={6}
-                xl={3}
-                xs={12}
-              >
-                <TrafficByDevice sx={{ height: '100%' }} />
-              </Grid>
-              <Grid
-                item
-                lg={12}
-                md={18}
-                xl={12}
-                xs={24}
-              >
-                <LatestOrders />
-              </Grid>
+              <Budget />
             </Grid>
-          </Container>
-        </div>
+            <Grid
+              item
+              lg={3}
+              sm={6}
+              xl={3}
+              xs={12}
+            >
+              <TotalProfit2 />
+            </Grid>
+            <Grid
+              item
+              lg={3}
+              sm={6}
+              xl={3}
+              xs={12}
+            >
+              <TotalCustomers />
+            </Grid>
+            <Grid
+              item
+              lg={3}
+              sm={6}
+              xl={3}
+              xs={12}
+            >
+              <TotalProfit sx={{ height: '100%' }} />
+            </Grid>
+            <Grid
+              item
+              lg={8}
+              md={12}
+              xl={9}
+              xs={12}
+            >
+              <LatestSales />
+            </Grid>
+            <Grid
+              item
+              lg={4}
+              md={6}
+              xl={3}
+              xs={12}
+            >
+              <TrafficByDevice sx={{ height: '100%' }} />
+            </Grid>
+            <Grid
+              item
+              lg={12}
+              md={18}
+              xl={12}
+              xs={24}
+            >
+              <LatestOrders />
+            </Grid>
+          </Grid>
+        </Container>
+      </div>
     </>
   );
 }
