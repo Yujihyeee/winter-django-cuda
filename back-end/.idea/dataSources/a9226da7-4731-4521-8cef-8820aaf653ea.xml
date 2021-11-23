@@ -1618,7 +1618,7 @@ model</ColNames>
     </column>
     <column id="443" parent="343" name="price">
       <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
     <key id="444" parent="343" name="PRIMARY">

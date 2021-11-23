@@ -1,27 +1,24 @@
 import React from 'react';
-import { Route, Redirect, Switch } from 'react-router-dom'
-import { UserAdd, UserDetail, UserList, UserLogin, UserModify, UserRemove } from 'features/user/index'
-import { Home, Navigation } from "features/common/index";
-import { BrowserRouter as Router } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
+import { AdminLogin } from 'features/admin';
+import { DashBoard } from 'features/adminCommon';
+import { FinancialReports, SalesManagement } from 'features/financial';
+import { UserList } from 'features/adminUser';
 
-const App= () => {
-  return (
+
+function App() {
+  return (<>
     <div className="App">
-      <Router>
-      <Navigation/>
-      <Switch>
-        <Route exact path='/' component= {Home}/>
-        <Redirect from='/home' to ={'/'}/>
-        <Route exact path='/users/join' component={UserAdd}/>
-        <Route exact path='/users/detail' component={UserDetail}/>
-        <Route exact path='/users/list' component={UserList}/>
-        <Route exact path='/users/login' component={UserLogin}/>
-        <Route exact path='/users/modify' component={UserModify}/>
-        <Route exact path='/users/remove' component={UserRemove}/>
-      </Switch>
-      </Router>
+         <Routes>
+          {/* adminpage */}
+          <Route path='/an' element={<AdminLogin />} />
+          <Route path='/an/dash-board' element={<DashBoard />} />
+          <Route path='/an/user-list' element={<UserList />} />
+          <Route path='/an/sales-management' element={<SalesManagement />} />
+          <Route path='/an/financial-reports' element={<FinancialReports />} />
+        </Routes>
     </div>
-  );
+  </>);
 }
 
 export default App;

@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c36bdbfe-35e8-4871-a289-0d8396e03107" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9226da7-4731-4521-8cef-8820aaf653ea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a9226da7-4731-4521-8cef-8820aaf653ea.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fin_reports/data/2020_PL_2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fin_reports/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/fin_reports/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fin_reports/models_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/fin_reports/models_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fin_reports/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,6 +229,7 @@
       <workItem from="1637543026616" duration="2340000" />
       <workItem from="1637546310378" duration="344000" />
       <workItem from="1637546677510" duration="24174000" />
+      <workItem from="1637630084571" duration="4716000" />
     </task>
     <servers />
   </component>
