@@ -7,7 +7,20 @@ from fin_reports.models_data import DbUploader
 
 @api_view(['GET'])
 @parser_classes([JSONParser])
+def pre_process(request):
+    DbUploader().pre_process()
+    return JsonResponse({'preprocessing': 'SUCCESS'})
+
+
+@api_view(['GET'])
+@parser_classes([JSONParser])
 def upload(request):
-    print('############ 1 ##########')
     DbUploader().insert_data()
     return JsonResponse({'Product Upload': 'SUCCESS'})
+
+
+@api_view(['GET'])
+@parser_classes([JSONParser])
+def process(request):
+    DbUploader().process()
+    return JsonResponse({'process': 'SUCCESS'})
