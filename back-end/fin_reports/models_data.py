@@ -31,6 +31,3 @@ class DbUploader:
                                                         price=int(float(row['당기'])))
                 print(f'1 >>>> {fin_reports}')
         print('USER DATA UPLOADED SUCCESSFULY!')
-
-    def process(self):
-        pass
