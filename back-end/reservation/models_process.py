@@ -10,4 +10,3 @@ class Processing:
         subtotal = price + tax
         fees = subtotal * 0.2
         total_price = subtotal + fees
-        

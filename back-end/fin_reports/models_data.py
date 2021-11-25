@@ -30,4 +30,4 @@ class DbUploader:
                                                         category=row['항목명'],
                                                         price=int(float(row['당기'])))
                 print(f'1 >>>> {fin_reports}')
-        print('USER DATA UPLOADED SUCCESSFULY!')
+        print('USER DATA UPLOADED SUCCESSFULLY!')

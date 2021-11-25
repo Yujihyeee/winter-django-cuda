@@ -1,6 +1,5 @@
 from django.http import JsonResponse
 from rest_framework.parsers import JSONParser
-
 from rest_framework.decorators import api_view, parser_classes
 from fin_reports.models_data import DbUploader
 
