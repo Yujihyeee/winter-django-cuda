@@ -11,4 +11,7 @@ class FinReports(models.Model):
         db_table = 'fin_reports'
 
     def __str__(self):
-        return f'[{self.pk}] {self.id}'
+        return f'[{self.pk}] {self.id}' \
+               f'연도: {self.year}' \
+               f'항목명: {self.category}' \
+               f'금액: {self.price}'

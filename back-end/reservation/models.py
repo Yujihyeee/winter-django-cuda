@@ -4,6 +4,7 @@ from brevity.models import Brevity
 
 
 class Reservation(models.Model):
+    tax = models.IntegerField()
     subtotal = models.IntegerField()
     fees = models.IntegerField()
     total_price = models.IntegerField()
@@ -13,4 +14,9 @@ class Reservation(models.Model):
         db_table = 'reservation'
 
     def __str__(self):
-        return f'[{self.pk}] {self.id}'
+        return f'[{self.pk}] {self.id}' \
+               f'결제내역: {self.brevity}' \
+               f'부가가치세: {self.tax}' \
+               f'수수료 붙기 전 총금액: {self.subtotal}' \
+               f'여행수수료: {self.fees}' \
+               f'총금액: {self.total_price}'
