@@ -1,5 +1,4 @@
 """api URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
 Examples:
@@ -13,15 +12,13 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
 
+from user import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/fin_reports/', include('fin_reports.urls')),
-    path('api/brevity/', include('brevity.urls')),
-    path('api/jeju_data', include('jeju_data.urls')),
-    path('api/image', include('image.urls')),
-    path('api/user', include('user.urls')),
+    url(r'upload', views.upload),
+
 ]
