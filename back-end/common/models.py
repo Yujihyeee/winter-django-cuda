@@ -7,7 +7,6 @@ import json
 
 @dataclass
 class ValueObject(object):
-
     train: object
     test: object
     id: str
@@ -107,7 +106,7 @@ class Reader(ReaderBase):
     def csv(self, file) -> object:
         return pd.read_csv(f'{file}.csv', encoding='UTF-8', thousands=',')
 
-    def csv_header(self, file, header)-> object:
+    def csv_header(self, file, header) -> object:
         return pd.read_csv(f'{file}.csv', encoding='UTF-8', thousands=',', header=header)
 
     def xls(self, file, header, usecols):

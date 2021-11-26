@@ -15,7 +15,7 @@ def pre_process(request):
 @parser_classes([JSONParser])
 def upload(request):
     DbUploader().insert_data()
-    return JsonResponse({'Product Upload': 'SUCCESS'})
+    return JsonResponse({'Data Uploading': 'SUCCESS'})
 
 
 # @api_view(['GET'])

@@ -10,7 +10,7 @@ class DbUploader:
         reader = Reader()
         self.printer = Printer()
         vo.context = 'brevity/data/'
-        vo.fname = 'brevity_dummy.csv'
+        vo.fname = 'brevity_dummy_2.csv'
         self.csvfile = reader.new_file(vo)
 
     def insert_data(self):
@@ -19,7 +19,7 @@ class DbUploader:
     def pre_process(self):
         df = pd.read_csv(self.csvfile, encoding='UTF-8', thousands=',')
         colstocheck = df.columns
-        df[colstocheck] = df[colstocheck].replace({'\$': ''}, regex=True)
+        df[colstocheck] = df[colstocheck].replace({'\¥': ''}, regex=True)
         df[colstocheck] = df[colstocheck].replace({'\.': ''}, regex=True)
         df.to_csv(self.csvfile + 'brevity_dummy_2.csv')
 
@@ -27,9 +27,10 @@ class DbUploader:
         with open(self.csvfile, newline='', encoding='utf8') as f:
             data_reader = csv.DictReader(f)
             for row in data_reader:
-                if not brevity.objects.filter(category=row['항목명']).exists():
-                    brevity = Brevity.objects.create(year=2020,
-                                                     category=row['항목명'],
-                                                     price=int(float(row['당기'])))
+                # if not brevity.objects.filter(category=row['항목명']).exists():
+                brevity = Brevity.objects.create(userid=row['userid'],
+                                                 plane=row['plane'],
+                                                 accommodation=row['accommodation'],
+                                                 activity=row['activity'])
                 print(f'2 >>>> {brevity}')
         print('DATA UPLOADED SUCCESSFULLY!')
