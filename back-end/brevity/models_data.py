@@ -13,8 +13,8 @@ class DbUploader:
         vo.fname = 'brevity_dummy_2.csv'
         self.csvfile = reader.new_file(vo)
 
-    def insert_data(self):
-        self.insert_brevity()
+    # def insert_data(self):
+    #     self.insert_brevity()
 
     def pre_process(self):
         df = pd.read_csv(self.csvfile, encoding='UTF-8', thousands=',')

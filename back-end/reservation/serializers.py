@@ -1,13 +1,15 @@
 from rest_framework import serializers
+
+from brevity.models import Brevity
 from .models import Reservation as reservation
 
 
 class ReservationSerializer(serializers.Serializer):
-    schedule = serializers.CharField()
-    voucher = serializers.CharField()
-    caution = serializers.CharField()
+    tax = serializers.IntegerField()
+    subtotal = serializers.IntegerField()
     fees = serializers.IntegerField()
-    client = serializers.CharField()
+    total_price = serializers.IntegerField()
+    brevity = serializers.ForeignKey(Brevity, on_delete=serializers.CASCADE)
 
     class Meta:
         model = reservation

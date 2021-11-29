@@ -397,23 +397,23 @@ class DbUploader():
             # return x, y, address
             return 0
 
-#     # def insert_jeju(self):
-#     #     with open(self.csvfile, newline='', encoding='utf8') as csvfile:
-#     #         data_reader = csv.DictReader(csvfile)
-#     #         for row in data_reader:
-#     #             p = Plane()
-#     #             plane = Plane.objects.all().filter(vihicleId=row['vihicleId']).values()[0]
-#     #             p.id = plane['id']
-#     #             t = Tourism()
-#     #             tourism = Tourism.objects.all().filter(tour_name=row['name']).values()[0]
-#     #             t.id = tourism['id']
-#     #             a = Activity()
-#     #             activity = Activity.objects.all().filter(act_name=row['act_name']).values()[0]
-#     #             a.id = activity['id']
-#     #             Jeju.objects.create(name=row['product'],
-#     #                                    price=row['price'],
-#     #                                    activity=a,
-#     #                                    tourism=t,
-#     #                                    plane=p,
-#     #                                    )
-#     #         print('PRODUCT DATA UPLOADED SUCCESSFULY!')
+    # def insert_jeju(self):
+    #     with open(self.csvfile, newline='', encoding='utf8') as csvfile:
+    #         data_reader = csv.DictReader(csvfile)
+    #         for row in data_reader:
+    #             p = Plane()
+    #             plane = Plane.objects.all().filter(vihicleId=row['vihicleId']).values()[0]
+    #             p.id = plane['id']
+    #             t = Tourism()
+    #             tourism = Tourism.objects.all().filter(tour_name=row['name']).values()[0]
+    #             t.id = tourism['id']
+    #             a = Activity()
+    #             activity = Activity.objects.all().filter(act_name=row['act_name']).values()[0]
+    #             a.id = activity['id']
+    #             Jeju.objects.create(name=row['product'],
+    #                                    price=row['price'],
+    #                                    activity=a,
+    #                                    tourism=t,
+    #                                    plane=p,
+    #                                    )
+    #         print('PRODUCT DATA UPLOADED SUCCESSFULY!')
