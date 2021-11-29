@@ -1,8 +1,6 @@
 from django.http import JsonResponse
 from rest_framework.parsers import JSONParser
 from rest_framework.decorators import api_view, parser_classes
-
-from brevity.models import Brevity
 from reservation.models_process import Processing
 
 
@@ -15,16 +13,16 @@ def preprocess(request):
 
 @api_view(['GET'])
 @parser_classes([JSONParser])
-def insert_reservation(request):
-    Processing().insert_reservation(arr=[])
+def insert_data(request):
+    Processing().insert_data()
     return JsonResponse({'Processing': 'SUCCESS'})
 
 
-@api_view(['GET'])
-@parser_classes([JSONParser])
-def process(request):
-    Processing().process(arr=[])
-    return JsonResponse({'Processing': 'SUCCESS'})
+# @api_view(['GET'])
+# @parser_classes([JSONParser])
+# def process(request):
+#     Processing().process()
+#     return JsonResponse({'Processing': 'SUCCESS'})
 
 
 # @api_view(['POST'])
