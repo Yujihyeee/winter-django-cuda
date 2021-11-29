@@ -1581,17 +1581,17 @@ permission_id</ColNames>
     </column>
     <column id="449" parent="340" name="plane">
       <Position>3</Position>
-      <DataType>longtext|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="450" parent="340" name="accommodation">
       <Position>4</Position>
-      <DataType>longtext|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="451" parent="340" name="activity">
       <Position>5</Position>
-      <DataType>longtext|0s</DataType>
+      <DataType>int(11)|0s</DataType>
     </column>
     <column id="452" parent="340" name="restaurant">
       <Position>6</Position>

@@ -5,6 +5,7 @@ from .models import Reservation as reservation
 
 
 class ReservationSerializer(serializers.Serializer):
+    price = serializers.IntegerField()
     tax = serializers.IntegerField()
     subtotal = serializers.IntegerField()
     fees = serializers.IntegerField()

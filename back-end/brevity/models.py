@@ -3,9 +3,9 @@ from django.db import models
 
 class Brevity(models.Model):
     userid = models.IntegerField()
-    plane = models.TextField()
-    accommodation = models.TextField()
-    activity = models.TextField(null=True)
+    plane = models.IntegerField()
+    accommodation = models.IntegerField()
+    activity = models.IntegerField(null=True)
     restaurant = models.TextField(null=True)
     shop = models.TextField(null=True)
     tourism = models.TextField(null=True)
