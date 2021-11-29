@@ -20,6 +20,13 @@ def insert_reservation(request):
     return JsonResponse({'Processing': 'SUCCESS'})
 
 
+@api_view(['GET'])
+@parser_classes([JSONParser])
+def process(request):
+    Processing().process(arr=[])
+    return JsonResponse({'Processing': 'SUCCESS'})
+
+
 # @api_view(['POST'])
 # @parser_classes([JSONParser])
 # def process(request):

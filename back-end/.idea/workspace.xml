@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c36bdbfe-35e8-4871-a289-0d8396e03107" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9226da7-4731-4521-8cef-8820aaf653ea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a9226da7-4731-4521-8cef-8820aaf653ea.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brevity/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/brevity/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brevity/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/brevity/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reservation/models_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation/models_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reservation/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reservation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation/views.py" afterDir="false" />
     </list>
@@ -245,7 +240,7 @@
       <workItem from="1637715748646" duration="14687000" />
       <workItem from="1637818488064" duration="11515000" />
       <workItem from="1637890179052" duration="17255000" />
-      <workItem from="1638147473951" duration="17816000" />
+      <workItem from="1638147473951" duration="25764000" />
     </task>
     <servers />
   </component>

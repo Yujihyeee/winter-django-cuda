@@ -1,5 +1,7 @@
 # 여행업 알선 수입＝여행자로부터 받는 관광요금－원가
 import csv
+
+import pandas as pd
 from django.db.models import Sum
 import brevity
 from brevity.models import Brevity
@@ -12,8 +14,8 @@ class Processing:
         vo = ValueObject()
         reader = Reader()
         self.printer = Printer()
-        vo.context = 'brevity/data/'
-        vo.fname = 'brevity_dummy_2.csv'
+        vo.context = 'reservation/data/'
+        vo.fname = ''
         self.csvfile = reader.new_file(vo)
 
     def pre_process(self):
@@ -27,12 +29,19 @@ class Processing:
             fees = subtotal * 0.2
             total_price = subtotal + fees
             print(price, int(tax), int(subtotal), int(fees), int(total_price))
+            arr.append(price)
+            arr.append(int(tax))
+            arr.append(int(subtotal))
+            arr.append(int(fees))
             arr.append(int(total_price))
         return arr
 
+    def process(self, arr):
+        df = pd.DataFrame(data=[], index=range(1, 31), columns=['price', 'tax', 'subtotal', 'fees', 'total_price'])
+        print(df)
+
     def insert_reservation(self, arr):
-        data_reader = arr
-        for row in data_reader:
+        for row in arr:
             reservation = Reservation.objects.create(userid=row['id'],
                                                      price=row['price'],
                                                      tax=row['tax'],
