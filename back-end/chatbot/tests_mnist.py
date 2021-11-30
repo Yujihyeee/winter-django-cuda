@@ -1,15 +1,17 @@
+# 필요한 모듈 임포트
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from tensorflow.keras.datasets import mnist
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Flatten, Dense
+
 from tensorflow.keras.datasets import mnist
 from tensorflow.keras.models import load_model
-
-
+import matplotlib.pyplot as plt
 class MnistTest(object):
     def __init__(self):
         pass
+
 
     def mnist_execute(self):
         # MNIST 데이터셋 가져오기
@@ -60,13 +62,13 @@ class MnistTest(object):
         acc_ax.legend(loc='lower left')
         plt.show()
 
-    def hand_writing(self):
+    def hand_writing_execute(self):
         # MNIST 데이터셋 가져오기
         _, (x_test, y_test) = mnist.load_data()
         x_test = x_test / 255.0  # 데이터 정규화
 
         # 모델 불러오기
-        model = load_model('data/mnist_model.h5')
+        model = load_model('mnist_model.h5')
         model.summary()
         model.evaluate(x_test, y_test, verbose=2)
 
@@ -79,8 +81,7 @@ class MnistTest(object):
         predict = model.predict_classes(x_test[picks])
         print("손글씨 이미지 예측값 : ", predict)
 
-
 if __name__ == '__main__':
     m = MnistTest()
     # m.mnist_execute()
-    m.hand_writing()
+    m.hand_writing_execute()

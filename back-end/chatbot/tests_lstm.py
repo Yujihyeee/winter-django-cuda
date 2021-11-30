@@ -3,6 +3,11 @@ import matplotlib.pyplot as plt
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Flatten, Dense, LSTM, SimpleRNN
 
+'''
+주의 : 디폴트로 설치되는 numpy 는 21.x 이다.
+아래와 같이 다운그레이드 해야 한다.
+pip install --user numpy==1.19.5
+'''
 
 class LstmTest(object):
     def __init__(self):
@@ -85,3 +90,4 @@ class LstmTest(object):
 if __name__ == '__main__':
     l = LstmTest()
     l.execute()
+    print()

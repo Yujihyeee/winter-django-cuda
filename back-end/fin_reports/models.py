@@ -1,5 +1,6 @@
 from dataclasses import dataclass, field
-
+from random import random
+from palettable.lightbartlein.diverging import BlueDarkRed12_6 as palette # example import
 import numpy as np
 import pandas as pd
 from django.core.validators import MinValueValidator, MaxValueValidator
@@ -23,6 +24,48 @@ class FinReports(models.Model):
 
 @dataclass
 class Chart:
+
+    def __init__(self):
+        pass
+
+    def get_options(self):
+        """
+        the default options that all charts will use
+        """
+        return {}
+
+    def generate_chart_id(self):
+        """
+        returns a randomly generated 8 character ascii string
+        """
+        return ''.join(random.choice(str.ascii_letters) for i in range(8))
+
+    def get_random_colors(num, colors=[]):
+        """
+        function to generate a random hex color list
+        ``num`` the number of colors required
+        ``colors`` the existing color list - additional
+        colors will be added if colors exist
+        """
+        while len(colors) < num:
+            color = "#{:06x}".format(random.randint(0, 0xFFFFFF))
+            if color not in colors:
+                colors.append(color)
+        return colors
+
+    def get_colors(self):
+        """
+        Get colors from palette.colors or randomly generate a list
+        of colors.  This works great with the palettable module
+        but this is not required and will call get_random_colors
+        if palette.color is not set
+        """
+        try:
+            return palette.hex_colors
+        except:
+            return self.get_random_colors(6)
+
+
     """
     A class for using chart.js charts.
     ``datasets`` the data itself.  this contains the data and some
@@ -58,7 +101,7 @@ class Chart:
 
         # make sure we have the right number of colors
         if len(self.palette) < len(values):
-            get_random_colors(num=len(values), colors=self.palette)
+            self.get_random_colors(num=len(values), colors=self.palette)
 
         # build the datasets
         for i in range(len(stacks)):

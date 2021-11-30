@@ -3,7 +3,65 @@
   <component name="ChangeListManager">
     <list default="true" id="c36bdbfe-35e8-4871-a289-0d8396e03107" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/cnn_model.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/data/chatbot_data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/data/mnist_model.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/data/nvmc.model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/data/train.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/tests_chatbot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/tests_lstm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/tests_mnist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/tests_ner.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/fin_reports/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/fin_reports/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/data/category.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/models_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/data/accommodation.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/data/activity.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/data/jejuolle.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/data/plane.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/data/restaurant.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/data/shop.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/data/tourism.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/models_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/data/persons.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/data/user.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/models_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +297,7 @@
       <workItem from="1637818488064" duration="11515000" />
       <workItem from="1637890179052" duration="17255000" />
       <workItem from="1638147473951" duration="29209000" />
-      <workItem from="1638233598651" duration="7351000" />
+      <workItem from="1638233598651" duration="8779000" />
     </task>
     <servers />
   </component>

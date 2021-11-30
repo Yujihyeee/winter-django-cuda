@@ -1,14 +1,17 @@
-import pandas as pd
-import tensorflow as tf
-from tensorflow.keras import preprocessing
-from tensorflow.keras.models import Model, load_model
+
+# 필요한 모듈 임포트
 from tensorflow.keras.layers import Input, Embedding, Dense, Dropout, Conv1D, GlobalMaxPool1D, concatenate
+import tensorflow as tf
+import pandas as pd
+from tensorflow.keras.models import Model, load_model
+from tensorflow.keras import preprocessing
+
 
 class ChatbotTest(object):
     def __init__(self):
         pass
 
-    def chat_execute(self):
+    def fit_execute(self):
         # 데이터 읽어오기
         train_file = "./data/chatbot_data.csv"
         data = pd.read_csv(train_file, delimiter=',')
@@ -76,7 +79,7 @@ class ChatbotTest(object):
         # 모델 저장
         model.save('cnn_model.h5')
 
-    def evel_execute(self):
+    def eval_execute(self):
         # 데이터 읽어오기
         train_file = "./data/chatbot_data.csv"
         data = pd.read_csv(train_file, delimiter=',')
@@ -116,5 +119,5 @@ class ChatbotTest(object):
 
 if __name__ == '__main__':
     c = ChatbotTest()
-    # c.chat_execute()
-    c.evel_execute()
+    # c.fit_execute()
+    c.eval_execute()
