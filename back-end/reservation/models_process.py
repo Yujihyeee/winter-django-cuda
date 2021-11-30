@@ -22,14 +22,24 @@ class Processing:
         self.insert_reservation()
 
     def pre_process(self):
-        price = 0
-        people = 0
-        day = 0
-        tax = (price * people) + (price * day) * 0.1
-        subtotal = price + tax
-        fee = subtotal * 0.2
-        total_price = subtotal + fee
-
+        arr = []
+        for p in range(1, 12):
+            pr = JejuSchedule.objects.filter()
+            people = JejuSchedule.objects.filter()
+            day = JejuSchedule.objects.filter()
+            price = pr.plane + pr.accommodation + pr.activity
+            tax = (price * people) + (price * day) * 0.1
+            subtotal = price + tax
+            fee = subtotal * 0.2
+            total_price = subtotal + fee
+            arr.append(price)
+            arr.append(int(tax))
+            arr.append(int(subtotal))
+            arr.append(int(fee))
+            arr.append(int(total_price))
+        result = 0
+        df = pd.DataFrame(result, columns=['price', 'tax', 'subtotal', 'fees', 'total_price'])
+        df.to_csv(self.csvfile + 'price.csv')
 
     def insert_reservation(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:

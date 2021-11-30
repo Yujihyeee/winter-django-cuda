@@ -2,64 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c36bdbfe-35e8-4871-a289-0d8396e03107" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/brevity/data/dum.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/data/category.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/models_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeju_data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeju_data/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeju_data/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeju_data/data/accommodation.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeju_data/data/activity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeju_data/data/jejuolle.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeju_data/data/plane.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeju_data/data/restaurant.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeju_data/data/shop.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeju_data/data/tourism.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeju_data/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeju_data/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeju_data/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeju_data/models_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeju_data/serializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeju_data/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeju_data/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jeju_data/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reservation/models_process_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/data/persons.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/data/user.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/model_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9226da7-4731-4521-8cef-8820aaf653ea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a9226da7-4731-4521-8cef-8820aaf653ea.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brevity/data/brevity_dummy.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/brevity/data/brevity_dummy_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/brevity/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/brevity/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brevity/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/brevity/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brevity/models_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/brevity/models_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brevity/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/brevity/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brevity/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/brevity/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/fin_reports/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/models_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/fin_reports/models_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/data/price.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reservation/models_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation/models_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -296,7 +239,7 @@
       <workItem from="1637818488064" duration="11515000" />
       <workItem from="1637890179052" duration="17255000" />
       <workItem from="1638147473951" duration="29209000" />
-      <workItem from="1638233598651" duration="16623000" />
+      <workItem from="1638233598651" duration="17388000" />
     </task>
     <servers />
   </component>
