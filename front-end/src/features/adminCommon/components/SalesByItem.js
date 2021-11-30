@@ -13,16 +13,16 @@ import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import PhoneIcon from '@material-ui/icons/Phone';
 import TabletIcon from '@material-ui/icons/Tablet';
 
-const TrafficByDevice = (props) => {
+const SalesByItem = (props) => {
   const theme = useTheme();
 
   const data = {
     datasets: [
       {
-        data: [63, 15, 22],
+        data: [30, 48, 22],
         backgroundColor: [
-          colors.indigo[500],
           colors.red[600],
+          colors.indigo[500],
           colors.orange[600]
         ],
         borderWidth: 5,
@@ -30,7 +30,7 @@ const TrafficByDevice = (props) => {
         hoverBorderColor: colors.common.white
       }
     ],
-    labels: ['항공', '숙박', '액티비티']
+    labels: ['숙박', '항공', '액티비티']
   };
 
   const options = {
@@ -57,16 +57,16 @@ const TrafficByDevice = (props) => {
 
   const devices = [
     {
-      title: '항공',
-      value: 63,
-      icon: LaptopMacIcon,
-      color: colors.indigo[500]
-    },
-    {
       title: '숙박',
-      value: 15,
+      value: 48,
       icon: TabletIcon,
       color: colors.red[600]
+    },
+    {
+      title: '항공',
+      value: 30,
+      icon: LaptopMacIcon,
+      color: colors.indigo[500]
     },
     {
       title: '액티비티',
@@ -133,4 +133,4 @@ const TrafficByDevice = (props) => {
   );
 };
 
-export default TrafficByDevice;
+export default SalesByItem;

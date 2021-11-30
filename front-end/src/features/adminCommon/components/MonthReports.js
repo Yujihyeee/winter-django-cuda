@@ -9,7 +9,7 @@ import {
   colors
 } from '@material-ui/core';
 
-const LatestSales = (props) => {
+const MonthReports = (props) => {
   const theme = useTheme();
 
   const data = {
@@ -20,8 +20,8 @@ const LatestSales = (props) => {
         barThickness: 12,
         borderRadius: 4,
         categoryPercentage: 0.5,
-        data: [18, 5, 19, 27, 29, 19, 20],
-        label: 'This year',
+        data: [18, 20, 19, 37, 29, 29],
+        label: '매출액',
         maxBarThickness: 10
       },
       {
@@ -30,12 +30,12 @@ const LatestSales = (props) => {
         barThickness: 12,
         borderRadius: 4,
         categoryPercentage: 0.5,
-        data: [11, 20, 12, 29, 30, 25, 13],
-        label: 'Last year',
+        data: [11, 5, 12, 29, 20, 25],
+        label: '영업이익',
         maxBarThickness: 10
       }
     ],
-    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June']
+    labels: ['6월', '7월', '8월', '9월', '10월', '11월']
   };
 
   const options = {
@@ -121,4 +121,4 @@ const LatestSales = (props) => {
   );
 };
 
-export default LatestSales;
+export default MonthReports;
