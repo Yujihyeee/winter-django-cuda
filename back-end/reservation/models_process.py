@@ -4,7 +4,7 @@ import csv
 import pandas as pd
 from django.db.models import Sum
 import brevity
-from brevity.models import Brevity
+from brevity.models import JejuSchedule
 from reservation.models import Reservation
 from common.models import ValueObject, Reader, Printer
 
@@ -22,32 +22,21 @@ class Processing:
         self.insert_reservation()
 
     def pre_process(self):
-        arr = []
-        for p in range(1, 31):
-            # print(f' 유저아이디: {p}')
-            pr = Brevity.objects.get(pk=p)
-            price = pr.plane + pr.accommodation + pr.activity
-            tax = price * 0.1
-            subtotal = price + tax
-            fees = subtotal * 0.2
-            total_price = subtotal + fees
-            # print(price, int(tax), int(subtotal), int(fees), int(total_price))
-            arr.append(price)
-            arr.append(int(tax))
-            arr.append(int(subtotal))
-            arr.append(int(fees))
-            arr.append(int(total_price))
-            # print(arr)
-        n = 5
-        result = [arr[i * n:(i + 1) * n] for i in range((len(arr) + n - 1) // n)]
-        df = pd.DataFrame(result, columns=['price', 'tax', 'subtotal', 'fees', 'total_price'])
-        df.to_csv(self.csvfile + 'price.csv')
+        price = 0
+        people = 0
+        day = 0
+        tax = (price * people) + (price * day) * 0.1
+        subtotal = price + tax
+        fee = subtotal * 0.2
+        total_price = subtotal + fee
+
 
     def insert_reservation(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:
             data_reader = csv.DictReader(f)
             for row in data_reader:
-                reservation = Reservation.objects.create(price=row['price'],
+                reservation = Reservation.objects.create(reg_date=row['reg_date'],
+                                                         price=row['price'],
                                                          tax=row['tax'],
                                                          subtotal=row['subtotal'],
                                                          fees=row['fees'],

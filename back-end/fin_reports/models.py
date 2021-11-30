@@ -140,11 +140,9 @@ class Chart:
         )
 
         pivot = pivot.round(round_values)
-
         values = pivot.values.tolist()
         labels = pivot.columns.tolist()
         stacks = pivot.index.tolist()
-
         self.from_lists(values, labels, stacks)
 
     def get_elements(self):
