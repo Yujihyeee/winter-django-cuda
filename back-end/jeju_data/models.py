@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 from image.models import Image, Category
 
+
 class TourismCategory(models.Model):
 
     # TourismCategory
@@ -34,6 +35,7 @@ class Tourism(models.Model):
     def __str__(self):
         return f'{self.id}'
 
+
 class ActivityCategory(models.Model):
 
     # ActivityCategory
@@ -46,6 +48,7 @@ class ActivityCategory(models.Model):
 
     def __str__(self):
         return f'{self.id}'
+
 
 class Activity(models.Model):
     currencies = [
@@ -71,6 +74,7 @@ class Activity(models.Model):
     def __str__(self):
         return f'{self.id}'
 
+
 class PlaneCategory(models.Model):
 
     # PlaneCategory
@@ -83,6 +87,7 @@ class PlaneCategory(models.Model):
 
     def __str__(self):
         return f'{self.id}'
+
 
 class Plane(models.Model):
     currencies = [
@@ -135,7 +140,6 @@ class Shop(models.Model):
 
     def __str__(self):
         return f'{self.id}'
-
 
 
 class RestaurantCategory(models.Model):
@@ -204,6 +208,7 @@ class Accommodation(models.Model):
     def __str__(self):
         return f'{self.id}'
 
+
 class Olle(models.Model):
 
     # Olle
@@ -224,7 +229,6 @@ class Olle(models.Model):
 
     def __str__(self):
         return f'{self.id}'
-
 
 
 # # class Jeju(models.Model):

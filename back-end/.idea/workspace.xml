@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c36bdbfe-35e8-4871-a289-0d8396e03107" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/jeju_data/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reservation/models_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation/models_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -239,7 +240,7 @@
       <workItem from="1637818488064" duration="11515000" />
       <workItem from="1637890179052" duration="17255000" />
       <workItem from="1638147473951" duration="29209000" />
-      <workItem from="1638233598651" duration="17388000" />
+      <workItem from="1638233598651" duration="24046000" />
     </task>
     <servers />
   </component>
