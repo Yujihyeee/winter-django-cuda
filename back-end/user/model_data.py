@@ -1,24 +1,20 @@
 import os
 from datetime import datetime
-
 import django
 import csv
 import sys
 from common.models import ValueObject, Reader, Printer
 from user.models import Person, User
-
 # system setup
 #
 # SET FOREIGN_KEY_CHECKS = 0;
-
 from image.models import Category, Image
-
 from icecream import ic
-
 from sphinx.util import requests
 import json
 
-class DbUploader():
+
+class DbUploader:
     def __init__(self):
         vo = ValueObject()
         reader = Reader()

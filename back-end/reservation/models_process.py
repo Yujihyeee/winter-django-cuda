@@ -4,7 +4,6 @@ from datetime import datetime
 import pandas as pd
 from dateutil.relativedelta import relativedelta
 from rest_framework.generics import get_object_or_404
-
 from brevity.models import JejuSchedule
 from reservation.models import Reservation
 from jeju_data.models import Accommodation, Plane, Activity
