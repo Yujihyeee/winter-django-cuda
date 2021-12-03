@@ -24,7 +24,6 @@ class DbUploader:
         vo.fname = 'user.csv'
         self.csvfile = reader.new_file(vo)
 
-
     def insert_data(self):
         print('############ 2 ##########')
         # self.insert_category_person()
