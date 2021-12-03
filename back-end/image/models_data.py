@@ -2,10 +2,8 @@ import os
 import django
 import csv
 import sys
-
 import pandas as pd
 from icecream import ic
-
 from common.models import ValueObject, Reader, Printer
 # system setup
 from image.models import Image, Category
@@ -24,7 +22,6 @@ class DbUploader():
         # vo.fname = 'user.csv'
         # restaurant, shop, tourism, activity, plane, accommodation, jejuolle
         self.csvfile = reader.new_file(vo)
-
 
     def insert_data(self):
         print('############ 2 ##########')
@@ -47,7 +44,6 @@ class DbUploader():
     def test(self):
         df = pd.read_csv(self.csvfile, encoding='utf-8')
         print(df)
-
 
     def insert_image(self):
         with open(self.csvfile, newline='', encoding='utf8') as csvfile:

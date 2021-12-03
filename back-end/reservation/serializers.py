@@ -1,5 +1,4 @@
 from rest_framework import serializers
-
 from brevity.models import Brevity
 from .models import Reservation as reservation
 
