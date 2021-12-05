@@ -1,6 +1,5 @@
 # 여행업 알선 수입＝여행자로부터 받는 관광요금－원가
 import csv
-
 import pandas as pd
 from django.db.models import Sum
 import brevity
