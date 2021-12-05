@@ -24,7 +24,6 @@ class FinReports(models.Model):
 
 @dataclass
 class Chart:
-
     def __init__(self):
         pass
 
@@ -64,7 +63,6 @@ class Chart:
             return palette.hex_colors
         except:
             return self.get_random_colors(6)
-
 
     """
     A class for using chart.js charts.

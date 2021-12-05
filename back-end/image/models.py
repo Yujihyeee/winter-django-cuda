@@ -2,8 +2,8 @@
 from django.db import models
 from django.db.models import CharField, TextField
 from django_mysql.models import ListTextField
-
 # Create your models here.
+
 
 class Category(models.Model):
 
