@@ -6,7 +6,6 @@ import sys
 from common.models import ValueObject, Reader, Printer
 from user.models import Person, User
 # system setup
-#
 # SET FOREIGN_KEY_CHECKS = 0;
 from image.models import Category, Image
 from icecream import ic
