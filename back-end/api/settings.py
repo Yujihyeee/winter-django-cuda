@@ -85,9 +85,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mariadb',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': '127.0.0.1',
+        'USER': 'admin',
+        'PASSWORD': 'xmflqdps',
+        'HOST': 'tripn-mariadb.cj7pgkq6vjwv.ap-northeast-2.rds.amazonaws.com',
         'PORT': '3306'
     }
 }
