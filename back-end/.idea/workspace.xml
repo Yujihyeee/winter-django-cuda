@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c36bdbfe-35e8-4871-a289-0d8396e03107" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9226da7-4731-4521-8cef-8820aaf653ea/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a9226da7-4731-4521-8cef-8820aaf653ea/entities/entities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9226da7-4731-4521-8cef-8820aaf653ea/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a9226da7-4731-4521-8cef-8820aaf653ea/entities/entities.dat.values" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9226da7-4731-4521-8cef-8820aaf653ea/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a9226da7-4731-4521-8cef-8820aaf653ea/entities/entities.dat.values.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a9226da7-4731-4521-8cef-8820aaf653ea/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a9226da7-4731-4521-8cef-8820aaf653ea/entities/entities.dat_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,6 +248,8 @@
       <workItem from="1638847903576" duration="26000" />
       <workItem from="1638858499928" duration="1811000" />
       <workItem from="1638866270315" duration="546000" />
+      <workItem from="1638890777626" duration="122000" />
+      <workItem from="1638949377397" duration="1513000" />
     </task>
     <servers />
   </component>
