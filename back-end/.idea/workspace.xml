@@ -2,134 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbc6e459-6875-4cfb-9bdf-a0c48c722e5b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/back-end.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/back-end.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/84bac87c-b4cf-4d13-80c1-a2081bbc685c.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/84bac87c-b4cf-4d13-80c1-a2081bbc685c/entities/entities.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/84bac87c-b4cf-4d13-80c1-a2081bbc685c/entities/entities.dat.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/84bac87c-b4cf-4d13-80c1-a2081bbc685c/entities/entities.dat.values" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/84bac87c-b4cf-4d13-80c1-a2081bbc685c/entities/entities.dat.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/84bac87c-b4cf-4d13-80c1-a2081bbc685c/entities/entities.dat.values.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/84bac87c-b4cf-4d13-80c1-a2081bbc685c/entities/entities.dat_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/84bac87c-b4cf-4d13-80c1-a2081bbc685c/entities/entities.dat_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/84bac87c-b4cf-4d13-80c1-a2081bbc685c/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/84bac87c-b4cf-4d13-80c1-a2081bbc685c/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/84bac87c-b4cf-4d13-80c1-a2081bbc685c/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JPype1-1.3.0-cp38-cp38-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brevity/data/dum.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/brevity/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/brevity/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/brevity/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brevity/models_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/brevity/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/brevity/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/brevity/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/brevity/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/cnn_model.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/data/chatbot_data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/data/nvmc.model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/data/train.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/mnist_model.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/tests_chatbot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/tests_lstm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/tests_mnist.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/tests_ner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/data/2020_PL.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/data/2020_PL_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/models_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/models_process.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/data/category.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/models_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/data/accommodation.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/data/activity.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/data/jejuolle.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/data/plane.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/data/restaurant.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/data/shop.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/data/tourism.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/models_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/serializer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytorch/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytorch/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytorch/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytorch/data/ratings_test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytorch/data/ratings_train.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytorch/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytorch/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytorch/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytorch/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/models_process.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/models_process_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/data/persons.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/data/user.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/model_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +63,7 @@
       <updated>1639020442934</updated>
       <workItem from="1639020444043" duration="1212000" />
       <workItem from="1639022340853" duration="1120000" />
-      <workItem from="1639023522222" duration="2073000" />
+      <workItem from="1639023522222" duration="3500000" />
     </task>
     <servers />
   </component>
