@@ -1,25 +1,3 @@
-from django.http import JsonResponse
-from rest_framework.parsers import JSONParser
-from rest_framework.decorators import api_view, parser_classes
-from brevity.models_data import DbUploader
+from django.shortcuts import render
 
-
-# @api_view(['GET'])
-# @parser_classes([JSONParser])
-# def pre_process(request):
-#     DbUploader().pre_process()
-#     return JsonResponse({'preprocessing': 'SUCCESS'})
-
-
-@api_view(['GET'])
-@parser_classes([JSONParser])
-def upload(request):
-    DbUploader().insert_brevity()
-    return JsonResponse({'Data Uploading': 'SUCCESS'})
-
-
-# @api_view(['GET'])
-# @parser_classes([JSONParser])
-# def process(request):
-#     DbUploader().process()
-#     return JsonResponse({'process': 'SUCCESS'})
+# Create your views here.
