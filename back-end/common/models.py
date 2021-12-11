@@ -122,3 +122,7 @@ class Printer(PrinterBase):
         print(this.tail(3))
         print(this.info())
         print(f'Null Count is {this.isnull().sum()}')
+
+class Report:
+    pass
+
