@@ -123,6 +123,7 @@ class Printer(PrinterBase):
         print(this.info())
         print(f'Null Count is {this.isnull().sum()}')
 
+
 class Report:
     pass
 
