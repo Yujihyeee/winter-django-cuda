@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbc6e459-6875-4cfb-9bdf-a0c48c722e5b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6/entities/entities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6/entities/entities.dat.values" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6/entities/entities.dat.values.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6/entities/entities.dat_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2cc777f-8059-4aae-8c45-533f91171e3c/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2cc777f-8059-4aae-8c45-533f91171e3c/entities/entities.dat.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2cc777f-8059-4aae-8c45-533f91171e3c/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2cc777f-8059-4aae-8c45-533f91171e3c/entities/entities.dat.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +85,7 @@
       <workItem from="1639118739709" duration="1792000" />
       <workItem from="1639136137574" duration="599000" />
       <workItem from="1639232285766" duration="220000" />
-      <workItem from="1639314041363" duration="1403000" />
+      <workItem from="1639314041363" duration="1819000" />
     </task>
     <servers />
   </component>

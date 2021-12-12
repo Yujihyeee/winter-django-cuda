@@ -4,8 +4,9 @@ cd KoGPT2
 pip install -r requirements.txt
 pip install
 '''
-
-from transformers import GPT2LMHeadModel, GPT2Tokenizer
+from nltk import download
+from tinycss import tokenizer
+from transformers import GPT2LMHeadModel, GPT2Tokenizer, GPT2Config
 import os
 import torch
 
@@ -19,7 +20,7 @@ import gluonnlp '''
 import argparse
 
 
-class MyKoGPT2():
+class MyKoGPT2:
     def __init__(self):
         pass
 
@@ -31,18 +32,16 @@ class MyKoGPT2():
         text = '근육이 커지기 위해서는'
         input_ids = tokenizer.encode(text)
         gen_ids = model.generate(torch.tensor([input_ids]),
-                                   max_length=128,
-                                   repetition_penalty=2.0,
-                                   pad_token_id=tokenizer.pad_token_id,
-                                   eos_token_id=tokenizer.eos_token_id,
-                                   bos_token_id=tokenizer.bos_token_id,
-                                   use_cache=True)
+                                 max_length=128,
+                                 repetition_penalty=2.0,
+                                 pad_token_id=tokenizer.pad_token_id,
+                                 eos_token_id=tokenizer.eos_token_id,
+                                 bos_token_id=tokenizer.bos_token_id,
+                                 use_cache=True)
         generated = tokenizer.decode(gen_ids[0,:].tolist())
         print(generated)
 
     def execute2(self):
-
-
         parser = argparse.ArgumentParser()
         parser.add_argument('--temperature', type=float, default=0.7,
                             help="temperature 를 통해서 글의 창의성을 조절합니다.")
@@ -187,6 +186,7 @@ class MyKoGPT2():
             # execute only if run as a script
             main(temperature=args.temperature, top_p=args.top_p, top_k=args.top_k, tmp_sent=args.tmp_sent,
                  text_size=args.text_size, loops=args.loops + 1, load_path=args.load_path)
+
 
 if __name__ == '__main__':
     m = MyKoGPT2()
