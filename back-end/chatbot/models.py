@@ -3,12 +3,12 @@ git clone https://github.com/SKT-AI/KoGPT2.git
 cd KoGPT2
 pip install -r requirements.txt
 pip install
-
 '''
 
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 import os
 import torch
+
 '''
 from gluonnlp.data import SentencepieceTokenizer
 from kogpt2.model.sample import sample_sequence
