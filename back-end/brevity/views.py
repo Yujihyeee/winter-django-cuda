@@ -14,7 +14,7 @@ from brevity.models_data import DbUploader
 @api_view(['GET'])
 @parser_classes([JSONParser])
 def upload(request):
-    DbUploader().insert_brevity()
+    DbUploader().insert_data()
     return JsonResponse({'Data Uploading': 'SUCCESS'})
 
 
