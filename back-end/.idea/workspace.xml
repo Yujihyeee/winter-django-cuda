@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbc6e459-6875-4cfb-9bdf-a0c48c722e5b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6/entities/entities.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6/entities/entities.dat.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6/entities/entities.dat.values" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6/entities/entities.dat.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6/entities/entities.dat.values.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6/entities/entities.dat_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6/entities/entities.dat_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9d30f86f-27eb-4ec1-b400-ce65cc3005e6/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2cc777f-8059-4aae-8c45-533f91171e3c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2cc777f-8059-4aae-8c45-533f91171e3c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2cc777f-8059-4aae-8c45-533f91171e3c/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2cc777f-8059-4aae-8c45-533f91171e3c/entities/entities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2cc777f-8059-4aae-8c45-533f91171e3c/entities/entities.dat.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2cc777f-8059-4aae-8c45-533f91171e3c/entities/entities.dat.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2cc777f-8059-4aae-8c45-533f91171e3c/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2cc777f-8059-4aae-8c45-533f91171e3c/entities/entities.dat_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="bbc6e459-6875-4cfb-9bdf-a0c48c722e5b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +82,7 @@
       <workItem from="1639136137574" duration="599000" />
       <workItem from="1639232285766" duration="220000" />
       <workItem from="1639314041363" duration="1945000" />
-      <workItem from="1639395078202" duration="3903000" />
+      <workItem from="1639395078202" duration="4227000" />
     </task>
     <servers />
   </component>
