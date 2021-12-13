@@ -1105,7 +1105,9 @@ global_priv|||mariadb.sys|localhost|UPDATE|G</Grants>
     <user id="332" parent="1" name="rdsadmin">
       <Host>localhost</Host>
     </user>
-    <table id="333" parent="7" name="accommodation"/>
+    <table id="333" parent="7" name="accommodation">
+      <Collation>utf8_general_ci</Collation>
+    </table>
     <table id="334" parent="7" name="activity"/>
     <table id="335" parent="7" name="auth_group"/>
     <table id="336" parent="7" name="auth_group_permissions"/>
@@ -1114,11 +1116,21 @@ global_priv|||mariadb.sys|localhost|UPDATE|G</Grants>
     <table id="339" parent="7" name="auth_user_groups"/>
     <table id="340" parent="7" name="auth_user_user_permissions"/>
     <table id="341" parent="7" name="category"/>
-    <table id="342" parent="7" name="category_accommodation"/>
-    <table id="343" parent="7" name="category_activity"/>
-    <table id="344" parent="7" name="category_plane"/>
-    <table id="345" parent="7" name="category_restaurant"/>
-    <table id="346" parent="7" name="category_tourism"/>
+    <table id="342" parent="7" name="category_accommodation">
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="343" parent="7" name="category_activity">
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="344" parent="7" name="category_plane">
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="345" parent="7" name="category_restaurant">
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="346" parent="7" name="category_tourism">
+      <Collation>utf8_general_ci</Collation>
+    </table>
     <table id="347" parent="7" name="django_admin_log"/>
     <table id="348" parent="7" name="django_content_type"/>
     <table id="349" parent="7" name="django_migrations"/>
@@ -1127,15 +1139,23 @@ global_priv|||mariadb.sys|localhost|UPDATE|G</Grants>
     <table id="352" parent="7" name="image">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="353" parent="7" name="jeju_schedule"/>
-    <table id="354" parent="7" name="olle"/>
+    <table id="353" parent="7" name="jeju_schedule">
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="354" parent="7" name="olle">
+      <Collation>utf8_general_ci</Collation>
+    </table>
     <table id="355" parent="7" name="person"/>
     <table id="356" parent="7" name="plane"/>
     <table id="357" parent="7" name="reservation"/>
     <table id="358" parent="7" name="restaurant"/>
-    <table id="359" parent="7" name="shop"/>
+    <table id="359" parent="7" name="shop">
+      <Collation>utf8_general_ci</Collation>
+    </table>
     <table id="360" parent="7" name="tourism"/>
-    <table id="361" parent="7" name="users"/>
+    <table id="361" parent="7" name="users">
+      <Collation>utf8_general_ci</Collation>
+    </table>
     <column id="362" parent="333" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>

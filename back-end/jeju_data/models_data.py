@@ -23,7 +23,7 @@ class DbUploader():
         # vo.fname = 'activity.csv'
         # vo.fname = 'plane.csv'
         # vo.fname = 'restaurant.csv'
-        # vo.fname = 'accommodation.csv'
+        vo.fname = 'accommodation.csv'
         # vo.fname = 'jejuolle.csv'
         # vo.fname = 'shop.csv'
         self.csvfile = reader.new_file(vo)
@@ -87,7 +87,7 @@ class DbUploader():
                                                          lat=geo['lat'],
                                                          log=geo['long'],
                                                          tour_category=c,
-                                                         image=i,)
+                                                         image=i)
                         print(f' 1 >>>> {tourism}')
         print('Tourism DATA UPLOADED SUCCESSFULY!')
 
@@ -101,8 +101,8 @@ class DbUploader():
                 c.id = category['id']
                 if not ActivityCategory.objects.filter(type=row['category']).exists():  # 동일한 값 있으면 넘어가
                     a = ActivityCategory.objects.create(type=row['category'],
-                                                              section=c,
-                                                              category=row['section'])
+                                                        section=c,
+                                                        category=row['section'])
                     print(f' 1 >>>> {a}')
         print('ActivityCategory DATA UPLOADED SUCCESSFULY!')
 
