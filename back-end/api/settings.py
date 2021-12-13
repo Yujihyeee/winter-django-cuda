@@ -99,10 +99,10 @@ WSGI_APPLICATION = 'api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mariadb',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': '127.0.0.1',
+        'NAME': 'tripn_mariadb',
+        'USER': 'admin',
+        'PASSWORD': 'xmflqdps',
+        'HOST': 'tripn-mariadb.cj7pgkq6vjwv.ap-northeast-2.rds.amazonaws.com',
         'PORT': '3306'
     }
 }
