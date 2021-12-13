@@ -1124,7 +1124,9 @@ global_priv|||mariadb.sys|localhost|UPDATE|G</Grants>
     <table id="349" parent="7" name="django_migrations"/>
     <table id="350" parent="7" name="django_session"/>
     <table id="351" parent="7" name="fin_reports"/>
-    <table id="352" parent="7" name="image"/>
+    <table id="352" parent="7" name="image">
+      <Collation>utf8_general_ci</Collation>
+    </table>
     <table id="353" parent="7" name="jeju_schedule"/>
     <table id="354" parent="7" name="olle"/>
     <table id="355" parent="7" name="person"/>
