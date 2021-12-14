@@ -13,17 +13,17 @@ from sphinx.util import requests
 import json
 
 
-class DbUploader():
+class DbUploader:
     def __init__(self):
         vo = ValueObject()
         reader = Reader()
         self.printer = Printer()
         vo.context = 'jeju_data/data/'
-        # vo.fname = 'tourism.csv'
+        vo.fname = 'tourism.csv'
         # vo.fname = 'activity.csv'
         # vo.fname = 'plane.csv'
         # vo.fname = 'restaurant.csv'
-        vo.fname = 'accommodation.csv'
+        # vo.fname = 'accommodation.csv'
         # vo.fname = 'jejuolle.csv'
         # vo.fname = 'shop.csv'
         self.csvfile = reader.new_file(vo)
@@ -36,7 +36,7 @@ class DbUploader():
         # self.insert_category_restaurant()
         # self.insert_category_accommodation()
         print('############ 3 ##########')
-        # self.insert_table_tourism()
+        self.insert_table_tourism()
         # self.insert_table_activity()
         # self.insert_table_plane()
         # self.insert_table_restaurant()

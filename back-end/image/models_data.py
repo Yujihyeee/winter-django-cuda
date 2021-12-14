@@ -9,7 +9,7 @@ from common.models import ValueObject, Reader, Printer
 from image.models import Image, Category
 
 
-class DbUploader():
+class DbUploader:
     def __init__(self):
         vo = ValueObject()
         reader = Reader()
@@ -17,7 +17,7 @@ class DbUploader():
         # vo.context = 'image/data/'
         # vo.fname = 'category.csv'
         vo.context = 'jeju_data/data/'
-        vo.fname = 'accommodation.csv'
+        vo.fname = 'activity.csv'
         # vo.context = 'user/data/'
         # vo.fname = 'user.csv'
         # restaurant, shop, tourism, activity, plane, accommodation, jejuolle
@@ -50,33 +50,17 @@ class DbUploader():
             data_reader = csv.DictReader(csvfile)
             for row in data_reader:
                 c = Category()
-                category = Category.objects.all().filter(category='accommodation').values()[0]
+                category = Category.objects.all().filter(category='activity').values()[0]
                 c.id = category['id']
-                if not Image.objects.filter(name=row['상호명']).exists():  # 동일한 값 있으면 넘어가
-                        image = Image.objects.create(category=c,
+                # if not Image.objects.filter(name=row['상호명']).exists():  # 동일한 값 있으면 넘어가
+                image = Image.objects.create(category=c,
                 # Image.objects.create(category=c,
-                                                     name=row['상호명'],
-                                                     # url=f"{row['illustration']},{row['map']},{row['vmap']}"
-                                                     url=row['url'],
-                                                     # url=row['image'],
-                                                     # url=row['photo']
-                                                     )
-                        print(f' 1 >>>> {image}')
+                                             name=row['name'],
+                                             # url=f"{row['illustration']},{row['map']},{row['vmap']}"
+                                             url=row['url'],
+                                             # url=row['image'],
+                                             # url=row['photo']
+                                             )
+                print(f' 1 >>>> {image}')
 
         print('IMAGE DATA UPLOADED SUCCESSFULY!')
-
-
-#     # def insert_planes(self):
-#     #     with open(self.csvfile, newline='', encoding='utf8') as f:
-#     #         data_reader = csv.DictReader(f)
-#     #         for row in data_reader:
-#     #             if not Plane.objects.filter(vihicleId=row['vihicleId']).exists():
-#     #                 plane = Plane.objects.create(vihicleId=row['vihicleId'],
-#     #                                              airlineNm=row['airlineNm'],
-#     #                                              depPlandTime=row['depPlandTime'],
-#     #                                              arrPlandTime=row['arrPlandTime'],
-#     #                                              economyCharge=row['economyCharge'],
-#     #                                              depAirportNm=row['depAirportNm'],
-#     #                                              arrAirportNm=row['arrAirportNm'])
-#     #                 print(f' 1 >>>> {plane}')
-#     #     print('Plane DATA UPLOADED SUCCESSFULY!')

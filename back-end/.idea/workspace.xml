@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbc6e459-6875-4cfb-9bdf-a0c48c722e5b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brevity/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/brevity/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/models_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/image/models_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju_data/models_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/jeju_data/models_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +91,7 @@
       <workItem from="1639409211272" duration="7274000" />
       <workItem from="1639448412129" duration="37000" />
       <workItem from="1639449431043" duration="297000" />
-      <workItem from="1639449768423" duration="427000" />
+      <workItem from="1639449768423" duration="1676000" />
     </task>
     <servers />
   </component>
