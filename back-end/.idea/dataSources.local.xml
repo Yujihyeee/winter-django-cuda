@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="PY-212.4746.96">
-    <data-source name="@tripn" uuid="e2cc777f-8059-4aae-8c45-533f91171e3c">
+  <component name="dataSourceStorageLocal" created-in="PY-212.5457.59">
+    <data-source name="tripn-aws" uuid="9af9b1df-f005-486a-928b-82ba5ebe31c6">
       <database-info product="MariaDB" version="10.5.12-MariaDB" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="2.7.3" dbms="MARIADB" exact-version="10.5.12" exact-driver-version="2.7">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>

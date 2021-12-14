@@ -10,9 +10,7 @@ from user.models import User
 
 
 class JejuSchedule(models.Model):
-
     # days[0], plane, acc, activity, olle, restaurant, tourism, shop, startday, endday, day, people, user, relationship
-
     # Jeju_Schedule
     user = models.ForeignKey(User, on_delete=models.CASCADE)  # user
     startday = models.DateField()  # startday

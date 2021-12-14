@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@tripn" uuid="e2cc777f-8059-4aae-8c45-533f91171e3c">
+    <data-source source="LOCAL" name="tripn-aws" uuid="9af9b1df-f005-486a-928b-82ba5ebe31c6">
       <driver-ref>mariadb</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
