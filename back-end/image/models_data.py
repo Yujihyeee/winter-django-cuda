@@ -16,10 +16,10 @@ class DbUploader:
         self.printer = Printer()
         # vo.context = 'image/data/'
         # vo.fname = 'category.csv'
-        vo.context = 'jeju_data/data/'
-        vo.fname = 'activity.csv'
-        # vo.context = 'user/data/'
-        # vo.fname = 'user.csv'
+        # vo.context = 'jeju_data/data/'
+        # vo.fname = 'jejuolle.csv'
+        vo.context = 'user/data/'
+        vo.fname = 'user.csv'
         # restaurant, shop, tourism, activity, plane, accommodation, jejuolle
         self.csvfile = reader.new_file(vo)
 
@@ -50,15 +50,15 @@ class DbUploader:
             data_reader = csv.DictReader(csvfile)
             for row in data_reader:
                 c = Category()
-                category = Category.objects.all().filter(category='activity').values()[0]
+                category = Category.objects.all().filter(category='user').values()[0]
                 c.id = category['id']
                 # if not Image.objects.filter(name=row['상호명']).exists():  # 동일한 값 있으면 넘어가
                 image = Image.objects.create(category=c,
                 # Image.objects.create(category=c,
-                                             name=row['name'],
+                                             name=row['gender'],
                                              # url=f"{row['illustration']},{row['map']},{row['vmap']}"
-                                             url=row['url'],
-                                             # url=row['image'],
+                                             # url=row['url'],
+                                             url=row['image'],
                                              # url=row['photo']
                                              )
                 print(f' 1 >>>> {image}')

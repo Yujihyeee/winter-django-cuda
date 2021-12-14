@@ -1,15 +1,16 @@
 from rest_framework import serializers
-from brevity.models import Brevity
+from brevity.models import JejuSchedule
 from .models import Reservation as reservation
 
 
 class ReservationSerializer(serializers.Serializer):
+    reg_date = serializers.DateField()
     price = serializers.IntegerField()
     tax = serializers.IntegerField()
     subtotal = serializers.IntegerField()
     fees = serializers.IntegerField()
     total_price = serializers.IntegerField()
-    brevity = serializers.ForeignKey(Brevity, on_delete=serializers.CASCADE)
+    brevity = serializers.ForeignKey(JejuSchedule, on_delete=serializers.CASCADE)
 
     class Meta:
         model = reservation

@@ -1105,7 +1105,9 @@
     <table id="333" parent="7" name="accommodation">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="334" parent="7" name="activity"/>
+    <table id="334" parent="7" name="activity">
+      <Collation>utf8_general_ci</Collation>
+    </table>
     <table id="335" parent="7" name="auth_group"/>
     <table id="336" parent="7" name="auth_group_permissions"/>
     <table id="337" parent="7" name="auth_permission"/>
@@ -1145,13 +1147,19 @@
       <Collation>utf8_general_ci</Collation>
     </table>
     <table id="355" parent="7" name="person"/>
-    <table id="356" parent="7" name="plane"/>
+    <table id="356" parent="7" name="plane">
+      <Collation>utf8_general_ci</Collation>
+    </table>
     <table id="357" parent="7" name="reservation"/>
-    <table id="358" parent="7" name="restaurant"/>
+    <table id="358" parent="7" name="restaurant">
+      <Collation>utf8_general_ci</Collation>
+    </table>
     <table id="359" parent="7" name="shop">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="360" parent="7" name="tourism"/>
+    <table id="360" parent="7" name="tourism">
+      <Collation>utf8_general_ci</Collation>
+    </table>
     <table id="361" parent="7" name="users">
       <Collation>utf8_general_ci</Collation>
     </table>
