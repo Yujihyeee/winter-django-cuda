@@ -101,12 +101,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'tripn_mariadb',
         'USER': 'admin',
-        'PASSWORD': 'xmflqdps',
-        'HOST': 'tripn-mariadb.cj7pgkq6vjwv.ap-northeast-2.rds.amazonaws.com',
+        'PASSWORD': get_secret("AWS_PASSWORD"),
+        'HOST': get_secret("AWS_HOST"),
         'PORT': '3306'
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
