@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbc6e459-6875-4cfb-9bdf-a0c48c722e5b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/models_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/image/models_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_data/models_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/jeju_data/models_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reservation/models_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation/models_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/model_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +90,7 @@
       <workItem from="1639409211272" duration="7274000" />
       <workItem from="1639448412129" duration="37000" />
       <workItem from="1639449431043" duration="297000" />
-      <workItem from="1639449768423" duration="16322000" />
+      <workItem from="1639449768423" duration="20454000" />
     </task>
     <servers />
   </component>
