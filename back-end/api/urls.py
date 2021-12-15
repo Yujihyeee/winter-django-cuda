@@ -21,7 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/fin_reports/', include('fin_reports.urls')),
     path('api/reservation/', include('reservation.urls')),
-    path('api/brevity/', include('brevity.urls')),
+    path('api/jeju_schedule/', include('jeju_schedule.urls')),
     path('api/jeju_data/', include('jeju_data.urls')),
     path('api/image/', include('image.urls')),
     path('api/user/', include('user.urls')),

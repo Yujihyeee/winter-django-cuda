@@ -1,7 +1,7 @@
 import csv
 import pandas as pd
 from common.models import ValueObject, Printer, Reader
-from brevity.models import JejuSchedule
+from jeju_schedule.models import JejuSchedule
 
 
 class DbUploader:
@@ -9,12 +9,12 @@ class DbUploader:
         vo = ValueObject()
         reader = Reader()
         self.printer = Printer()
-        vo.context = 'brevity/data/'
+        vo.context = 'jeju_schedule/data/'
         vo.fname = 'dum.csv'
         self.csvfile = reader.new_file(vo)
 
     def insert_data(self):
-        self.insert_brevity()
+        self.insert_schedule()
 
     def pre_process(self):
         df = pd.read_csv(self.csvfile, encoding='UTF-8', thousands=',')
@@ -23,11 +23,11 @@ class DbUploader:
         df[colstocheck] = df[colstocheck].replace({'\.': ''}, regex=True)
         df.to_csv(self.csvfile + 'brevity_dummy_2.csv')
 
-    def insert_brevity(self):
+    def insert_schedule(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:
             data_reader = csv.DictReader(f)
             for row in data_reader:
-                # if not brevity.objects.filter(category=row['항목명']).exists():
+                # if not jeju_schedule.objects.filter(category=row['항목명']).exists():
                 jeju_schedule = JejuSchedule.objects.create(startday=row['startday'],
                                                             endday=row['endday'],
                                                             day=row['day'],

@@ -1,7 +1,7 @@
 from django.http import JsonResponse
 from rest_framework.parsers import JSONParser
 from rest_framework.decorators import api_view, parser_classes
-from brevity.models_data import DbUploader
+from jeju_schedule.models_data import DbUploader
 
 
 # @api_view(['GET'])

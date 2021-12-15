@@ -1,9 +1,10 @@
 from django.db import models
+from jeju_schedule.models import JejuSchedule
 from reservation.models import Reservation
 
 
 class Ledger:
-    reg_date = models.ForeignKey(Reservation, on_delete=models.CASCADE)
+    reg_date = models.ForeignKey(JejuSchedule, on_delete=models.CASCADE)
     category = models.TextField()
     price = models.ForeignKey(Reservation, on_delete=models.CASCADE)
 

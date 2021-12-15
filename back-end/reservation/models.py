@@ -1,5 +1,5 @@
 from django.db import models
-from brevity.models import JejuSchedule
+from jeju_schedule.models import JejuSchedule
 
 
 class Reservation(models.Model):

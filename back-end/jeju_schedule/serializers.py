@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from .models import Brevity as brevity
+from .models import JejuSchedule as jeju_schedule
 
 
-class FinReportsSerializer(serializers.Serializer):
+class JejuScheduleSerializer(serializers.Serializer):
     userid = serializers.IntegerField()
     plane = serializers.CharField()
     accommodation = serializers.CharField()
@@ -14,11 +14,11 @@ class FinReportsSerializer(serializers.Serializer):
     option = serializers.CharField()
 
     class Meta:
-        model = brevity
+        model = jeju_schedule
         fileds = '__all__'
 
     def create(self, valideted_data):
-        return brevity.objects.create(**valideted_data)
+        return jeju_schedule.objects.create(**valideted_data)
 
     def update(self, instance, valideted_data):
-        brevity.objects.filter(pk=instance.username).update(**valideted_data)
+        jeju_schedule.objects.filter(pk=instance.username).update(**valideted_data)

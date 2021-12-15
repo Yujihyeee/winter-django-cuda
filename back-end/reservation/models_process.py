@@ -2,7 +2,7 @@
 import csv
 import pandas as pd
 from dateutil.relativedelta import relativedelta
-from brevity.models import JejuSchedule
+from jeju_schedule.models import JejuSchedule
 from reservation.models import Reservation
 from jeju_data.models import Accommodation, Plane, Activity
 from common.models import ValueObject, Reader, Printer

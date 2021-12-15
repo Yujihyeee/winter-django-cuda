@@ -9,7 +9,7 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('brevity', '0001_initial'),
+        ('jeju_schedule', '0001_initial'),
     ]
 
     operations = [
@@ -23,7 +23,7 @@ class Migration(migrations.Migration):
                 ('subtotal', models.IntegerField()),
                 ('fees', models.IntegerField()),
                 ('total_price', models.IntegerField()),
-                ('jeju_schedule', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='brevity.jejuschedule')),
+                ('jeju_schedule', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='jeju_schedule.jejuschedule')),
             ],
             options={
                 'db_table': 'reservation',

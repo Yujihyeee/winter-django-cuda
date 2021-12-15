@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from brevity.models import JejuSchedule
+from jeju_schedule.models import JejuSchedule
 from .models import Reservation as reservation
 
 

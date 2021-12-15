@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'api',
     'fin_reports',
     'reservation',
-    'brevity',
+    'jeju_schedule',
     'image',
     'jeju_data',
     'user',

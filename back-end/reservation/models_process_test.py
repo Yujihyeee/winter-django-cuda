@@ -2,8 +2,8 @@
 import csv
 import pandas as pd
 from django.db.models import Sum
-import brevity
-from brevity.models import JejuSchedule
+import jeju_schedule
+from jeju_schedule.models import JejuSchedule
 from reservation.models import Reservation
 from common.models import ValueObject, Reader, Printer
 
