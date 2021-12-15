@@ -1,9 +1,7 @@
 # 여행업 알선 수입＝여행자로부터 받는 관광요금－원가
 import csv
-from datetime import datetime
 import pandas as pd
 from dateutil.relativedelta import relativedelta
-from django.shortcuts import get_object_or_404
 from brevity.models import JejuSchedule
 from reservation.models import Reservation
 from jeju_data.models import Accommodation, Plane, Activity
@@ -59,11 +57,7 @@ class Processing:
     def insert_reservation(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:
             data_reader = csv.DictReader(f)
-
             for row in data_reader:
-                # j = JejuSchedule()
-                # jeju_schedule_id = JejuSchedule.objects.filter(id=row['jeju_schedule_id']).values()[0]
-                # j.id = jeju_schedule_id['id']
                 reservation = Reservation.objects.create(reg_date=row['reg_date'],
                                                          price=row['price'],
                                                          tax=row['tax'],
