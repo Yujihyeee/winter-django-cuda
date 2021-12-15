@@ -21,7 +21,7 @@ class JejuSchedule(models.Model):
     relationship = models.TextField()  # relationship
     category = models.ForeignKey(Category, on_delete=models.CASCADE)  # recommend
     plane = ListTextField(base_field=CharField(max_length=255), size=5)  # plane
-    acc = models.ForeignKey(Accommodation, max_length=255, on_delete=models.CASCADE)  # acc
+    acc = models.ForeignKey(Accommodation, max_length=255, on_delete=models.CASCADE)  # accommodation
     activity = ListTextField(base_field=CharField(max_length=255), size=50, null=True)  # activity
     olle = ListTextField(base_field=CharField(max_length=255), size=50, null=True)  # olle
     restaurant = ListTextField(base_field=CharField(max_length=255), size=100, null=True)  # restaurant
