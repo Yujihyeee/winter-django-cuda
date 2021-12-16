@@ -22,11 +22,8 @@ class Processing:
 
     def pre_process(self):
         arr = []
-        for p in range(3, 14):
-            print(f' 유저아이디: {p}')
+        for p in range(2, 20):
             pr = JejuSchedule.objects.get(pk=p)
-            print('-------------------------')
-            print(pr)
             acc_pr = Accommodation.objects.get(pk=p)
             plane = Plane.objects.get(pk=p)
             activity = Activity.objects.get(pk=p)
@@ -34,7 +31,7 @@ class Processing:
             day = pr.day
             plane_pr = plane.economyCharge
             activity_pr = activity.price
-            reg_date = pr.startday - relativedelta(days=10)
+            reg_date = pr.reg_date.date()
             price = plane_pr + acc_pr.price + activity_pr
             tax = (price * people) + (price * day) * 0.1
             subtotal = price + tax
@@ -42,15 +39,17 @@ class Processing:
             total_price = subtotal + fee
             jeju_schedule_id = p
             arr.append(reg_date)
+            arr.append(people)
+            arr.append(day)
             arr.append(price)
             arr.append(int(tax))
             arr.append(int(subtotal))
             arr.append(int(fee))
             arr.append(int(total_price))
             arr.append(jeju_schedule_id)
-        n = 7
+        n = 9
         result = [arr[i * n:(i + 1) * n] for i in range((len(arr) + n - 1) // n)]
-        df = pd.DataFrame(result, columns=['reg_date', 'price', 'tax', 'subtotal', 'fees', 'total_price', 'jeju_schedule_id'])
+        df = pd.DataFrame(result, columns=['reg_date', 'people', 'day', 'price', 'tax', 'subtotal', 'fees', 'total_price', 'jeju_schedule_id'])
         print(df)
         df.to_csv(self.csvfile + 'price.csv')
 

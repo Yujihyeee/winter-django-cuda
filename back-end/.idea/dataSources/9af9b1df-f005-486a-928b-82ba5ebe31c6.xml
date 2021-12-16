@@ -1140,7 +1140,9 @@
     <table id="352" parent="7" name="image">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="353" parent="7" name="jeju_schedule"/>
+    <table id="353" parent="7" name="jeju_schedule">
+      <Collation>utf8_general_ci</Collation>
+    </table>
     <table id="354" parent="7" name="ledger"/>
     <table id="355" parent="7" name="olle">
       <Collation>utf8_general_ci</Collation>
