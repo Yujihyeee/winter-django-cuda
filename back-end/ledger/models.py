@@ -3,7 +3,7 @@ from jeju_schedule.models import JejuSchedule
 from reservation.models import Reservation
 
 
-class Ledger:
+class Ledger(models.Model):
     date = models.DateField()
     category = models.TextField()
     price = models.ForeignKey(Reservation, on_delete=models.CASCADE)

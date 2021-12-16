@@ -9,19 +9,15 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
-from pathlib import Path
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
-
+from pathlib import Path
 import os
 import json  # json을 읽어오기 위해 json을 추가해 줍니다.
 from django.core.exceptions import ImproperlyConfigured  # 예외 처리를 위해 불러와줍니다.
+
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 secret_file = os.path.join(BASE_DIR, 'secrets.json')  # secrets.json을 불러와 줍니다.
 
@@ -53,6 +49,7 @@ INSTALLED_APPS = [
     'image',
     'jeju_data',
     'user',
+    'ledger',
     'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
