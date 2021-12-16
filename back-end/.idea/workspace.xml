@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbc6e459-6875-4cfb-9bdf-a0c48c722e5b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_schedule/data/dum.csv" beforeDir="false" afterPath="$PROJECT_DIR$/jeju_schedule/data/dum.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeju_schedule/models_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/jeju_schedule/models_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/data/price.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/models_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation/models_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/data/user.csv" beforeDir="false" afterPath="$PROJECT_DIR$/user/data/user.csv" afterDir="false" />
-    </list>
+    <list default="true" id="bbc6e459-6875-4cfb-9bdf-a0c48c722e5b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +106,7 @@
       <workItem from="1639545476935" duration="15309000" />
       <workItem from="1639633022331" duration="9425000" />
       <workItem from="1639650558592" duration="834000" />
-      <workItem from="1639651409982" duration="3586000" />
+      <workItem from="1639651409982" duration="3620000" />
     </task>
     <servers />
   </component>
