@@ -1140,1400 +1140,1285 @@
     <table id="352" parent="7" name="image">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="353" parent="7" name="jeju_schedule">
+    <table id="353" parent="7" name="olle">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="354" parent="7" name="olle">
+    <table id="354" parent="7" name="person"/>
+    <table id="355" parent="7" name="plane">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="355" parent="7" name="person"/>
-    <table id="356" parent="7" name="plane">
+    <table id="356" parent="7" name="restaurant">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="357" parent="7" name="restaurant">
+    <table id="357" parent="7" name="shop">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="358" parent="7" name="shop">
+    <table id="358" parent="7" name="tourism">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="359" parent="7" name="tourism">
+    <table id="359" parent="7" name="users">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="360" parent="7" name="users">
-      <Collation>utf8_general_ci</Collation>
-    </table>
-    <column id="361" parent="333" name="id">
+    <column id="360" parent="333" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="362" parent="333" name="name">
+    <column id="361" parent="333" name="name">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="363" parent="333" name="loc">
+    <column id="362" parent="333" name="loc">
       <Position>3</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="364" parent="333" name="price">
+    <column id="363" parent="333" name="price">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="365" parent="333" name="contact">
+    <column id="364" parent="333" name="contact">
       <Position>5</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="366" parent="333" name="standard_number">
+    <column id="365" parent="333" name="standard_number">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="367" parent="333" name="lat">
+    <column id="366" parent="333" name="lat">
       <Position>7</Position>
       <DataType>double|0s</DataType>
     </column>
-    <column id="368" parent="333" name="log">
+    <column id="367" parent="333" name="log">
       <Position>8</Position>
       <DataType>double|0s</DataType>
     </column>
-    <column id="369" parent="333" name="acc_category_id">
+    <column id="368" parent="333" name="acc_category_id">
       <Position>9</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <column id="370" parent="333" name="image_id">
+    <column id="369" parent="333" name="image_id">
       <Position>10</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <index id="371" parent="333" name="accommodation_acc_category_id_d1174594_fk_category_">
+    <index id="370" parent="333" name="accommodation_acc_category_id_d1174594_fk_category_">
       <ColNames>acc_category_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="372" parent="333" name="accommodation_image_id_9464f352_fk_image_id">
+    <index id="371" parent="333" name="accommodation_image_id_9464f352_fk_image_id">
       <ColNames>image_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="373" parent="333" name="PRIMARY">
+    <key id="372" parent="333" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="374" parent="333" name="accommodation_acc_category_id_d1174594_fk_category_">
+    <foreign-key id="373" parent="333" name="accommodation_acc_category_id_d1174594_fk_category_">
       <ColNames>acc_category_id</ColNames>
       <RefTableName>category_accommodation</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="375" parent="333" name="accommodation_image_id_9464f352_fk_image_id">
+    <foreign-key id="374" parent="333" name="accommodation_image_id_9464f352_fk_image_id">
       <ColNames>image_id</ColNames>
       <RefTableName>image</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="376" parent="334" name="id">
+    <column id="375" parent="334" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="377" parent="334" name="name">
+    <column id="376" parent="334" name="name">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="378" parent="334" name="start_business_time">
+    <column id="377" parent="334" name="start_business_time">
       <Position>3</Position>
       <DataType>time(6)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="379" parent="334" name="end_business_time">
+    <column id="378" parent="334" name="end_business_time">
       <Position>4</Position>
       <DataType>time(6)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="380" parent="334" name="time">
+    <column id="379" parent="334" name="time">
       <Position>5</Position>
       <DataType>time(6)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="381" parent="334" name="contact">
+    <column id="380" parent="334" name="contact">
       <Position>6</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="382" parent="334" name="loc">
+    <column id="381" parent="334" name="loc">
       <Position>7</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="383" parent="334" name="price">
+    <column id="382" parent="334" name="price">
       <Position>8</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="384" parent="334" name="lat">
+    <column id="383" parent="334" name="lat">
       <Position>9</Position>
       <DataType>double|0s</DataType>
     </column>
-    <column id="385" parent="334" name="log">
+    <column id="384" parent="334" name="log">
       <Position>10</Position>
       <DataType>double|0s</DataType>
     </column>
-    <column id="386" parent="334" name="act_category_id">
+    <column id="385" parent="334" name="act_category_id">
       <Position>11</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <column id="387" parent="334" name="image_id">
+    <column id="386" parent="334" name="image_id">
       <Position>12</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <index id="388" parent="334" name="activity_act_category_id_532b410a_fk_category_activity_id">
+    <index id="387" parent="334" name="activity_act_category_id_532b410a_fk_category_activity_id">
       <ColNames>act_category_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="389" parent="334" name="activity_image_id_350ff12a_fk_image_id">
+    <index id="388" parent="334" name="activity_image_id_350ff12a_fk_image_id">
       <ColNames>image_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="390" parent="334" name="PRIMARY">
+    <key id="389" parent="334" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="391" parent="334" name="activity_act_category_id_532b410a_fk_category_activity_id">
+    <foreign-key id="390" parent="334" name="activity_act_category_id_532b410a_fk_category_activity_id">
       <ColNames>act_category_id</ColNames>
       <RefTableName>category_activity</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="392" parent="334" name="activity_image_id_350ff12a_fk_image_id">
+    <foreign-key id="391" parent="334" name="activity_image_id_350ff12a_fk_image_id">
       <ColNames>image_id</ColNames>
       <RefTableName>image</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="393" parent="335" name="id">
+    <column id="392" parent="335" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="394" parent="335" name="name">
+    <column id="393" parent="335" name="name">
       <Position>2</Position>
       <DataType>varchar(150)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="395" parent="335" name="name">
+    <index id="394" parent="335" name="name">
       <ColNames>name</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="396" parent="335" name="PRIMARY">
+    <key id="395" parent="335" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="397" parent="335" name="name">
+    <key id="396" parent="335" name="name">
       <ColNames>name</ColNames>
       <UnderlyingIndexName>name</UnderlyingIndexName>
     </key>
-    <column id="398" parent="336" name="id">
+    <column id="397" parent="336" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="399" parent="336" name="group_id">
+    <column id="398" parent="336" name="group_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="400" parent="336" name="permission_id">
+    <column id="399" parent="336" name="permission_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="401" parent="336" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
+    <index id="400" parent="336" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
       <ColNames>group_id
 permission_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="402" parent="336" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
+    <index id="401" parent="336" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
       <ColNames>permission_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="403" parent="336" name="PRIMARY">
+    <key id="402" parent="336" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="404" parent="336" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
+    <key id="403" parent="336" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
       <ColNames>group_id
 permission_id</ColNames>
       <UnderlyingIndexName>auth_group_permissions_group_id_permission_id_0cd325b0_uniq</UnderlyingIndexName>
     </key>
-    <foreign-key id="405" parent="336" name="auth_group_permissions_group_id_b120cbf9_fk_auth_group_id">
+    <foreign-key id="404" parent="336" name="auth_group_permissions_group_id_b120cbf9_fk_auth_group_id">
       <ColNames>group_id</ColNames>
       <RefTableName>auth_group</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="406" parent="336" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
+    <foreign-key id="405" parent="336" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
       <ColNames>permission_id</ColNames>
       <RefTableName>auth_permission</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="407" parent="337" name="id">
+    <column id="406" parent="337" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="408" parent="337" name="name">
+    <column id="407" parent="337" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="409" parent="337" name="content_type_id">
+    <column id="408" parent="337" name="content_type_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="410" parent="337" name="codename">
+    <column id="409" parent="337" name="codename">
       <Position>4</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="411" parent="337" name="auth_permission_content_type_id_codename_01ab375a_uniq">
+    <index id="410" parent="337" name="auth_permission_content_type_id_codename_01ab375a_uniq">
       <ColNames>content_type_id
 codename</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="412" parent="337" name="PRIMARY">
+    <key id="411" parent="337" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="413" parent="337" name="auth_permission_content_type_id_codename_01ab375a_uniq">
+    <key id="412" parent="337" name="auth_permission_content_type_id_codename_01ab375a_uniq">
       <ColNames>content_type_id
 codename</ColNames>
       <UnderlyingIndexName>auth_permission_content_type_id_codename_01ab375a_uniq</UnderlyingIndexName>
     </key>
-    <foreign-key id="414" parent="337" name="auth_permission_content_type_id_2f476e4b_fk_django_co">
+    <foreign-key id="413" parent="337" name="auth_permission_content_type_id_2f476e4b_fk_django_co">
       <ColNames>content_type_id</ColNames>
       <RefTableName>django_content_type</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="415" parent="338" name="id">
+    <column id="414" parent="338" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="416" parent="338" name="password">
+    <column id="415" parent="338" name="password">
       <Position>2</Position>
       <DataType>varchar(128)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="417" parent="338" name="last_login">
+    <column id="416" parent="338" name="last_login">
       <Position>3</Position>
       <DataType>datetime(6)|0s</DataType>
     </column>
-    <column id="418" parent="338" name="is_superuser">
+    <column id="417" parent="338" name="is_superuser">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="419" parent="338" name="username">
+    <column id="418" parent="338" name="username">
       <Position>5</Position>
       <DataType>varchar(150)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="420" parent="338" name="first_name">
+    <column id="419" parent="338" name="first_name">
       <Position>6</Position>
       <DataType>varchar(150)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="421" parent="338" name="last_name">
+    <column id="420" parent="338" name="last_name">
       <Position>7</Position>
       <DataType>varchar(150)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="422" parent="338" name="email">
+    <column id="421" parent="338" name="email">
       <Position>8</Position>
       <DataType>varchar(254)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="423" parent="338" name="is_staff">
+    <column id="422" parent="338" name="is_staff">
       <Position>9</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="424" parent="338" name="is_active">
+    <column id="423" parent="338" name="is_active">
       <Position>10</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="425" parent="338" name="date_joined">
+    <column id="424" parent="338" name="date_joined">
       <Position>11</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="426" parent="338" name="username">
+    <index id="425" parent="338" name="username">
       <ColNames>username</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="427" parent="338" name="PRIMARY">
+    <key id="426" parent="338" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="428" parent="338" name="username">
+    <key id="427" parent="338" name="username">
       <ColNames>username</ColNames>
       <UnderlyingIndexName>username</UnderlyingIndexName>
     </key>
-    <column id="429" parent="339" name="id">
+    <column id="428" parent="339" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="430" parent="339" name="user_id">
+    <column id="429" parent="339" name="user_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="431" parent="339" name="group_id">
+    <column id="430" parent="339" name="group_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="432" parent="339" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
+    <index id="431" parent="339" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
       <ColNames>user_id
 group_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="433" parent="339" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
+    <index id="432" parent="339" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
       <ColNames>group_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="434" parent="339" name="PRIMARY">
+    <key id="433" parent="339" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="435" parent="339" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
+    <key id="434" parent="339" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
       <ColNames>user_id
 group_id</ColNames>
       <UnderlyingIndexName>auth_user_groups_user_id_group_id_94350c0c_uniq</UnderlyingIndexName>
     </key>
-    <foreign-key id="436" parent="339" name="auth_user_groups_user_id_6a12ed8b_fk_auth_user_id">
+    <foreign-key id="435" parent="339" name="auth_user_groups_user_id_6a12ed8b_fk_auth_user_id">
       <ColNames>user_id</ColNames>
       <RefTableName>auth_user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="437" parent="339" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
+    <foreign-key id="436" parent="339" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
       <ColNames>group_id</ColNames>
       <RefTableName>auth_group</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="438" parent="340" name="id">
+    <column id="437" parent="340" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="439" parent="340" name="user_id">
+    <column id="438" parent="340" name="user_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="440" parent="340" name="permission_id">
+    <column id="439" parent="340" name="permission_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="441" parent="340" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
+    <index id="440" parent="340" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
       <ColNames>user_id
 permission_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="442" parent="340" name="auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm">
+    <index id="441" parent="340" name="auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm">
       <ColNames>permission_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="443" parent="340" name="PRIMARY">
+    <key id="442" parent="340" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="444" parent="340" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
+    <key id="443" parent="340" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
       <ColNames>user_id
 permission_id</ColNames>
       <UnderlyingIndexName>auth_user_user_permissions_user_id_permission_id_14a6b632_uniq</UnderlyingIndexName>
     </key>
-    <foreign-key id="445" parent="340" name="auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id">
+    <foreign-key id="444" parent="340" name="auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id">
       <ColNames>user_id</ColNames>
       <RefTableName>auth_user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="446" parent="340" name="auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm">
+    <foreign-key id="445" parent="340" name="auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm">
       <ColNames>permission_id</ColNames>
       <RefTableName>auth_permission</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="447" parent="341" name="id">
+    <column id="446" parent="341" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="448" parent="341" name="section">
+    <column id="447" parent="341" name="section">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="449" parent="341" name="category">
+    <column id="448" parent="341" name="category">
       <Position>3</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="450" parent="341" name="PRIMARY">
+    <key id="449" parent="341" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="451" parent="342" name="id">
+    <column id="450" parent="342" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="452" parent="342" name="type">
+    <column id="451" parent="342" name="type">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="453" parent="342" name="category_id">
+    <column id="452" parent="342" name="category_id">
       <Position>3</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <index id="454" parent="342" name="category_accommodation_category_id_ac75335c_fk_category_id">
+    <index id="453" parent="342" name="category_accommodation_category_id_ac75335c_fk_category_id">
       <ColNames>category_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="455" parent="342" name="PRIMARY">
+    <key id="454" parent="342" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="456" parent="342" name="category_accommodation_category_id_ac75335c_fk_category_id">
+    <foreign-key id="455" parent="342" name="category_accommodation_category_id_ac75335c_fk_category_id">
       <ColNames>category_id</ColNames>
       <RefTableName>category</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="457" parent="343" name="id">
+    <column id="456" parent="343" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="458" parent="343" name="category">
+    <column id="457" parent="343" name="category">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="459" parent="343" name="type">
+    <column id="458" parent="343" name="type">
       <Position>3</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="460" parent="343" name="section_id">
+    <column id="459" parent="343" name="section_id">
       <Position>4</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <index id="461" parent="343" name="category_activity_section_id_53fcbb8b_fk_category_id">
+    <index id="460" parent="343" name="category_activity_section_id_53fcbb8b_fk_category_id">
       <ColNames>section_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="462" parent="343" name="PRIMARY">
+    <key id="461" parent="343" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="463" parent="343" name="category_activity_section_id_53fcbb8b_fk_category_id">
+    <foreign-key id="462" parent="343" name="category_activity_section_id_53fcbb8b_fk_category_id">
       <ColNames>section_id</ColNames>
       <RefTableName>category</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="464" parent="344" name="id">
+    <column id="463" parent="344" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="465" parent="344" name="category">
+    <column id="464" parent="344" name="category">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="466" parent="344" name="type">
+    <column id="465" parent="344" name="type">
       <Position>3</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="467" parent="344" name="section_id">
+    <column id="466" parent="344" name="section_id">
       <Position>4</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <index id="468" parent="344" name="category_plane_section_id_9a0896fb_fk_category_id">
+    <index id="467" parent="344" name="category_plane_section_id_9a0896fb_fk_category_id">
       <ColNames>section_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="469" parent="344" name="PRIMARY">
+    <key id="468" parent="344" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="470" parent="344" name="category_plane_section_id_9a0896fb_fk_category_id">
+    <foreign-key id="469" parent="344" name="category_plane_section_id_9a0896fb_fk_category_id">
       <ColNames>section_id</ColNames>
       <RefTableName>category</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="471" parent="345" name="id">
+    <column id="470" parent="345" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="472" parent="345" name="type">
+    <column id="471" parent="345" name="type">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="473" parent="345" name="category_id">
+    <column id="472" parent="345" name="category_id">
       <Position>3</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <index id="474" parent="345" name="category_restaurant_category_id_d8bf98bc_fk_category_id">
+    <index id="473" parent="345" name="category_restaurant_category_id_d8bf98bc_fk_category_id">
       <ColNames>category_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="475" parent="345" name="PRIMARY">
+    <key id="474" parent="345" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="476" parent="345" name="category_restaurant_category_id_d8bf98bc_fk_category_id">
+    <foreign-key id="475" parent="345" name="category_restaurant_category_id_d8bf98bc_fk_category_id">
       <ColNames>category_id</ColNames>
       <RefTableName>category</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="477" parent="346" name="id">
+    <column id="476" parent="346" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="478" parent="346" name="type">
+    <column id="477" parent="346" name="type">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="479" parent="346" name="category_id">
+    <column id="478" parent="346" name="category_id">
       <Position>3</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <index id="480" parent="346" name="category_tourism_category_id_2e634a96_fk_category_id">
+    <index id="479" parent="346" name="category_tourism_category_id_2e634a96_fk_category_id">
       <ColNames>category_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="481" parent="346" name="PRIMARY">
+    <key id="480" parent="346" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="482" parent="346" name="category_tourism_category_id_2e634a96_fk_category_id">
+    <foreign-key id="481" parent="346" name="category_tourism_category_id_2e634a96_fk_category_id">
       <ColNames>category_id</ColNames>
       <RefTableName>category</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <check id="483" parent="347" name="action_flag">
+    <check id="482" parent="347" name="action_flag">
       <Predicate>`action_flag` &gt;= 0</Predicate>
     </check>
-    <column id="484" parent="347" name="id">
+    <column id="483" parent="347" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="485" parent="347" name="action_time">
+    <column id="484" parent="347" name="action_time">
       <Position>2</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="486" parent="347" name="object_id">
+    <column id="485" parent="347" name="object_id">
       <Position>3</Position>
       <DataType>longtext|0s</DataType>
     </column>
-    <column id="487" parent="347" name="object_repr">
+    <column id="486" parent="347" name="object_repr">
       <Position>4</Position>
       <DataType>varchar(200)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="488" parent="347" name="action_flag">
+    <column id="487" parent="347" name="action_flag">
       <Position>5</Position>
       <DataType>smallint(5) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="489" parent="347" name="change_message">
+    <column id="488" parent="347" name="change_message">
       <Position>6</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="490" parent="347" name="content_type_id">
+    <column id="489" parent="347" name="content_type_id">
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="491" parent="347" name="user_id">
+    <column id="490" parent="347" name="user_id">
       <Position>8</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="492" parent="347" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
+    <index id="491" parent="347" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
       <ColNames>content_type_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="493" parent="347" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
+    <index id="492" parent="347" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="494" parent="347" name="PRIMARY">
+    <key id="493" parent="347" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="495" parent="347" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
+    <foreign-key id="494" parent="347" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
       <ColNames>content_type_id</ColNames>
       <RefTableName>django_content_type</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="496" parent="347" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
+    <foreign-key id="495" parent="347" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
       <ColNames>user_id</ColNames>
       <RefTableName>auth_user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="497" parent="348" name="id">
+    <column id="496" parent="348" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="498" parent="348" name="app_label">
+    <column id="497" parent="348" name="app_label">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="499" parent="348" name="model">
+    <column id="498" parent="348" name="model">
       <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="500" parent="348" name="django_content_type_app_label_model_76bd3d3b_uniq">
+    <index id="499" parent="348" name="django_content_type_app_label_model_76bd3d3b_uniq">
       <ColNames>app_label
 model</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="501" parent="348" name="PRIMARY">
+    <key id="500" parent="348" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="502" parent="348" name="django_content_type_app_label_model_76bd3d3b_uniq">
+    <key id="501" parent="348" name="django_content_type_app_label_model_76bd3d3b_uniq">
       <ColNames>app_label
 model</ColNames>
       <UnderlyingIndexName>django_content_type_app_label_model_76bd3d3b_uniq</UnderlyingIndexName>
     </key>
-    <column id="503" parent="349" name="id">
+    <column id="502" parent="349" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="504" parent="349" name="app">
+    <column id="503" parent="349" name="app">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="505" parent="349" name="name">
+    <column id="504" parent="349" name="name">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="506" parent="349" name="applied">
+    <column id="505" parent="349" name="applied">
       <Position>4</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="507" parent="349" name="PRIMARY">
+    <key id="506" parent="349" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="508" parent="350" name="session_key">
+    <column id="507" parent="350" name="session_key">
       <Position>1</Position>
       <DataType>varchar(40)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="509" parent="350" name="session_data">
+    <column id="508" parent="350" name="session_data">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="510" parent="350" name="expire_date">
+    <column id="509" parent="350" name="expire_date">
       <Position>3</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="511" parent="350" name="django_session_expire_date_a5c62663">
+    <index id="510" parent="350" name="django_session_expire_date_a5c62663">
       <ColNames>expire_date</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="512" parent="350" name="PRIMARY">
+    <key id="511" parent="350" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>session_key</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="513" parent="351" name="id">
+    <column id="512" parent="351" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="514" parent="351" name="year">
+    <column id="513" parent="351" name="year">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="515" parent="351" name="category">
+    <column id="514" parent="351" name="category">
       <Position>3</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="516" parent="351" name="price">
+    <column id="515" parent="351" name="price">
       <Position>4</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="517" parent="351" name="PRIMARY">
+    <key id="516" parent="351" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="518" parent="352" name="id">
+    <column id="517" parent="352" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="519" parent="352" name="name">
+    <column id="518" parent="352" name="name">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="520" parent="352" name="url">
+    <column id="519" parent="352" name="url">
       <Position>3</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="521" parent="352" name="category_id">
+    <column id="520" parent="352" name="category_id">
       <Position>4</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <index id="522" parent="352" name="image_category_id_541add52_fk_category_id">
+    <index id="521" parent="352" name="image_category_id_541add52_fk_category_id">
       <ColNames>category_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="523" parent="352" name="PRIMARY">
+    <key id="522" parent="352" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="524" parent="352" name="image_category_id_541add52_fk_category_id">
+    <foreign-key id="523" parent="352" name="image_category_id_541add52_fk_category_id">
       <ColNames>category_id</ColNames>
       <RefTableName>category</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="525" parent="353" name="id">
+    <column id="524" parent="353" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="526" parent="353" name="startday">
-      <Position>2</Position>
-      <DataType>date|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="527" parent="353" name="endday">
-      <Position>3</Position>
-      <DataType>date|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="528" parent="353" name="day">
-      <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="529" parent="353" name="startloc">
-      <Position>5</Position>
-      <DataType>longtext|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="530" parent="353" name="people">
-      <Position>6</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="531" parent="353" name="relationship">
-      <Position>7</Position>
-      <DataType>longtext|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="532" parent="353" name="plane">
-      <Position>8</Position>
-      <DataType>longtext|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="533" parent="353" name="activity">
-      <Position>9</Position>
-      <DataType>longtext|0s</DataType>
-    </column>
-    <column id="534" parent="353" name="olle">
-      <Position>10</Position>
-      <DataType>longtext|0s</DataType>
-    </column>
-    <column id="535" parent="353" name="restaurant">
-      <Position>11</Position>
-      <DataType>longtext|0s</DataType>
-    </column>
-    <column id="536" parent="353" name="tourism">
-      <Position>12</Position>
-      <DataType>longtext|0s</DataType>
-    </column>
-    <column id="537" parent="353" name="shop">
-      <Position>13</Position>
-      <DataType>longtext|0s</DataType>
-    </column>
-    <column id="538" parent="353" name="schedule">
-      <Position>14</Position>
-      <DataType>longtext|0s</DataType>
-    </column>
-    <column id="539" parent="353" name="acc_id">
-      <Position>15</Position>
-      <DataType>bigint(20)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="540" parent="353" name="category_id">
-      <Position>16</Position>
-      <DataType>bigint(20)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="541" parent="353" name="user_id">
-      <Position>17</Position>
-      <DataType>bigint(20)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <index id="542" parent="353" name="jeju_schedule_acc_id_768b17af_fk_accommodation_id">
-      <ColNames>acc_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="543" parent="353" name="jeju_schedule_category_id_6826af0c_fk_category_id">
-      <ColNames>category_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="544" parent="353" name="jeju_schedule_user_id_240c76ea_fk_users_id">
-      <ColNames>user_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="545" parent="353" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="546" parent="353" name="jeju_schedule_acc_id_768b17af_fk_accommodation_id">
-      <ColNames>acc_id</ColNames>
-      <RefTableName>accommodation</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="547" parent="353" name="jeju_schedule_category_id_6826af0c_fk_category_id">
-      <ColNames>category_id</ColNames>
-      <RefTableName>category</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="548" parent="353" name="jeju_schedule_user_id_240c76ea_fk_users_id">
-      <ColNames>user_id</ColNames>
-      <RefTableName>users</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <column id="549" parent="354" name="id">
-      <Position>1</Position>
-      <DataType>bigint(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
-    </column>
-    <column id="550" parent="354" name="course">
+    <column id="525" parent="353" name="course">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="551" parent="354" name="name">
+    <column id="526" parent="353" name="name">
       <Position>3</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="552" parent="354" name="distance">
+    <column id="527" parent="353" name="distance">
       <Position>4</Position>
       <DataType>double|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="553" parent="354" name="time">
+    <column id="528" parent="353" name="time">
       <Position>5</Position>
       <DataType>time(6)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="554" parent="354" name="starting_point">
+    <column id="529" parent="353" name="starting_point">
       <Position>6</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="555" parent="354" name="end_point">
+    <column id="530" parent="353" name="end_point">
       <Position>7</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="556" parent="354" name="explanation">
+    <column id="531" parent="353" name="explanation">
       <Position>8</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="557" parent="354" name="lat">
+    <column id="532" parent="353" name="lat">
       <Position>9</Position>
       <DataType>double|0s</DataType>
     </column>
-    <column id="558" parent="354" name="log">
+    <column id="533" parent="353" name="log">
       <Position>10</Position>
       <DataType>double|0s</DataType>
     </column>
-    <column id="559" parent="354" name="category_id">
+    <column id="534" parent="353" name="category_id">
       <Position>11</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <column id="560" parent="354" name="image_id">
+    <column id="535" parent="353" name="image_id">
       <Position>12</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <index id="561" parent="354" name="olle_category_id_805bf919_fk_category_id">
+    <index id="536" parent="353" name="olle_category_id_805bf919_fk_category_id">
       <ColNames>category_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="562" parent="354" name="olle_image_id_d127c8f8_fk_image_id">
+    <index id="537" parent="353" name="olle_image_id_d127c8f8_fk_image_id">
       <ColNames>image_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="563" parent="354" name="PRIMARY">
+    <key id="538" parent="353" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="564" parent="354" name="olle_category_id_805bf919_fk_category_id">
+    <foreign-key id="539" parent="353" name="olle_category_id_805bf919_fk_category_id">
       <ColNames>category_id</ColNames>
       <RefTableName>category</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="565" parent="354" name="olle_image_id_d127c8f8_fk_image_id">
+    <foreign-key id="540" parent="353" name="olle_image_id_d127c8f8_fk_image_id">
       <ColNames>image_id</ColNames>
       <RefTableName>image</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="566" parent="355" name="id">
+    <column id="541" parent="354" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="567" parent="355" name="age">
+    <column id="542" parent="354" name="age">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="568" parent="355" name="gender">
+    <column id="543" parent="354" name="gender">
       <Position>3</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="569" parent="355" name="mbti">
+    <column id="544" parent="354" name="mbti">
       <Position>4</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="570" parent="355" name="category_id">
+    <column id="545" parent="354" name="category_id">
       <Position>5</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <index id="571" parent="355" name="person_category_id_b03f339a_fk_category_id">
+    <index id="546" parent="354" name="person_category_id_b03f339a_fk_category_id">
       <ColNames>category_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="572" parent="355" name="PRIMARY">
+    <key id="547" parent="354" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="573" parent="355" name="person_category_id_b03f339a_fk_category_id">
+    <foreign-key id="548" parent="354" name="person_category_id_b03f339a_fk_category_id">
       <ColNames>category_id</ColNames>
       <RefTableName>category</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="574" parent="356" name="id">
+    <column id="549" parent="355" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="575" parent="356" name="vihicleId">
+    <column id="550" parent="355" name="vihicleId">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="576" parent="356" name="airlineNm">
+    <column id="551" parent="355" name="airlineNm">
       <Position>3</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="577" parent="356" name="depPlandTime">
+    <column id="552" parent="355" name="depPlandTime">
       <Position>4</Position>
       <DataType>time(6)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="578" parent="356" name="arrPlandTime">
+    <column id="553" parent="355" name="arrPlandTime">
       <Position>5</Position>
       <DataType>time(6)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="579" parent="356" name="economyCharge">
+    <column id="554" parent="355" name="economyCharge">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="580" parent="356" name="plane_category_id">
+    <column id="555" parent="355" name="plane_category_id">
       <Position>7</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <index id="581" parent="356" name="plane_plane_category_id_f7f017e3_fk_category_plane_id">
+    <index id="556" parent="355" name="plane_plane_category_id_f7f017e3_fk_category_plane_id">
       <ColNames>plane_category_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="582" parent="356" name="PRIMARY">
+    <key id="557" parent="355" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="583" parent="356" name="plane_plane_category_id_f7f017e3_fk_category_plane_id">
+    <foreign-key id="558" parent="355" name="plane_plane_category_id_f7f017e3_fk_category_plane_id">
       <ColNames>plane_category_id</ColNames>
       <RefTableName>category_plane</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="584" parent="357" name="id">
+    <column id="559" parent="356" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="585" parent="357" name="name">
+    <column id="560" parent="356" name="name">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="586" parent="357" name="loc">
+    <column id="561" parent="356" name="loc">
       <Position>3</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="587" parent="357" name="recommend">
+    <column id="562" parent="356" name="recommend">
       <Position>4</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="588" parent="357" name="lat">
+    <column id="563" parent="356" name="lat">
       <Position>5</Position>
       <DataType>double|0s</DataType>
     </column>
-    <column id="589" parent="357" name="log">
+    <column id="564" parent="356" name="log">
       <Position>6</Position>
       <DataType>double|0s</DataType>
     </column>
-    <column id="590" parent="357" name="image_id">
+    <column id="565" parent="356" name="image_id">
       <Position>7</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <column id="591" parent="357" name="res_category_id">
+    <column id="566" parent="356" name="res_category_id">
       <Position>8</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <index id="592" parent="357" name="restaurant_image_id_5b2f98a6_fk_image_id">
+    <index id="567" parent="356" name="restaurant_image_id_5b2f98a6_fk_image_id">
       <ColNames>image_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="593" parent="357" name="restaurant_res_category_id_444dddc7_fk_category_restaurant_id">
+    <index id="568" parent="356" name="restaurant_res_category_id_444dddc7_fk_category_restaurant_id">
       <ColNames>res_category_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="594" parent="357" name="PRIMARY">
+    <key id="569" parent="356" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="595" parent="357" name="restaurant_image_id_5b2f98a6_fk_image_id">
+    <foreign-key id="570" parent="356" name="restaurant_image_id_5b2f98a6_fk_image_id">
       <ColNames>image_id</ColNames>
       <RefTableName>image</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="596" parent="357" name="restaurant_res_category_id_444dddc7_fk_category_restaurant_id">
+    <foreign-key id="571" parent="356" name="restaurant_res_category_id_444dddc7_fk_category_restaurant_id">
       <ColNames>res_category_id</ColNames>
       <RefTableName>category_restaurant</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="597" parent="358" name="id">
+    <column id="572" parent="357" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="598" parent="358" name="name">
+    <column id="573" parent="357" name="name">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="599" parent="358" name="loc">
+    <column id="574" parent="357" name="loc">
       <Position>3</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="600" parent="358" name="explanation">
+    <column id="575" parent="357" name="explanation">
       <Position>4</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="601" parent="358" name="recommend">
+    <column id="576" parent="357" name="recommend">
       <Position>5</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="602" parent="358" name="lat">
+    <column id="577" parent="357" name="lat">
       <Position>6</Position>
       <DataType>double|0s</DataType>
     </column>
-    <column id="603" parent="358" name="log">
+    <column id="578" parent="357" name="log">
       <Position>7</Position>
       <DataType>double|0s</DataType>
     </column>
-    <column id="604" parent="358" name="category_id">
+    <column id="579" parent="357" name="category_id">
       <Position>8</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <column id="605" parent="358" name="image_id">
+    <column id="580" parent="357" name="image_id">
       <Position>9</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <index id="606" parent="358" name="shop_category_id_3ed9ddd2_fk_category_id">
+    <index id="581" parent="357" name="shop_category_id_3ed9ddd2_fk_category_id">
       <ColNames>category_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="607" parent="358" name="shop_image_id_871908dc_fk_image_id">
+    <index id="582" parent="357" name="shop_image_id_871908dc_fk_image_id">
       <ColNames>image_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="608" parent="358" name="PRIMARY">
+    <key id="583" parent="357" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="609" parent="358" name="shop_category_id_3ed9ddd2_fk_category_id">
+    <foreign-key id="584" parent="357" name="shop_category_id_3ed9ddd2_fk_category_id">
       <ColNames>category_id</ColNames>
       <RefTableName>category</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="610" parent="358" name="shop_image_id_871908dc_fk_image_id">
+    <foreign-key id="585" parent="357" name="shop_image_id_871908dc_fk_image_id">
       <ColNames>image_id</ColNames>
       <RefTableName>image</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="611" parent="359" name="id">
+    <column id="586" parent="358" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="612" parent="359" name="name">
+    <column id="587" parent="358" name="name">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="613" parent="359" name="address">
+    <column id="588" parent="358" name="address">
       <Position>3</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="614" parent="359" name="explanation">
+    <column id="589" parent="358" name="explanation">
       <Position>4</Position>
       <DataType>longtext|0s</DataType>
     </column>
-    <column id="615" parent="359" name="lat">
+    <column id="590" parent="358" name="lat">
       <Position>5</Position>
       <DataType>double|0s</DataType>
     </column>
-    <column id="616" parent="359" name="log">
+    <column id="591" parent="358" name="log">
       <Position>6</Position>
       <DataType>double|0s</DataType>
     </column>
-    <column id="617" parent="359" name="image_id">
+    <column id="592" parent="358" name="image_id">
       <Position>7</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <column id="618" parent="359" name="tour_category_id">
+    <column id="593" parent="358" name="tour_category_id">
       <Position>8</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <index id="619" parent="359" name="tourism_image_id_8405c825_fk_image_id">
+    <index id="594" parent="358" name="tourism_image_id_8405c825_fk_image_id">
       <ColNames>image_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="620" parent="359" name="tourism_tour_category_id_d37837f5_fk_category_tourism_id">
+    <index id="595" parent="358" name="tourism_tour_category_id_d37837f5_fk_category_tourism_id">
       <ColNames>tour_category_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="621" parent="359" name="PRIMARY">
+    <key id="596" parent="358" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="622" parent="359" name="tourism_image_id_8405c825_fk_image_id">
+    <foreign-key id="597" parent="358" name="tourism_image_id_8405c825_fk_image_id">
       <ColNames>image_id</ColNames>
       <RefTableName>image</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="623" parent="359" name="tourism_tour_category_id_d37837f5_fk_category_tourism_id">
+    <foreign-key id="598" parent="358" name="tourism_tour_category_id_d37837f5_fk_category_tourism_id">
       <ColNames>tour_category_id</ColNames>
       <RefTableName>category_tourism</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="624" parent="360" name="id">
+    <column id="599" parent="359" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="625" parent="360" name="username">
+    <column id="600" parent="359" name="username">
       <Position>2</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="626" parent="360" name="password">
+    <column id="601" parent="359" name="password">
       <Position>3</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="627" parent="360" name="name">
+    <column id="602" parent="359" name="name">
       <Position>4</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="628" parent="360" name="email">
+    <column id="603" parent="359" name="email">
       <Position>5</Position>
       <DataType>varchar(254)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="629" parent="360" name="birth">
+    <column id="604" parent="359" name="birth">
       <Position>6</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="630" parent="360" name="gender">
+    <column id="605" parent="359" name="gender">
       <Position>7</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="631" parent="360" name="mbti">
+    <column id="606" parent="359" name="mbti">
       <Position>8</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="632" parent="360" name="mbti_list">
+    <column id="607" parent="359" name="mbti_list">
       <Position>9</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="633" parent="360" name="card_number">
+    <column id="608" parent="359" name="card_number">
       <Position>10</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="634" parent="360" name="card_company">
+    <column id="609" parent="359" name="card_company">
       <Position>11</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="635" parent="360" name="reg_date">
+    <column id="610" parent="359" name="reg_date">
       <Position>12</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="636" parent="360" name="category_id">
+    <column id="611" parent="359" name="category_id">
       <Position>13</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <column id="637" parent="360" name="image_id">
+    <column id="612" parent="359" name="image_id">
       <Position>14</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <column id="638" parent="360" name="person_category_id">
+    <column id="613" parent="359" name="person_category_id">
       <Position>15</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <index id="639" parent="360" name="users_category_id_3583b485">
+    <index id="614" parent="359" name="users_category_id_3583b485">
       <ColNames>category_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="640" parent="360" name="users_image_id_1588c44f">
+    <index id="615" parent="359" name="users_image_id_1588c44f">
       <ColNames>image_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="641" parent="360" name="users_person_category_id_98cd1a2f">
+    <index id="616" parent="359" name="users_person_category_id_98cd1a2f">
       <ColNames>person_category_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="642" parent="360" name="PRIMARY">
+    <key id="617" parent="359" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="643" parent="360" name="users_category_id_3583b485_fk_category_id">
+    <foreign-key id="618" parent="359" name="users_category_id_3583b485_fk_category_id">
       <ColNames>category_id</ColNames>
       <RefTableName>category</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="644" parent="360" name="users_image_id_1588c44f_fk_image_id">
+    <foreign-key id="619" parent="359" name="users_image_id_1588c44f_fk_image_id">
       <ColNames>image_id</ColNames>
       <RefTableName>image</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="645" parent="360" name="users_person_category_id_98cd1a2f_fk_person_id">
+    <foreign-key id="620" parent="359" name="users_person_category_id_98cd1a2f_fk_person_id">
       <ColNames>person_category_id</ColNames>
       <RefTableName>person</RefTableName>
       <RefColNames>id</RefColNames>

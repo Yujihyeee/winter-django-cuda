@@ -1,8 +1,5 @@
 from datetime import datetime
-from random import random
 from django.db import models
-# Create your models here.
-from icecream import ic
 from django.db.models import IntegerField, CharField
 from django_mysql.models import ListCharField, ListTextField
 from image.models import Category
