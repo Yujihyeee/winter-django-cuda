@@ -9,3 +9,4 @@ from ledger.models_process import Processing
 def preprocess(request):
     Processing().pre_process()
     return JsonResponse({'Pre-Processing': 'SUCCESS'})
+
