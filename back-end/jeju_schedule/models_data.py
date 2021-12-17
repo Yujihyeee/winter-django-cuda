@@ -27,7 +27,7 @@ class DbUploader:
         with open(self.csvfile, newline='', encoding='utf8') as f:
             data_reader = csv.DictReader(f)
             for row in data_reader:
-                # if not jeju_schedule.objects.filter(schedule=row['schedule']).exists():
+                # if not JejuSchedule.objects.filter(schedule=row['schedule']).exists():
                 jeju_schedule = JejuSchedule.objects.create(reg_date=row['reg_date'],
                                                             startday=row['startday'],
                                                             endday=row['endday'],
