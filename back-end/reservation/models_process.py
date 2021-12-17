@@ -24,16 +24,15 @@ class Processing:
         arr = []
         for p in range(2, 20):
             pr = JejuSchedule.objects.get(pk=p)
-            acc_pr = Accommodation.objects.get(pk=p)
             plane = Plane.objects.get(pk=p)
+            acc_pr = Accommodation.objects.get(pk=p)
             activity = Activity.objects.get(pk=p)
             people = pr.people
             day = pr.day
-            plane_pr = plane.economyCharge
-            activity_pr = activity.price
+            acc_price = acc_pr.price * day // people
             reg_date = pr.reg_date.date()
-            price = plane_pr + acc_pr.price + activity_pr
-            tax = (price * people) + (price * day) * 0.1
+            price = (plane.economyCharge * people) + acc_price + activity.price
+            tax = price * 0.1
             subtotal = price + tax
             fee = subtotal * 0.2
             total_price = subtotal + fee
