@@ -4,7 +4,6 @@ from jeju_schedule.models import JejuSchedule
 
 class Reservation(models.Model):
     reg_date = models.DateField()
-
     price = models.IntegerField()
     tax = models.IntegerField()
     subtotal = models.IntegerField()
