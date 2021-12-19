@@ -30,9 +30,7 @@ class Processing:
             people = pr.people
             day = pr.day
             unit = acc_pr.standard_number
-
-            if unit == (people // acc_pr.standard_number) == 0:
-
+        if unit == (people // acc_pr.standard_number) == 0:
             print(acc_price, unit)
             reg_date = pr.reg_date.date()
             price = (plane.economyCharge * people) + acc_price + activity.price
