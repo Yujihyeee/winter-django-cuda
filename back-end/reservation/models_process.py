@@ -38,7 +38,7 @@ class Processing:
         acc_price = math.ceil(people/unit) * acc_pr.price * day
         print(acc_price, unit, p, acc_pr.price, day)
         reg_date = pr.reg_date.date()
-        price = (plane.economyCharge * people) + acc_price + activity.price
+        price = (plane.filter('economyCharge') * people) + acc_price + activity.price
         tax = price * 0.1
         subtotal = price + tax
         fee = subtotal * 0.2
