@@ -22,7 +22,7 @@ class Processing:
 
     def pre_process(self):
         arr = []
-        for p in range(2, 20):
+        for p in range(2, 4):
             pr = JejuSchedule.objects.get(pk=p)
             plane = Plane.objects.get(pk=p)
             acc_pr = Accommodation.objects.get(pk=p)
@@ -30,29 +30,31 @@ class Processing:
             people = pr.people
             day = pr.day
             unit = acc_pr.standard_number
-        if unit == (people // acc_pr.standard_number) == 0:
-            print(acc_price, unit)
-            reg_date = pr.reg_date.date()
-            price = (plane.economyCharge * people) + acc_price + activity.price
-            tax = price * 0.1
-            subtotal = price + tax
-            fee = subtotal * 0.2
-            total_price = subtotal + fee
-            jeju_schedule_id = p
-            arr.append(reg_date)
-            arr.append(people)
-            arr.append(day)
-            arr.append(price)
-            arr.append(int(tax))
-            arr.append(int(subtotal))
-            arr.append(int(fee))
-            arr.append(int(total_price))
-            arr.append(jeju_schedule_id)
-        n = 9
-        result = [arr[i * n:(i + 1) * n] for i in range((len(arr) + n - 1) // n)]
-        df = pd.DataFrame(result, columns=['reg_date', 'people', 'day', 'price', 'tax', 'subtotal', 'fees', 'total_price', 'jeju_schedule_id'])
-        print(df)
-        df.to_csv(self.csvfile + 'price.csv')
+            print(people/unit)
+
+            acc_price = (int(people/unit)+1) * acc_pr.price
+            print(acc_price, unit, p)
+        #     reg_date = pr.reg_date.date()
+        #     price = (plane.economyCharge * people) + acc_price + activity.price
+        #     tax = price * 0.1
+        #     subtotal = price + tax
+        #     fee = subtotal * 0.2
+        #     total_price = subtotal + fee
+        #     jeju_schedule_id = p
+        #     arr.append(reg_date)
+        #     arr.append(people)
+        #     arr.append(day)
+        #     arr.append(price)
+        #     arr.append(int(tax))
+        #     arr.append(int(subtotal))
+        #     arr.append(int(fee))
+        #     arr.append(int(total_price))
+        #     arr.append(jeju_schedule_id)
+        # n = 9
+        # result = [arr[i * n:(i + 1) * n] for i in range((len(arr) + n - 1) // n)]
+        # df = pd.DataFrame(result, columns=['reg_date', 'people', 'day', 'price', 'tax', 'subtotal', 'fees', 'total_price', 'jeju_schedule_id'])
+        # print(df)
+        # df.to_csv(self.csvfile + 'price.csv')
 
     def insert_reservation(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:

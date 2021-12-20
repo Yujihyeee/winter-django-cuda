@@ -19,30 +19,30 @@ class DbUploader:
         reader = Reader()
         self.printer = Printer()
         vo.context = 'jeju_data/data/'
-        # vo.fname = 'tourism.csv'
+        vo.fname = 'tourism.csv'
         # vo.fname = 'activity.csv'
         # vo.fname = 'plane.csv'
         # vo.fname = 'restaurant.csv'
         # vo.fname = 'accommodation.csv'
         # vo.fname = 'jejuolle.csv'
-        vo.fname = 'shop.csv'
+        # vo.fname = 'shop.csv'
         self.csvfile = reader.new_file(vo)
 
     def insert_data(self):
         print('############ 2 ##########')
-        # self.insert_category_tourism()
+        self.insert_category_tourism()
         # self.insert_category_activity()
         # self.insert_category_plane()
         # self.insert_category_restaurant()
         # self.insert_category_accommodation()
         print('############ 3 ##########')
-        # self.insert_table_tourism()
+        self.insert_table_tourism()
         # self.insert_table_activity()
         # self.insert_table_plane()
         # self.insert_table_restaurant()
         # self.insert_table_accommodation()
         # self.insert_table_olle()
-        self.insert_table_shop()
+        # self.insert_table_shop()
         print('############ 4 ##########')
         # self.insert_planes()
         print('############ 5 ##########')

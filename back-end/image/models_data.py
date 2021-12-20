@@ -17,7 +17,7 @@ class DbUploader:
         # vo.context = 'image/data/'
         # vo.fname = 'category.csv'
         # vo.context = 'jeju_data/data/'
-        # vo.fname = 'jejuolle.csv'
+        # vo.fname = 'accommodation.csv'
         vo.context = 'user/data/'
         vo.fname = 'user.csv'
         # restaurant, shop, tourism, activity, plane, accommodation, jejuolle
@@ -52,11 +52,11 @@ class DbUploader:
                 c = Category()
                 category = Category.objects.all().filter(category='user').values()[0]
                 c.id = category['id']
-                # if not Image.objects.filter(name=row['상호명']).exists():  # 동일한 값 있으면 넘어가
-                image = Image.objects.create(category=c,
-                # Image.objects.create(category=c,
-                                             name=row['gender'],
-                                             # url=f"{row['illustration']},{row['map']},{row['vmap']}"
+                if not Image.objects.filter(name=row['gender']).exists():  # 동일한 값 있으면 넘어가
+                    image = Image.objects.create(name=row['gender'],
+                    # Image.objects.create(name=row['course-name'],
+                    #                      url=f"{row['illustration']},{row['map']},{row['vmap']}",
+                                            category=c,
                                              # url=row['url'],
                                              url=row['image'],
                                              # url=row['photo']
