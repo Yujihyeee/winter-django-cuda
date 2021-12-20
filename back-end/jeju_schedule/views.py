@@ -157,4 +157,3 @@ def save_days(request):
         olle = {"olle" : days[13]}
         print(olle)
         return JsonResponse(data=(days[0], plane, acc, activity, olle, restaurant, tourism, shop, startday, endday, day, people, user, relationship), safe=False)
-    

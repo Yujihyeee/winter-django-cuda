@@ -37,30 +37,27 @@ class Processing:
         print(people/unit)
         acc_price = math.ceil(people/unit) * acc_pr.price * day
         print(acc_price, unit, p, acc_pr.price, day)
-
-
-
-        #     reg_date = pr.reg_date.date()
-        #     price = (plane.economyCharge * people) + acc_price + activity.price
-        #     tax = price * 0.1
-        #     subtotal = price + tax
-        #     fee = subtotal * 0.2
-        #     total_price = subtotal + fee
-        #     jeju_schedule_id = p
-        #     arr.append(reg_date)
-        #     arr.append(people)
-        #     arr.append(day)
-        #     arr.append(price)
-        #     arr.append(int(tax))
-        #     arr.append(int(subtotal))
-        #     arr.append(int(fee))
-        #     arr.append(int(total_price))
-        #     arr.append(jeju_schedule_id)
-        # n = 9
-        # result = [arr[i * n:(i + 1) * n] for i in range((len(arr) + n - 1) // n)]
-        # df = pd.DataFrame(result, columns=['reg_date', 'people', 'day', 'price', 'tax', 'subtotal', 'fees', 'total_price', 'jeju_schedule_id'])
-        # print(df)
-        # df.to_csv(self.csvfile + 'price.csv')
+        reg_date = pr.reg_date.date()
+        price = (plane.economyCharge * people) + acc_price + activity.price
+        tax = price * 0.1
+        subtotal = price + tax
+        fee = subtotal * 0.2
+        total_price = subtotal + fee
+        jeju_schedule_id = p
+        arr.append(reg_date)
+        arr.append(people)
+        arr.append(day)
+        arr.append(price)
+        arr.append(int(tax))
+        arr.append(int(subtotal))
+        arr.append(int(fee))
+        arr.append(int(total_price))
+        arr.append(jeju_schedule_id)
+        n = 9
+        result = [arr[i * n:(i + 1) * n] for i in range((len(arr) + n - 1) // n)]
+        df = pd.DataFrame(result, columns=['reg_date', 'people', 'day', 'price', 'tax', 'subtotal', 'fees', 'total_price', 'jeju_schedule_id'])
+        print(df)
+        df.to_csv(self.csvfile + 'price.csv')
 
     def insert_reservation(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:

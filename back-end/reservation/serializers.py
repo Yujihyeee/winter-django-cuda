@@ -10,7 +10,7 @@ class ReservationSerializer(serializers.Serializer):
     subtotal = serializers.IntegerField()
     fees = serializers.IntegerField()
     total_price = serializers.IntegerField()
-    brevity = serializers.ForeignKey(JejuSchedule, on_delete=serializers.CASCADE)
+    jeju_schedule = serializers.IntegerField()
 
     class Meta:
         model = reservation
