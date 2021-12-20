@@ -1,5 +1,6 @@
 # 여행업 알선 수입＝여행자로부터 받는 관광요금－원가
 import csv
+import math
 import pandas as pd
 from dateutil.relativedelta import relativedelta
 from jeju_schedule.models import JejuSchedule
@@ -20,20 +21,25 @@ class Processing:
     def insert_data(self):
         self.insert_reservation()
 
-    def pre_process(self):
+    def pre_process(self, p):
         arr = []
-        for p in range(2, 4):
-            pr = JejuSchedule.objects.get(pk=p)
-            plane = Plane.objects.get(pk=p)
-            acc_pr = Accommodation.objects.get(pk=p)
-            activity = Activity.objects.get(pk=p)
-            people = pr.people
-            day = pr.day
-            unit = acc_pr.standard_number
-            print(people/unit)
+        pr = JejuSchedule.objects.get(id=p)
+        print(pr)
+        plane = Plane.objects.filter(id__in=pr.plane).values()
+        print(plane)
+        acc_pr = Accommodation.objects.get(id=pr.acc_id)
+        print(acc_pr)
+        activity = Activity.objects.filter(id__in=pr.activity).values()
+        print(activity)
+        people = pr.people
+        day = pr.day
+        unit = acc_pr.standard_number
+        print(people/unit)
+        acc_price = math.ceil(people/unit) * acc_pr.price * day
+        print(acc_price, unit, p, acc_pr.price, day)
 
-            acc_price = (int(people/unit)+1) * acc_pr.price
-            print(acc_price, unit, p)
+
+
         #     reg_date = pr.reg_date.date()
         #     price = (plane.economyCharge * people) + acc_price + activity.price
         #     tax = price * 0.1

@@ -68,6 +68,7 @@ def recommendation(request):
     # return JsonResponse(recommendation)
     # return JsonResponse(data=(departure_plane.data, arrival_plane.data, accommodation.data, activity.data, olle.data, oleum.data), safe=False)
 
+
 @api_view(['POST'])
 @parser_classes([JSONParser])
 def days(request):
@@ -156,3 +157,4 @@ def save_days(request):
         olle = {"olle" : days[13]}
         print(olle)
         return JsonResponse(data=(days[0], plane, acc, activity, olle, restaurant, tourism, shop, startday, endday, day, people, user, relationship), safe=False)
+    
