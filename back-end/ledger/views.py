@@ -6,20 +6,27 @@ from ledger.models_process import Processing
 
 @api_view(['GET'])
 @parser_classes([JSONParser])
-def preprocess(request):
-    Processing().pre_process()
-    return JsonResponse({'Pre-Processing': 'SUCCESS'})
-
-
-@api_view(['GET'])
-@parser_classes([JSONParser])
-def upload(request):
-    Processing().insert_data()
-    return JsonResponse({'insert_data': 'SUCCESS'})
+def sales(request):
+    Processing().pre_sales()
+    return JsonResponse({'SALES': 'SUCCESS'})
 
 
 @api_view(['GET'])
 @parser_classes([JSONParser])
 def cost(request):
+    Processing().pre_cost()
+    return JsonResponse({'COST': 'SUCCESS'})
+
+
+@api_view(['GET'])
+@parser_classes([JSONParser])
+def upload_sales(request):
+    Processing().insert_sales()
+    return JsonResponse({'insert_sales': 'SUCCESS'})
+
+
+@api_view(['GET'])
+@parser_classes([JSONParser])
+def upload_cost(request):
     Processing().insert_cost()
     return JsonResponse({'insert_cost': 'SUCCESS'})

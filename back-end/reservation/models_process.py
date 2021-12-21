@@ -1,10 +1,7 @@
 # 여행업 알선 수입＝여행자로부터 받는 관광요금－원가
 import csv
 import math
-from _csv import writer
-
 import pandas as pd
-from dateutil.relativedelta import relativedelta
 from jeju_schedule.models import JejuSchedule
 from reservation.models import Reservation
 from jeju_data.models import Accommodation, Plane, Activity

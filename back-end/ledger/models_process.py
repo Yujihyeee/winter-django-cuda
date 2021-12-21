@@ -1,8 +1,6 @@
 # 여행업 알선 수입＝여행자로부터 받는 관광요금－원가
 import csv
-import datetime
 import random
-
 import pandas as pd
 from ledger.models import Ledger
 from common.models import ValueObject, Reader, Printer
@@ -15,13 +13,10 @@ class Processing:
         reader = Reader()
         self.printer = Printer()
         vo.context = 'ledger/data/'
-        vo.fname = 'test.csv'
+        vo.fname = 'sales.csv'
         self.csvfile = reader.new_file(vo)
 
-    def insert_data(self):
-        self.insert_ledger()
-
-    def pre_process(self):
+    def pre_sales(self):
         arr = []
         for t in range(1, 5):
             t = Reservation.objects.get(pk=t)
@@ -40,7 +35,7 @@ class Processing:
         print(df)
         df.to_csv(self.csvfile)
 
-    def insert_cost(self):
+    def pre_cost(self):
         arr = []
 
         def create_price():
@@ -61,12 +56,15 @@ class Processing:
         def create_date():
             return f'2021-{create_month()}-{create_day()}'
 
-        for i in range(1000):
+        for i in range(100):
             arr.append(create_date())
             arr.append('판매비와관리비')
             arr.append(create_price())
             arr.append(create_date())
             arr.append('지급수수료')
+            arr.append(create_price())
+            arr.append(create_date())
+            arr.append('기타비용')
             arr.append(create_price())
             arr.append(create_date())
             arr.append('금융비용')
@@ -77,7 +75,17 @@ class Processing:
         print(df)
         df.to_csv('ledger/data/cost.csv')
 
-    def insert_ledger(self):
+    def insert_sales(self):
+        with open('ledger/data/sales.csv', newline='', encoding='utf8') as f:
+            data_reader = csv.DictReader(f)
+            for row in data_reader:
+                ledger = Ledger.objects.create(date=row['date'],
+                                               category=row['category'],
+                                               price=row['price'])
+                print(f'2 >>>> {ledger}')
+            print('DATA UPLOADED SUCCESSFULLY!')
+
+    def insert_cost(self):
         with open('ledger/data/cost.csv', newline='', encoding='utf8') as f:
             data_reader = csv.DictReader(f)
             for row in data_reader:
