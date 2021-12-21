@@ -8,26 +8,28 @@ from reservation.models_process import Processing
 from reservation.serializers import ReservationSerializer
 
 
-@api_view(['GET', "POST"])
+@api_view(['GET'])
 @parser_classes([JSONParser])
 def preprocess(request):
-    Processing().pre_process(p=5)
-    return JsonResponse({'preprocess': 'SUCCESS'})
+    Processing().pre_process()
+    return Response({'preprocess': 'SUCCESS'})
 
 
 @api_view(['GET'])
 @parser_classes([JSONParser])
 def insert_data(request):
-    if request.method == 'GET':
-        queryset = Reservation.objects.all()
-        serializer = ReservationSerializer(queryset, many=True)
-        return Response(serializer.data)
-    elif request.method == 'POST':
-        serializer = ReservationSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATE)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    Processing().insert_data()
+    return Response({'SUCCESS'})
+    # if request.method == 'GET':
+    #     queryset = Reservation.objects.all()
+    #     serializer = ReservationSerializer(queryset, many=True)
+    #     return Response(serializer.data)
+    # elif request.method == 'POST':
+    #     serializer = ReservationSerializer(data=request.data)
+    #     if serializer.is_valid():
+    #         serializer.save()
+    #         return Response(serializer.data, status=status.HTTP_201_CREATE)
+    #     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 # @api_view(['GET'])

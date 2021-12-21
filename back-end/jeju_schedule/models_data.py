@@ -16,13 +16,6 @@ class DbUploader:
     def insert_data(self):
         self.insert_schedule()
 
-    def pre_process(self):
-        df = pd.read_csv(self.csvfile, encoding='UTF-8', thousands=',')
-        colstocheck = df.columns
-        df[colstocheck] = df[colstocheck].replace({'\¥': ''}, regex=True)
-        df[colstocheck] = df[colstocheck].replace({'\.': ''}, regex=True)
-        df.to_csv(self.csvfile + 'brevity_dummy_2.csv')
-
     def insert_schedule(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:
             data_reader = csv.DictReader(f)

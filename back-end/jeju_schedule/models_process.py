@@ -33,7 +33,6 @@ class JejuProcess:
         accommodation = self.accommodation(mbti)
         activity = self.activity(mbti)
         olle = self.olle()
-
         return plane, accommodation, activity, olle
 
     def process_days(self, choice):
@@ -66,7 +65,6 @@ class JejuProcess:
 
                 family = Plane.objects.filter(plane_category_id=category2['id'], depPlandTime__hour__in=[17, 18, 19, 20])
                 [arls.append(i['id']) for i in family.values('id')]
-
             else:
                 family = Plane.objects.filter(airlineNm='AAR' or 'KAL', plane_category_id=category1['id'],
                                               depPlandTime__hour__in=[8, 9, 10, 11])
@@ -80,30 +78,23 @@ class JejuProcess:
             departure = Plane.objects.filter(id__in=departure).values()
             arrival = random.sample(arls, (3 if len(dels) > 3 else len(dels)))  # 3개 추천
             arrival = Plane.objects.filter(id__in=arrival).values()
-
             serializer1 = PlaneSerializer(departure, many=True)
             serializer2 = PlaneSerializer(arrival, many=True)
-
             return serializer1, serializer2
-
         else:
             dels, arls = [], []
-
             nofamily = Plane.objects.filter(plane_category_id=category1['id'],
                                             depPlandTime__hour__in=[6, 7, 8, 9, 10]).exclude(airlineNm='AAR' or 'KAL')
             [dels.append(i['id']) for i in nofamily.values('id')]
             departure = random.sample(dels, (3 if len(dels) > 3 else len(dels)))  # 3개 추천
             departure = Plane.objects.filter(id__in=departure).values()
-
             nofamily = Plane.objects.filter(plane_category_id=category2['id'],
                                             depPlandTime__hour__in=[18, 19, 20, 21, 22]).exclude(airlineNm='AAR' or 'KAL')
             [arls.append(i['id']) for i in nofamily.values('id')]
             arrival = random.sample(arls, (3 if len(dels) > 3 else len(dels)))  # 3개 추천
             arrival = Plane.objects.filter(id__in=arrival).values()
-
             serializer1 = PlaneSerializer(departure, many=True)
             serializer2 = PlaneSerializer(arrival, many=True)
-
             return serializer1, serializer2
 
     def accommodation(self, mbti):
@@ -125,7 +116,6 @@ class JejuProcess:
                 acc = Accommodation.objects.filter(id__in=acc).values()
                 serializer = AccommodationSerializer(acc, many=True)
                 return serializer
-
             else:
                 pull = Accommodation.objects.filter(acc_category_id__in=[1, 4])
                 [ls.append(i['id']) for i in pull.values('id')]
@@ -133,7 +123,6 @@ class JejuProcess:
                 acc = Accommodation.objects.filter(id__in=acc).values()
                 serializer = AccommodationSerializer(acc, many=True)
                 return serializer
-
         else:
             guesthouse = Accommodation.objects.filter(acc_category_id__in=[2, 4])
             [ls.append(i['id']) for i in guesthouse.values('id')]
@@ -153,7 +142,6 @@ class JejuProcess:
             activity = Activity.objects.filter(id__in=activity).values()
             serializer = ActivitySerializer(activity, many=True)
             return serializer
-
         if e == 2:
             day = int(days * 0.7)
             activity = Activity.objects.filter(act_category__category='액티비티')
@@ -167,7 +155,6 @@ class JejuProcess:
             activity = Activity.objects.filter(id__in=ls2).values()
             serializer = ActivitySerializer(activity, many=True)
             return serializer
-
         if e == 1:
             day = int(self.days * 0.8)
             activity = Activity.objects.exclude(act_category__category='액티비티')
@@ -181,7 +168,6 @@ class JejuProcess:
             activity = Activity.objects.filter(id__in=ls2).values()
             serializer = ActivitySerializer(activity, many=True)
             return serializer
-
         else:
             activty = Activity.objects.exclude(act_category__category='액티비티')
             [ls.append(i['id']) for i in activty.values('id')]
@@ -247,7 +233,6 @@ class JejuProcess:
         d = ShopSerializer(d, many=True).data
         [except_shop_id.append(list(i.values())[0]) for i in d]
         dic[f"day-{i['name']}"] = c + a + b + d
-
         return dic, except_restaurant_id, except_tourism_id, except_shop_id
 
     def olle_values(self, dic, i, except_restaurant_id, except_tourism_id, except_shop_id):
@@ -280,7 +265,6 @@ class JejuProcess:
         d = ShopSerializer(d, many=True).data
         [except_shop_id.append(list(i.values())[0]) for i in d]
         dic[f"day-{i['name']}"] = c + a + b + d
-
         return dic, except_restaurant_id, except_tourism_id, except_shop_id
 
     def oleum_values(self, dic, i, except_restaurant_id, except_tourism_id, except_shop_id):
@@ -314,7 +298,6 @@ class JejuProcess:
         d = ShopSerializer(d, many=True).data
         [except_shop_id.append(list(i.values())[0]) for i in d]
         dic[f"day-{i['name']}"] = c + a + b + d
-
         return dic, except_restaurant_id, except_tourism_id, except_shop_id
 
     def accommodation_values(self, dic, i, j, except_restaurant_id, except_tourism_id, except_shop_id):
@@ -343,16 +326,13 @@ class JejuProcess:
         d = ShopSerializer(d, many=True).data
         [except_shop_id.append(list(i.values())[0]) for i in d]
         dic[f"{j}day-{i['name']}"] = a + b + d
-
         return dic, except_restaurant_id, except_tourism_id, except_shop_id
 
     def day_set(self, choice):
         plane = choice['plane']
         acc = choice['acc']
         activity = choice['activty']
-
         dic = {}
-
         if choice['olle'] == None:
             count = len(activity)
             day = int(self.days - count)
@@ -365,13 +345,11 @@ class JejuProcess:
                 for j in range(day):
                     for i in acc.values():
                         self.accommodation_values(dic, i, j, except_restaurant_id, except_tourism_id, except_shop_id)
-
             else:
                 activty = Activity.objects.filter(id__in=activity).values()
                 except_restaurant_id, except_tourism_id, except_shop_id = [0], [0], [0]
                 for i in activty.values():
                     self.activty_values(dic, i, except_restaurant_id, except_tourism_id, except_shop_id)
-
         else:
             olle = choice['olle']
             count = len(activity) + len(olle)
@@ -402,8 +380,6 @@ class JejuProcess:
                     self.oleum_values(dic, i, except_restaurant_id, except_tourism_id, except_shop_id)
                 for i in olle.values():
                     self.olle_values(dic, i, except_restaurant_id, except_tourism_id, except_shop_id)
-
-
         return dic, plane, choice['acc']
 
     def save_day_set(self, choice):
@@ -414,7 +390,6 @@ class JejuProcess:
         print(choice['olle'])
         if choice['olle'] == []:
             print('************************  if')
-
             count = len(activity)
             day = int(self.days - count)
             if day > 0:
@@ -426,17 +401,14 @@ class JejuProcess:
                 for j in range(day):
                     for i in acc.values():
                         self.accommodation_values(dic, i, j, except_restaurant_id, except_tourism_id, except_shop_id)
-
             else:
                 activty = Activity.objects.filter(id__in=activity).values()
                 except_restaurant_id, except_tourism_id, except_shop_id = [0], [0], [0]
                 for i in activty.values():
                     self.activty_values(dic, i, except_restaurant_id, except_tourism_id, except_shop_id)
-
             except_restaurant_id.remove(0)
             except_tourism_id.remove(0)
             except_shop_id.remove(0)
-
             u = User()
             user = User.objects.all().filter(id=self.user['id']).values()[0]
             u.id = user['id']
@@ -448,26 +420,21 @@ class JejuProcess:
             accommodation = Accommodation.objects.filter(id=choice['acc']).values()[0]
             print(accommodation)
             ac.id = accommodation['id']
-
             p = ','.join(str(i) for i in plane)
             a = ','.join(str(i) for i in activity)
             r = ','.join(str(i) for i in except_restaurant_id)
             t = ','.join(str(i) for i in except_tourism_id)
             s = ','.join(str(i) for i in except_shop_id)
-
             save_day = JejuSchedule.objects.create(user=u, startday=self.startday, endday=self.endday, day=self.days, startloc=self.startloc, people=self.people, relationship=self.relationship, category=c,
                                                    plane=p, acc=ac, activity=a, restaurant=r, tourism=t, shop=s, schedule=f"{dic}")
             print(f' 1 >>>> {save_day}')
-
             startday = {"startday": self.startday}
             endday = {"endday": self.endday}
             days = {"days": self.days}
             people = {"people": self.people}
             user = {"user": self.user['id']}
             relationship = {"relationship": self.relationship}
-
             return dic, plane, choice['acc'], activity, except_restaurant_id, except_tourism_id, except_shop_id, startday, endday, days, people, user, relationship
-
         else:
             print('************************  else')
             olle = choice['olle']
@@ -499,11 +466,9 @@ class JejuProcess:
                     self.oleum_values(dic, i, except_restaurant_id, except_tourism_id, except_shop_id)
                 for i in olle1.values():
                     self.olle_values(dic, i, except_restaurant_id, except_tourism_id, except_shop_id)
-
             except_restaurant_id.remove(0)
             except_tourism_id.remove(0)
             except_shop_id.remove(0)
-
             u = User()
             user = User.objects.all().filter(id=self.user['id']).values()[0]
             u.id = user['id']
@@ -513,22 +478,17 @@ class JejuProcess:
             ac = Accommodation()
             accommodation = Accommodation.objects.filter(id=choice['acc']).values()[0]
             ac.id = accommodation['id']
-
             p = ','.join(str(i) for i in plane)
             a = ','.join(str(i) for i in activity)
             o = ','.join(str(i) for i in olle)
             r = ','.join(str(i) for i in except_restaurant_id)
             t = ','.join(str(i) for i in except_tourism_id)
             s = ','.join(str(i) for i in except_shop_id)
-
             # plane_data = Plane.objects.filter(id__in=plane).values()
             dic["plane"] = PlaneSerializer(Plane.objects.filter(id__in=plane).values(), many=True).data
-
             # acc_data = Accommodation.objects.filter(id=acc).values()
             dic["acc"] = AccommodationSerializer(Accommodation.objects.filter(id=choice['acc']).values(), many=True).data
-
             # schedule_dic = {"plane" : plane_data} + {"acc": acc_data} + dic
-
             save_day = JejuSchedule.objects.create(user=u, startday=self.startday, endday=self.endday, day=self.days, startloc=self.startloc,
                                                    people=self.people, relationship=self.relationship, category=c,
                                                    plane=p, acc=ac, activity=a, olle=o, restaurant=r, tourism=t, shop=s, schedule=f"{dic}")
@@ -540,7 +500,6 @@ class JejuProcess:
             people = {"people": self.people}
             user = {"user": self.user['id']}
             relationship = {"relationship": self.relationship}
-
             return dic, plane, choice['acc'], activity, except_restaurant_id, except_tourism_id, except_shop_id, startday, endday, days, people, user, relationship, olle
 
 
