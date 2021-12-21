@@ -2,6 +2,7 @@ import random
 from datetime import datetime
 import sys
 sys.getdefaultencoding()
+from dateutil.relativedelta import relativedelta
 import os
 from image.models import Category
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "api.settings")
@@ -301,7 +302,6 @@ class JejuProcess:
         return dic, except_restaurant_id, except_tourism_id, except_shop_id
 
     def accommodation_values(self, dic, i, j, except_restaurant_id, except_tourism_id, except_shop_id):
-
         at = tuple(except_restaurant_id)
         a = Restaurant.objects.raw(
             'SELECT *, (6371*acos(cos(radians(%s))*cos(radians(lat))*cos(radians(log)'
@@ -425,8 +425,10 @@ class JejuProcess:
             r = ','.join(str(i) for i in except_restaurant_id)
             t = ','.join(str(i) for i in except_tourism_id)
             s = ','.join(str(i) for i in except_shop_id)
-            save_day = JejuSchedule.objects.create(user=u, startday=self.startday, endday=self.endday, day=self.days, startloc=self.startloc, people=self.people, relationship=self.relationship, category=c,
-                                                   plane=p, acc=ac, activity=a, restaurant=r, tourism=t, shop=s, schedule=f"{dic}")
+            save_day = JejuSchedule.objects.create(user=u, startday=self.startday, endday=self.endday, day=self.days,
+                                                   startloc=self.startloc, people=self.people, relationship=self.relationship,
+                                                   category=c, plane=p, acc=ac, activity=a, restaurant=r, tourism=t,
+                                                   shop=s, schedule=f"{dic}", reg_date=self.startday - relativedelta(days=10))
             print(f' 1 >>>> {save_day}')
             startday = {"startday": self.startday}
             endday = {"endday": self.endday}
@@ -489,9 +491,10 @@ class JejuProcess:
             # acc_data = Accommodation.objects.filter(id=acc).values()
             dic["acc"] = AccommodationSerializer(Accommodation.objects.filter(id=choice['acc']).values(), many=True).data
             # schedule_dic = {"plane" : plane_data} + {"acc": acc_data} + dic
-            save_day = JejuSchedule.objects.create(user=u, startday=self.startday, endday=self.endday, day=self.days, startloc=self.startloc,
-                                                   people=self.people, relationship=self.relationship, category=c,
-                                                   plane=p, acc=ac, activity=a, olle=o, restaurant=r, tourism=t, shop=s, schedule=f"{dic}")
+            save_day = JejuSchedule.objects.create(user=u, startday=self.startday, endday=self.endday, day=self.days,
+                                                   startloc=self.startloc, people=self.people, relationship=self.relationship,
+                                                   category=c, plane=p, acc=ac, activity=a, olle=o, restaurant=r,
+                                                   tourism=t, shop=s, schedule=f"{dic}", reg_date=self.startday - relativedelta(days=10))
             print(f' 1 >>>> {save_day}')
 
             startday = {"startday": self.startday}
@@ -500,14 +503,15 @@ class JejuProcess:
             people = {"people": self.people}
             user = {"user": self.user['id']}
             relationship = {"relationship": self.relationship}
-            return dic, plane, choice['acc'], activity, except_restaurant_id, except_tourism_id, except_shop_id, startday, endday, days, people, user, relationship, olle
+            return dic, plane, choice['acc'], activity, except_restaurant_id, except_tourism_id, except_shop_id, \
+                   startday, endday, days, people, user, relationship, olle
 
 
-if __name__ == '__main__':
-    option = {"date1": '2021-05-30', "date2": '2021-06-09', 'start': 'gmp', 'Number': 4, 'user': 2, 'relationship': 'family'}
-    a = JejuProcess(option)
-    a.process()
-    choice = {'acc' : 15, 'activty' : [1, 5, 6, 20, 15, 17, 18], 'olle': ['거문오름']}
-    # a.process_days(choice)
-    choice = {"date1": "2021-05-30", "date2": "2021-06-09", "start": "gmp", "Number": 4, "user": 2, "relationship": "family", "plane" : [24, 127], "acc": 15, "activty": [1,5,6,23,29,17,14], "olle": ["무릉-용수 올레", "금악오름"] }
-    a.save_day_set(choice)
+# if __name__ == '__main__':
+#     option = {"date1": '2021-05-30', "date2": '2021-06-09', 'start': 'gmp', 'Number': 4, 'user': 2, 'relationship': 'family'}
+#     a = JejuProcess(option)
+#     a.process()
+#     choice = {'acc' : 15, 'activty' : [1, 5, 6, 20, 15, 17, 18], 'olle': ['거문오름']}
+#     # a.process_days(choice)
+#     choice = {"date1": "2021-05-30", "date2": "2021-06-09", "start": "gmp", "Number": 4, "user": 2, "relationship": "family", "plane" : [24, 127], "acc": 15, "activty": [1,5,6,23,29,17,14], "olle": ["무릉-용수 올레", "금악오름"] }
+#     a.save_day_set(choice)

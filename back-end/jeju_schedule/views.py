@@ -1,10 +1,10 @@
 from django.http import JsonResponse
 from rest_framework.parsers import JSONParser
 from rest_framework.decorators import api_view, parser_classes
-
 from jeju_data.models import Plane, Accommodation
 from jeju_data.serializer import PlaneSerializer, AccommodationSerializer
 from jeju_schedule.models_data import DbUploader
+from jeju_schedule.models_process import JejuProcess
 
 
 # @api_view(['GET'])
@@ -12,7 +12,6 @@ from jeju_schedule.models_data import DbUploader
 # def pre_process(request):
 #     DbUploader().pre_process()
 #     return JsonResponse({'preprocessing': 'SUCCESS'})
-from jeju_schedule.models_process import JejuProcess
 
 
 @api_view(['GET'])
@@ -96,7 +95,6 @@ def days(request):
     acc = {"acc": acc_data}  # acc
     print(acc)
     print('############ 6 ##########')
-
     return JsonResponse(data=(plane, acc, days[0]), safe=False)
 
 
@@ -149,11 +147,11 @@ def save_days(request):
     relationship = days[12]
     print(len(days))
     if len(days) == 13:
-        return JsonResponse(data=(days[0], plane, acc, activity, restaurant, tourism, shop, startday, endday, day, people, user, relationship),safe=False)
+        return JsonResponse(data=(days[0], plane, acc, activity, restaurant, tourism, shop, startday, endday, day, people, user, relationship), safe=False)
 
     if len(days) == 14:
         print('############ 11 ##########')
         print(days[13])  # olle
-        olle = {"olle" : days[13]}
+        olle = {"olle": days[13]}
         print(olle)
         return JsonResponse(data=(days[0], plane, acc, activity, olle, restaurant, tourism, shop, startday, endday, day, people, user, relationship), safe=False)

@@ -11,7 +11,7 @@ class JejuSchedule(models.Model):
     # days[0], plane, acc, activity, olle, restaurant, tourism, shop, startday, endday, day, people, user, relationship
     # Jeju_Schedule
     user = models.ForeignKey(User, on_delete=models.CASCADE)  # user
-    reg_date = models.DateTimeField(default=datetime.now())  # 생성일
+    reg_date = models.DateTimeField()  # 생성일
     startday = models.DateField()  # startday
     endday = models.DateField()  # endday
     day = models.IntegerField()  # day
