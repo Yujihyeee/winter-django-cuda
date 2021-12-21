@@ -1,6 +1,8 @@
 # 여행업 알선 수입＝여행자로부터 받는 관광요금－원가
 import csv
 import math
+from _csv import writer
+
 import pandas as pd
 from dateutil.relativedelta import relativedelta
 from jeju_schedule.models import JejuSchedule
@@ -57,7 +59,6 @@ class Processing:
         n = 9
         result = [arr[i * n:(i + 1) * n] for i in range((len(arr) + n - 1) // n)]
         df = pd.DataFrame(result, columns=['reg_date', 'people', 'day', 'price', 'tax', 'subtotal', 'fees', 'total_price', 'jeju_schedule_id'])
-        print(df)
         df.to_csv(self.csvfile)
 
     def insert_reservation(self):

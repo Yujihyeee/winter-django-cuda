@@ -11,7 +11,7 @@ from reservation.serializers import ReservationSerializer
 @api_view(['GET'])
 @parser_classes([JSONParser])
 def preprocess(request):
-    Processing().pre_process(p=1)
+    Processing().pre_process(p=4)
     return Response({'preprocess': 'SUCCESS'})
 
 

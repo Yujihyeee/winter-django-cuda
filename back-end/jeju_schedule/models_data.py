@@ -1,5 +1,4 @@
 import csv
-import pandas as pd
 from common.models import ValueObject, Printer, Reader
 from jeju_schedule.models import JejuSchedule
 

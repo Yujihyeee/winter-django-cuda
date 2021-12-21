@@ -6,7 +6,7 @@ from reservation.models import Reservation
 class Ledger(models.Model):
     date = models.DateField()
     category = models.TextField()
-    price = models.ForeignKey(Reservation, on_delete=models.CASCADE)
+    price = models.IntegerField()
 
     class Meta:
         db_table = 'ledger'

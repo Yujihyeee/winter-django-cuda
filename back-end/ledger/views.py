@@ -10,3 +10,16 @@ def preprocess(request):
     Processing().pre_process()
     return JsonResponse({'Pre-Processing': 'SUCCESS'})
 
+
+@api_view(['GET'])
+@parser_classes([JSONParser])
+def upload(request):
+    Processing().insert_data()
+    return JsonResponse({'insert_data': 'SUCCESS'})
+
+
+@api_view(['GET'])
+@parser_classes([JSONParser])
+def cost(request):
+    Processing().insert_cost()
+    return JsonResponse({'insert_cost': 'SUCCESS'})
