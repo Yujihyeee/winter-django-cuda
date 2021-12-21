@@ -63,6 +63,8 @@ class Processing:
             data_reader = csv.DictReader(f)
             for row in data_reader:
                 reservation = Reservation.objects.create(reg_date=row['reg_date'],
+                                                         people=row['people'],
+                                                         day=row['day'],
                                                          price=row['price'],
                                                          tax=row['tax'],
                                                          subtotal=row['subtotal'],

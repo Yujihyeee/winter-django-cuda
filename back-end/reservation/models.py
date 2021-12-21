@@ -4,6 +4,8 @@ from jeju_schedule.models import JejuSchedule
 
 class Reservation(models.Model):
     reg_date = models.DateField()
+    people = models.IntegerField()
+    day = models.IntegerField()
     price = models.IntegerField()
     tax = models.IntegerField()
     subtotal = models.IntegerField()
@@ -16,6 +18,8 @@ class Reservation(models.Model):
 
     def __str__(self):
         return f'[{self.pk}] {self.id}' \
+               f'인원수: {self.people}' \
+               f'숙박일: {self.day}' \
                f'결제내역: {self.price}' \
                f'부가가치세: {self.tax}' \
                f'수수료 붙기 전 총금액: {self.subtotal}' \
