@@ -58,7 +58,7 @@ class Processing:
         result = [arr[i * n:(i + 1) * n] for i in range((len(arr) + n - 1) // n)]
         df = pd.DataFrame(result, columns=['reg_date', 'people', 'day', 'price', 'tax', 'subtotal', 'fees', 'total_price', 'jeju_schedule_id'])
         print(df)
-        df.to_csv(self.csvfile + 'price.csv')
+        df.to_csv(self.csvfile)
 
     def insert_reservation(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:
