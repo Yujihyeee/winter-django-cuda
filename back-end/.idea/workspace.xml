@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bbc6e459-6875-4cfb-9bdf-a0c48c722e5b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fin_reports/models_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/fin_reports/models_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fin_reports/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fin_reports/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fin_reports/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fin_reports/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +63,29 @@
       <recent name="C:\Users\bitcamp\winter-django-cuda\back-end\reservation\data" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.models_process">
+    <configuration name="models_process" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="back-end" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fin_reports" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fin_reports/models_process.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="back-end" type="Python.DjangoServer" factoryName="Django server">
       <module name="back-end" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,6 +109,11 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.models_process" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -123,6 +152,7 @@
       <workItem from="1639984179465" duration="14101000" />
       <workItem from="1640049393564" duration="29628000" />
       <workItem from="1640136456474" duration="4126000" />
+      <workItem from="1640144971566" duration="21253000" />
     </task>
     <servers />
   </component>
@@ -140,5 +170,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/back_end$models_process.coverage" NAME="models_process Coverage Results" MODIFIED="1640157404927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fin_reports" />
   </component>
 </project>
