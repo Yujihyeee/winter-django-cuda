@@ -28,7 +28,6 @@ def upload(request):
     return JsonResponse({'Product Upload': 'SUCCESS'})
 
 
-# '매출액', '매출원가', '판매비와관리비', '영업이익', '기타손익 및 금융손익', '기타수익', '기타비용', '금융수익', '금융비용', '당기순이익'
 @api_view(['POST'])
 @parser_classes([JSONParser])
 def show_fin_reports(request):
