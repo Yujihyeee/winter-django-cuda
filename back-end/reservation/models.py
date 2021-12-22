@@ -6,6 +6,9 @@ class Reservation(models.Model):
     reg_date = models.DateField()
     people = models.IntegerField()
     day = models.IntegerField()
+    plane_pr = models.IntegerField()
+    acc_pr = models.IntegerField()
+    act_pr = models.IntegerField()
     price = models.IntegerField()
     tax = models.IntegerField()
     subtotal = models.IntegerField()
@@ -20,6 +23,9 @@ class Reservation(models.Model):
         return f'[{self.pk}] {self.id}' \
                f'인원수: {self.people}' \
                f'숙박일: {self.day}' \
+               f'항공권: {self.plane_pr}' \
+               f'숙소: {self.acc_pr}' \
+               f'액티비티: {self.act_pr}' \
                f'결제내역: {self.price}' \
                f'부가가치세: {self.tax}' \
                f'수수료 붙기 전 총금액: {self.subtotal}' \

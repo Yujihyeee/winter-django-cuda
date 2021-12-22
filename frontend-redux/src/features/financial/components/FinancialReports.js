@@ -24,80 +24,87 @@ const FinancialReports = () => {
                 </Tr>
                 <Tr>
                     <Td>매출액</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
+                    <Td></Td>
+                    <Td>1</Td>
+                    <Td></Td>
+                    <Td>1</Td>
                 </Tr>
                 <Tr>
                     <Td>매출원가</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
+                    <Td></Td>
+                    <Td>1</Td>
+                    <Td></Td>
+                    <Td>1</Td>
+                </Tr>
+                <Tr>
+                    <Td>매출총이익</Td>
+                    <Td></Td>
+                    <Td>1</Td>
+                    <Td></Td>
+                    <Td>1</Td>
                 </Tr>
                 <Tr>
                     <Td>판매비와관리비</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
+                    <Td>1</Td>
+                    <Td></Td>
+                    <Td>1</Td>
+                    <Td></Td>
                 </Tr>
                 <Tr>
                     <Td>지급수수료</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
+                    <Td>1</Td>
+                    <Td></Td>
+                    <Td>1</Td>
+                    <Td></Td>
                 </Tr>
                 <Tr>
                     <Td>영업이익</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
+                    <Td></Td>
+                    <Td>1</Td>
+                    <Td></Td>
+                    <Td>1</Td>
                 </Tr>
                 <Tr>
                     <Td>기타손익 및 금융손익</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
+                    <Td></Td>
+                    <Td>1</Td>
+                    <Td></Td>
+                    <Td>1</Td>
                 </Tr>
                 <Tr>
                     <Td>기타수익</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
+                    <Td>1</Td>
+                    <Td></Td>
+                    <Td>1</Td>
+                    <Td></Td>
                 </Tr>
                 <Tr>
                     <Td>기타비용</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
+                    <Td>1</Td>
+                    <Td></Td>
+                    <Td>1</Td>
+                    <Td></Td>
                 </Tr>
                 <Tr>
                     <Td>금융수익</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
+                    <Td>1</Td>
+                    <Td></Td>
+                    <Td>1</Td>
+                    <Td></Td>
                 </Tr>
                 <Tr>
                     <Td>금융비용</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
+                    <Td>1</Td>
+                    <Td></Td>
+                    <Td>1</Td>
+                    <Td></Td>
                 </Tr>
                 <Tr>
                     <Td>당기순이익</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
-                    <Td>0</Td>
+                    <Td></Td>
+                    <Td>1</Td>
+                    <Td></Td>
+                    <Td>1</Td>
                 </Tr>
             </Table>
         </div>

@@ -47,15 +47,19 @@ class Processing:
         arr.append(reg_date)
         arr.append(people)
         arr.append(day)
+        arr.append(plane_pr)
+        arr.append(acc_pr.price)
+        arr.append(act_pr)
         arr.append(price)
         arr.append(int(tax))
         arr.append(int(subtotal))
         arr.append(int(fee))
         arr.append(int(total_price))
         arr.append(jeju_schedule_id)
-        n = 9
+        n = 12
         result = [arr[i * n:(i + 1) * n] for i in range((len(arr) + n - 1) // n)]
-        df = pd.DataFrame(result, columns=['reg_date', 'people', 'day', 'price', 'tax', 'subtotal', 'fees', 'total_price', 'jeju_schedule_id'])
+        df = pd.DataFrame(result, columns=['reg_date', 'people', 'day', 'plane_pr', 'acc_pr', 'act_pr', 'price', 'tax',
+                                           'subtotal', 'fees', 'total_price', 'jeju_schedule_id'])
         df.to_csv(self.csvfile)
 
     def insert_reservation(self):
@@ -65,6 +69,9 @@ class Processing:
                 reservation = Reservation.objects.create(reg_date=row['reg_date'],
                                                          people=row['people'],
                                                          day=row['day'],
+                                                         plane_pr=row['plane_pr'],
+                                                         acc_pr=row['acc_pr'],
+                                                         act_pr=row['act_pr'],
                                                          price=row['price'],
                                                          tax=row['tax'],
                                                          subtotal=row['subtotal'],
