@@ -1,5 +1,4 @@
 from django.http import JsonResponse
-from rest_framework import status
 from rest_framework.parsers import JSONParser
 from rest_framework.decorators import api_view, parser_classes
 from rest_framework.response import Response
@@ -11,8 +10,15 @@ from reservation.serializers import ReservationSerializer
 @api_view(['GET'])
 @parser_classes([JSONParser])
 def preprocess(request):
-    Processing().pre_process(p=4)
+    Processing().pre_process()
     return Response({'preprocess': 'SUCCESS'})
+
+
+@api_view(['GET'])
+@parser_classes([JSONParser])
+def process(request, pk):
+    Processing().process(pk)
+    return JsonResponse({'process': 'SUCCESS'})
 
 
 @api_view(['GET'])
@@ -33,12 +39,12 @@ def show_invoice(request):
     return JsonResponse(data=report, safe=False)
 
 
-@api_view(['POST'])
-@parser_classes([JSONParser])
-def show_chart(request):
-    print(f'hi : {request}')
-    print(f'hello : {request.data}')
-    chart2_data = Reservation.objects.all()
-    invoice_data = ReservationSerializer(invoice_data, many=True).data
-    report = {"report": invoice_data}
-    return JsonResponse(data=report, safe=False)
+# @api_view(['POST'])
+# @parser_classes([JSONParser])
+# def show_chart(request):
+#     print(f'hi : {request}')
+#     print(f'hello : {request.data}')
+#     chart2_data = Reservation.objects.all()
+#     invoice_data = ReservationSerializer(invoice_data, many=True).data
+#     report = {"report": invoice_data}
+#     return JsonResponse(data=report, safe=False)

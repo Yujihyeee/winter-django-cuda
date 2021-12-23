@@ -438,7 +438,7 @@ class JejuProcess:
             r = ','.join(str(i) for i in except_restaurant_id)
             t = ','.join(str(i) for i in except_tourism_id)
             s = ','.join(str(i) for i in except_shop_id)
-            today = datetime.date.today()
+            today = datetime.today()
             print(today)
             # today = f"{str(today)[0:4]}-{str(today)[5:7]}-{str(today)[8:10]}"
             dday = self.startday - today
@@ -507,7 +507,7 @@ class JejuProcess:
             dic["plane"] = PlaneSerializer(Plane.objects.filter(id__in=plane).values(), many=True).data
             # acc_data = Accommodation.objects.filter(id=acc).values()
             dic["acc"] = AccommodationSerializer(Accommodation.objects.filter(id=choice['acc']).values(), many=True).data
-            today = datetime.date.today()
+            today = datetime.today()
             # today = f"{str(today)[0:4]}-{str(today)[5:7]}-{str(today)[8:10]}"
             dday = self.startday - today
             # schedule_dic = {"plane" : plane_data} + {"acc": acc_data} + dic
@@ -526,7 +526,7 @@ class JejuProcess:
 
 class RDATA:
     def pr_days(self, user_id):
-        today = datetime.date.today()
+        today = datetime.today()
         print(today)
         jejuSchedule = JejuSchedule.objects.raw(
             f"select * from tripn_mariadb.jeju_schedule where user_id = {user_id} and startday > '{today}';")

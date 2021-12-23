@@ -1,11 +1,5 @@
 from datetime import datetime
-from random import random
-
 from django.db import models
-
-# Create your models here.
-from icecream import ic
-
 from django.db.models import IntegerField, CharField
 from django_mysql.models import ListCharField, ListTextField
 from image.models import Category
@@ -14,10 +8,8 @@ from user.models import User
 
 
 class JejuSchedule(models.Model):
-
     # days[0], plane, acc, activity, olle, restaurant, tourism, shop, startday, endday, day, people, user, relationship
     # Jeju_Schedule
-
     user = models.ForeignKey(User, on_delete=models.CASCADE)  # user
     reg_date = models.DateTimeField(default=datetime.now())  # 생성일
     startday = models.DateField()  # startday

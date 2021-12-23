@@ -91,7 +91,7 @@ def list_by_user(request, user_id):
 def list_by_user_pr(request, user_id):
     today = datetime.date.today()
     jejuSchedule = JejuSchedule.objects.raw(
-        f"select * from jeju_schedule where user_id = {user_id} and startday > '{today}';")
+        f"select * from tripn_mariadb.jeju_schedule where user_id = {user_id} and startday > '{today}';")
     serializer = JejuSerializer(jejuSchedule, many=True)
     return JsonResponse(data=serializer.data, safe=False)
 

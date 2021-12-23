@@ -1,5 +1,4 @@
 from rest_framework import serializers
-import datetime as dt
 from jeju.models import JejuSchedule as jeju
 
 

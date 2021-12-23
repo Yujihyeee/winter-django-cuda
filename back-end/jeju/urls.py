@@ -1,8 +1,5 @@
-
-
 from django.conf.urls import url, re_path
 from django.urls import path, re_path
-
 from jeju import views_test, views
 
 urlpatterns = [
