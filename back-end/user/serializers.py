@@ -2,7 +2,7 @@ from rest_framework import serializers
 # pip install Django django-rest-framework
 from .models import User as user
 
-
+#
 # class UserSerializer(serializers.Serializer):
 #
 #     id = serializers.IntegerField()

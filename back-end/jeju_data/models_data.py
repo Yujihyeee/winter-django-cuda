@@ -1,19 +1,23 @@
 import os
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "api.settings")
+
 import django
+django.setup()
 import csv
 import sys
 from common.models import ValueObject, Reader, Printer
 # system setup
+#
 # SET FOREIGN_KEY_CHECKS = 0;
 from image.models import Category, Image
 from jeju_data.models import Tourism, Activity, Plane, TourismCategory, ActivityCategory, Shop, PlaneCategory, \
     RestaurantCategory, Restaurant, AccommodationCategory, Accommodation, Olle
 from icecream import ic
+
 from sphinx.util import requests
 import json
 
-
-class DbUploader:
+class DbUploader():
     def __init__(self):
         vo = ValueObject()
         reader = Reader()
@@ -27,6 +31,7 @@ class DbUploader:
         # vo.fname = 'jejuolle.csv'
         # vo.fname = 'shop.csv'
         self.csvfile = reader.new_file(vo)
+
 
     def insert_data(self):
         print('############ 2 ##########')
@@ -61,19 +66,27 @@ class DbUploader:
                     a = TourismCategory.objects.create(type=row['category'],
                                                        category=c)
                     print(f' 1 >>>> {a}')
-        print('Tourism DATA UPLOADED SUCCESSFULLY!')
+        print('Tourism DATA UPLOADED SUCCESSFULY!')
 
     def insert_table_tourism(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:
             data_reader = csv.DictReader(f)
             for row in data_reader:
                 c = TourismCategory()
-                category = TourismCategory.objects.filter(type=row['category']).values()[0]
+                category = TourismCategory.objects.all().filter(type=row['category']).values()[0]
                 c.id = category['id']
                 i = Image()
-                image = Image.objects.filter(name=row['name']).values()[0]
-                print(image)
+                image = Image.objects.all().filter(name=row['name']).values()[0]
                 i.id = image['id']
+
+                # db = Tourism.objects.filter(name=row['name']).values()[0]
+                # print(db['address'])
+                # if Tourism.objects.filter(address=row['address']).exists():  # 동일한 값 있으면
+                #     geo = self.trans_geo(db['address'])
+                #     print(geo)
+                #     if geo != 0:
+                #         tourism = Tourism.objects.filter(address=row['address']).update(lat=geo['lat'], log=geo['long'])
+                #         print(f' 1 >>>> {tourism}')
 
                 if not Tourism.objects.filter(name=row['name']).exists():  # 동일한 값 있으면 넘어가
                     geo = self.trans_geo(row['address'])
@@ -85,9 +98,9 @@ class DbUploader:
                                                          lat=geo['lat'],
                                                          log=geo['long'],
                                                          tour_category=c,
-                                                         image=i)
+                                                         image=i,)
                         print(f' 1 >>>> {tourism}')
-        print('Tourism DATA UPLOADED SUCCESSFULLY!')
+        print('Tourism DATA UPLOADED SUCCESSFULY!')
 
     def insert_category_activity(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:
@@ -99,10 +112,11 @@ class DbUploader:
                 c.id = category['id']
                 if not ActivityCategory.objects.filter(type=row['category']).exists():  # 동일한 값 있으면 넘어가
                     a = ActivityCategory.objects.create(type=row['category'],
-                                                        section=c,
-                                                        category=row['section'])
+                                                              section=c,
+                                                              category=row['section'])
                     print(f' 1 >>>> {a}')
-        print('ActivityCategory DATA UPLOADED SUCCESSFULLY!')
+        print('ActivityCategory DATA UPLOADED SUCCESSFULY!')
+
 
     def insert_table_activity(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:
@@ -115,6 +129,17 @@ class DbUploader:
                 i = Image()
                 image = Image.objects.all().filter(name=row['name']).values()[0]
                 i.id = image['id']
+
+                db = Activity.objects.filter(name=row['name']).values()[0]
+                print(db['loc'])
+                if Activity.objects.filter(name=row['name']).exists():  # 동일한 값 있으면
+                    geo = self.trans_geo(db['loc'])
+                    # geo = self.trans_geo(row['location'])
+                    print(geo)
+                    if geo != 0:
+                        activity = Activity.objects.filter(name=row['name']).update(lat=geo['lat'],
+                                                                                    log=geo['long'])
+                        print(f' 1 >>>> {activity}')
 
                 if not Activity.objects.filter(name=row['name']).exists():  # 동일한 값 있으면 넘어가
                     geo = self.trans_geo(row['location'])
@@ -131,7 +156,8 @@ class DbUploader:
                                                            act_category=c,
                                                            image=i,)
                         print(f' 1 >>>> {activity}')
-        print('Activity DATA UPLOADED SUCCESSFULLY!')
+        print('Activity DATA UPLOADED SUCCESSFULY!')
+
 
     def insert_table_shop(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:
@@ -145,6 +171,14 @@ class DbUploader:
                 image = Image.objects.all().filter(name=row['name']).values()[0]
                 i.id = image['id']
 
+                db = Restaurant.objects.filter(name=row['name']).values()[0]
+                print(db['loc'])
+                if Shop.objects.filter(name=row['name']).exists():  # 동일한 값 있으면,
+                    geo = self.trans_geo(db['loc'])
+                    if geo != 0:
+                        shop = Shop.objects.filter(name=row['name']).update(lat=geo['lat'],log=geo['long'])
+                        print(f' 1 >>>> {shop}')
+
                 if not Shop.objects.filter(name=row['name']).exists():  # 동일한 값 있으면 넘어가
                     geo = self.trans_geo(row['loc'])
                     if geo != 0:
@@ -157,7 +191,7 @@ class DbUploader:
                                                    category=c,
                                                    image=i,)
                         print(f' 1 >>>> {shop}')
-        print('Shop DATA UPLOADED SUCCESSFULLY!')
+        print('Shop DATA UPLOADED SUCCESSFULY!')
 
     def insert_category_plane(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:
@@ -172,7 +206,7 @@ class DbUploader:
                                                               section=c,
                                                               category=row['type'])
                     print(f' 1 >>>> {a}')
-        print('PlaneCategory DATA UPLOADED SUCCESSFULLY!')
+        print('PlaneCategory DATA UPLOADED SUCCESSFULY!')
 
     def insert_table_plane(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:
@@ -190,7 +224,8 @@ class DbUploader:
                                                  arrPlandTime=row['arrPlandTime'],
                                                  plane_category=c)
                     print(f' 1 >>>> {plane}')
-        print('Plane DATA UPLOADED SUCCESSFULLY!')
+        print('Plane DATA UPLOADED SUCCESSFULY!')
+
 
     def insert_category_restaurant(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:
@@ -204,7 +239,8 @@ class DbUploader:
                     a = RestaurantCategory.objects.create(type=row['category'],
                                                           category=c)
                     print(f' 1 >>>> {a}')
-        print('RestaurantCategory DATA UPLOADED SUCCESSFULLY!')
+        print('RestaurantCategory DATA UPLOADED SUCCESSFULY!')
+
 
     def insert_table_restaurant(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:
@@ -217,6 +253,15 @@ class DbUploader:
                 image = Image.objects.all().filter(name=row['name']).values()[0]
                 i.id = image['id']
 
+                db = Restaurant.objects.filter(name=row['name']).values()[0]
+                print(db['loc'])
+                if Restaurant.objects.filter(name=row['name']).exists():  # 동일한 값 있으면
+                    geo = self.trans_geo(db['loc'])
+                    print(geo)
+                    if geo != 0:
+                        restaurant = Restaurant.objects.filter(name=row['name']).update(lat=geo['lat'], log=geo['long'])
+                        print(f' 1 >>>> {restaurant}')
+
                 if not Restaurant.objects.filter(name=row['name']).exists():  # 동일한 값 있으면 넘어가
                     geo = self.trans_geo(row['address'])
                     if geo != 0:
@@ -228,7 +273,7 @@ class DbUploader:
                                                                log=geo['long'],
                                                                image=i,)
                         print(f' 1 >>>> {restaurant}')
-        print('Restaurant DATA UPLOADED SUCCESSFULLY!')
+        print('Restaurant DATA UPLOADED SUCCESSFULY!')
 
     def insert_category_accommodation(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:
@@ -242,7 +287,8 @@ class DbUploader:
                     a = AccommodationCategory.objects.create(type=row['구분'],
                                                              category=c)
                     print(f' 1 >>>> {a}')
-        print('AccommodationCategory DATA UPLOADED SUCCESSFULLY!')
+        print('AccommodationCategory DATA UPLOADED SUCCESSFULY!')
+
 
     def insert_table_accommodation(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:
@@ -254,6 +300,15 @@ class DbUploader:
                 i = Image()
                 image = Image.objects.all().filter(name=row['상호명']).values()[0]
                 i.id = image['id']
+
+                db = Accommodation.objects.filter(name=row['상호명']).values()[0]
+                print(db['loc'])
+                if Accommodation.objects.filter(name=row['상호명']).exists():  # 동일한 값 있으면
+                    geo = self.trans_geo(db['loc'])
+                    print(geo)
+                    if geo != 0:
+                        accommodation = Accommodation.objects.filter(name=row['상호명']).update(lat=geo['lat'], log=geo['long'])
+                        print(f' 1 >>>> {accommodation}')
 
                 if not Accommodation.objects.filter(name=row['상호명']).exists():  # 동일한 값 있으면 넘어가
                     geo = self.trans_geo(row['소재지'])
@@ -268,7 +323,9 @@ class DbUploader:
                                                                      acc_category=c,
                                                                      image=i,)
                         print(f' 1 >>>> {accommodation}')
-        print('Accommodation DATA UPLOADED SUCCESSFULLY!')
+        print('Accommodation DATA UPLOADED SUCCESSFULY!')
+
+
 
     def insert_table_olle(self):
         with open(self.csvfile, newline='', encoding='utf8') as f:
@@ -280,6 +337,15 @@ class DbUploader:
                 i = Image()
                 image = Image.objects.all().filter(name=row['course-name']).values()[0]
                 i.id = image['id']
+
+                db = Olle.objects.filter(name=row['course-name']).values()[0]
+                print(db['starting_point'])
+                if Olle.objects.filter(name=row['course-name']).exists():  # 동일한 값 있으면
+                    geo = self.getAddress(db['starting_point'])
+                    print(geo)
+                    if geo != 0:
+                        olle = Olle.objects.filter(name=row['course-name']).update(lat=geo['lat'], log=geo['long'])
+                        print(f' 1 >>>> {olle}')
 
                 if not Olle.objects.filter(name=row['course-name']).exists():  # 동일한 값 있으면 넘어가
                     geo = self.getAddress(row['starting-point'])
@@ -296,7 +362,7 @@ class DbUploader:
                                                    category=c,
                                                    image=i)
                         print(f' 1 >>>> {olle}')
-        print('Olle DATA UPLOADED SUCCESSFULLY!')
+        print('Olle DATA UPLOADED SUCCESSFULY!')
 
     def trans_geo(self, addr):
         url = 'https://dapi.kakao.com/v2/local/search/address.json?query=' + addr
@@ -344,3 +410,24 @@ class DbUploader:
             x, y, address = '1', '1', '1'
             # return x, y, address
             return 0
+
+#     # def insert_jeju(self):
+#     #     with open(self.csvfile, newline='', encoding='utf8') as csvfile:
+#     #         data_reader = csv.DictReader(csvfile)
+#     #         for row in data_reader:
+#     #             p = Plane()
+#     #             plane = Plane.objects.all().filter(vihicleId=row['vihicleId']).values()[0]
+#     #             p.id = plane['id']
+#     #             t = Tourism()
+#     #             tourism = Tourism.objects.all().filter(tour_name=row['name']).values()[0]
+#     #             t.id = tourism['id']
+#     #             a = Activity()
+#     #             activity = Activity.objects.all().filter(act_name=row['act_name']).values()[0]
+#     #             a.id = activity['id']
+#     #             Jeju.objects.create(name=row['product'],
+#     #                                    price=row['price'],
+#     #                                    activity=a,
+#     #                                    tourism=t,
+#     #                                    plane=p,
+#     #                                    )
+#     #         print('PRODUCT DATA UPLOADED SUCCESSFULY!')

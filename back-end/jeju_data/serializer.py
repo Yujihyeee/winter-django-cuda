@@ -1,3 +1,9 @@
+import os
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "api.settings")
+
+import django
+django.setup()
+
 from rest_framework import serializers
 # pip install Django django-rest-framework
 from .models import Tourism as tourism
