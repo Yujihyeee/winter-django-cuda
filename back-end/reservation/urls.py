@@ -4,4 +4,5 @@ from reservation import views
 urlpatterns = {
     url(r'pre', views.preprocess),
     url(r'insert', views.insert_data),
+    url(r'invoice', views.show_invoice)
 }

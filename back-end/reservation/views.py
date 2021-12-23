@@ -20,40 +20,15 @@ def preprocess(request):
 def insert_data(request):
     Processing().insert_data()
     return Response({'SUCCESS'})
-    # if request.method == 'GET':
-    #     queryset = Reservation.objects.all()
-    #     serializer = ReservationSerializer(queryset, many=True)
-    #     return Response(serializer.data)
-    # elif request.method == 'POST':
-    #     serializer = ReservationSerializer(data=request.data)
-    #     if serializer.is_valid():
-    #         serializer.save()
-    #         return Response(serializer.data, status=status.HTTP_201_CREATE)
-    #     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-# @api_view(['GET'])
-# @parser_classes([JSONParser])
-# def process(request):
-#     Processing().process()
-#     return JsonResponse({'Processing': 'SUCCESS'})
-
-
-# @api_view(['POST'])
-# @parser_classes([JSONParser])
-# def process(request):
-#     try:
-#         loginUser = request.data
-#         dbUser = Brevity.objects.get(pk=loginUser['username'])
-#         if loginUser['password'] == dbUser.password:
-#             userSerializer = UserSerializer(dbUser, many=False)
-#             ic(userSerializer)
-#             return JsonResponse(data=userSerializer.data, safe=False)
-#         else:
-#             print('******** 비밀번호 오류')
-#             return JsonResponse(data={'result': 'PASSWORD-FAIL'}, status=201)
-#
-#     except User.DoesNotExist:
-#         print('*' * 50)
-#         print('******** Username 오류')
-#         return JsonResponse(data={'result': 'USERNAME-FAIL'}, status=201)
+@api_view(['POST'])
+@parser_classes([JSONParser])
+def show_invoice(request):
+    print(f'hi : {request}')
+    print(f'hello : {request.data}')
+    invoice_data = Reservation.objects.all()
+    print(invoice_data)
+    invoice_data = ReservationSerializer(invoice_data, many=True).data
+    report = {"report": invoice_data}
+    return JsonResponse(data=report, safe=False)

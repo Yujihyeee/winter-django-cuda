@@ -30,5 +30,4 @@ class Reservation(models.Model):
                f'부가가치세: {self.tax}' \
                f'수수료 붙기 전 총금액: {self.subtotal}' \
                f'여행수수료: {self.fees}' \
-               f'총금액: {self.total_price}' \
-               f'{self.jeju_schedule}'
+               f'총금액: {self.total_price}'

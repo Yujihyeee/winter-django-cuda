@@ -7,12 +7,14 @@ class ReservationSerializer(serializers.Serializer):
     reg_date = serializers.DateField()
     people = serializers.IntegerField()
     day = serializers.IntegerField()
+    plane_pr = serializers.IntegerField()
+    acc_pr = serializers.IntegerField()
+    act_pr = serializers.IntegerField()
     price = serializers.IntegerField()
     tax = serializers.IntegerField()
     subtotal = serializers.IntegerField()
     fees = serializers.IntegerField()
     total_price = serializers.IntegerField()
-    jeju_schedule = serializers.IntegerField()
 
     class Meta:
         model = reservation
