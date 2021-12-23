@@ -20,5 +20,6 @@ from user import views
 
 urlpatterns = [
     url(r'upload', views.upload),
+    url(r'mbti', views.get_mbti),
 
 ]

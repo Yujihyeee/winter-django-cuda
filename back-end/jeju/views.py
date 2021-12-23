@@ -111,3 +111,14 @@ def del_list_by_user(request, pk):
 def dday_up(request):
     DbUploader().updata_jeju_dday()
     return JsonResponse({"JEJU_dday DATA UPLOADED": "SUCCESSFULY!"})
+
+
+@api_view(['POST'])
+@parser_classes([JSONParser])
+def get_relation(request):
+    print(f'hi : {request}')
+    print(f'hello : {request.data}')
+    user_data = JejuSchedule.objects.filter()
+    user_data = JejuSerializer(user_data, many=True).data
+    report = {"report": user_data}
+    return JsonResponse(data=report, safe=False)

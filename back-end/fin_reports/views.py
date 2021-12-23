@@ -1,17 +1,9 @@
-import pandas as pd
-from django.forms import model_to_dict
 from django.http import JsonResponse
-from icecream import ic
 from rest_framework.parsers import JSONParser
 from rest_framework.decorators import api_view, parser_classes
 from fin_reports.models import FinReports
 from fin_reports.models_data import DbUploader
-from fin_reports.models_process import ReportProcessing
 from fin_reports.serializers import FinReportsSerializer
-from django.shortcuts import render
-from django.core import serializers
-from django.http import HttpResponse
-from common.models import ValueObject
 
 
 @api_view(['GET'])
