@@ -28,7 +28,17 @@ def show_invoice(request):
     print(f'hi : {request}')
     print(f'hello : {request.data}')
     invoice_data = Reservation.objects.all()
-    print(invoice_data)
+    invoice_data = ReservationSerializer(invoice_data, many=True).data
+    report = {"report": invoice_data}
+    return JsonResponse(data=report, safe=False)
+
+
+@api_view(['POST'])
+@parser_classes([JSONParser])
+def show_chart(request):
+    print(f'hi : {request}')
+    print(f'hello : {request.data}')
+    chart2_data = Reservation.objects.all()
     invoice_data = ReservationSerializer(invoice_data, many=True).data
     report = {"report": invoice_data}
     return JsonResponse(data=report, safe=False)
