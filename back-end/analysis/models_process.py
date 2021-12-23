@@ -1,5 +1,4 @@
 from datetime import datetime
-
 import torch
 import os
 import numpy as np
@@ -14,9 +13,8 @@ from icecream import ic
 from pandas.plotting import register_matplotlib_converters
 from torch import nn, optim
 
-class data_norminal():
 
-
+class data_norminal:
     def create_sequences(data, seq_length):
         xs = []
         ys = []
@@ -26,7 +24,6 @@ class data_norminal():
             xs.append(x)
             ys.append(y)
         return np.array(xs), np.array(ys)
-
     daily_cases = pd.read_csv('data/visitor_k.csv')
     daily_cases.set_index('year', inplace=True)
     ic(daily_cases)
@@ -68,6 +65,7 @@ class data_norminal():
     y_val = make_Tensor(y_val)
     X_test = make_Tensor(X_test)
     y_test = make_Tensor(y_test)
+
 
 class CovidPredictor(nn.Module):
     def __init__(self, n_features, n_hidden, seq_len, n_layers):
@@ -278,12 +276,8 @@ class create_model():
 
         return int(predicted_cases[0])
 
-
     def MAE(self, true, pred):
         return np.mean(np.abs(true - pred))
-
-
-
 
 
 if __name__ == '__main__':

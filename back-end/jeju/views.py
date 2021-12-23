@@ -1,20 +1,14 @@
-import random
-
 import datetime
-from django.shortcuts import render
 from django.http import JsonResponse
-from icecream import ic
 from rest_framework.parsers import JSONParser
 from rest_framework.decorators import api_view, parser_classes
-
-# Create your views here.
 from jeju.model_data import DbUploader
 from jeju.models import JejuSchedule
 from jeju.models_process import JejuProcess
 from jeju.serializer import JejuSerializer
-from jeju_data.models import Plane, PlaneCategory, Accommodation
+from jeju_data.models import Plane, Accommodation
 from jeju_data.serializer import PlaneSerializer, AccommodationSerializer
-from user.models import User
+
 
 @api_view(['POST'])
 @parser_classes([JSONParser])
@@ -52,7 +46,6 @@ def days(request):
     acc_data = Accommodation.objects.filter(id=days[2]).values()
     acc_data = AccommodationSerializer(acc_data, many=True).data
     acc = {"acc": acc_data}
-
     return JsonResponse(data=(plane, acc, days[0]), safe=False)
 
 
@@ -84,6 +77,7 @@ def save_days(request):
         olle = {"olle" : days[13]}
         return JsonResponse(data=(days[0], plane, acc, activity, olle, restaurant, tourism, shop, startday, endday, day, people, user, relationship), safe=False)
 
+
 @api_view(['GET', 'POST'])
 @parser_classes([JSONParser])
 def list_by_user(request, user_id):
@@ -95,13 +89,12 @@ def list_by_user(request, user_id):
 @api_view(['GET', 'POST'])
 @parser_classes([JSONParser])
 def list_by_user_pr(request, user_id):
-
     today = datetime.date.today()
     jejuSchedule = JejuSchedule.objects.raw(
         f"select * from jeju_schedule where user_id = {user_id} and startday > '{today}';")
     serializer = JejuSerializer(jejuSchedule, many=True)
-
     return JsonResponse(data=serializer.data, safe=False)
+
 
 @api_view(['DELETE'])
 @parser_classes([JSONParser])
@@ -110,12 +103,11 @@ def del_list_by_user(request, pk):
     print(f'pk : {pk}')
     jejuSchedule = JejuSchedule.objects.get(pk=pk)
     jejuSchedule.delete()
-
     return JsonResponse({'User want JejuSchedule': 'DELETE SUCCESS'})
+
 
 @api_view(['PUT'])
 @parser_classes([JSONParser])
 def dday_up(request):
     DbUploader().updata_jeju_dday()
     return JsonResponse({"JEJU_dday DATA UPLOADED": "SUCCESSFULY!"})
-

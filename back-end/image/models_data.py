@@ -1,21 +1,15 @@
 import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "api.settings")
 import csv
-import sys
-
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "api.settings")
-
 import django
 django.setup()
 import pandas as pd
 from icecream import ic
-
 from common.models import ValueObject, Reader, Printer
-# system setup
 from image.models import Image, Category
 
 
-class DbUploader():
+class DbUploader:
     def __init__(self):
         vo = ValueObject()
         reader = Reader()
@@ -28,7 +22,6 @@ class DbUploader():
         # vo.fname = 'user.csv'
         # restaurant, shop, tourism, activity, plane, accommodation, jejuolle
         self.csvfile = reader.new_file(vo)
-
 
     def insert_data(self):
         print('############ 2 ##########')
@@ -56,7 +49,6 @@ class DbUploader():
         df = pd.read_csv(self.csvfile, encoding='utf-8')
         print(df)
 
-
     def insert_image(self):
         with open(self.csvfile, newline='', encoding='utf8') as csvfile:
             data_reader = csv.DictReader(csvfile)
@@ -75,19 +67,3 @@ class DbUploader():
                         # print(f' 1 >>>> {image}')
 
         print('IMAGE DATA UPLOADED SUCCESSFULY!')
-
-
-#     # def insert_planes(self):
-#     #     with open(self.csvfile, newline='', encoding='utf8') as f:
-#     #         data_reader = csv.DictReader(f)
-#     #         for row in data_reader:
-#     #             if not Plane.objects.filter(vihicleId=row['vihicleId']).exists():
-#     #                 plane = Plane.objects.create(vihicleId=row['vihicleId'],
-#     #                                              airlineNm=row['airlineNm'],
-#     #                                              depPlandTime=row['depPlandTime'],
-#     #                                              arrPlandTime=row['arrPlandTime'],
-#     #                                              economyCharge=row['economyCharge'],
-#     #                                              depAirportNm=row['depAirportNm'],
-#     #                                              arrAirportNm=row['arrAirportNm'])
-#     #                 print(f' 1 >>>> {plane}')
-#     #     print('Plane DATA UPLOADED SUCCESSFULY!')

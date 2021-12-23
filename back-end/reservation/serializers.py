@@ -1,5 +1,4 @@
 from rest_framework import serializers
-from jeju_schedule.models import JejuSchedule
 from .models import Reservation as reservation
 
 

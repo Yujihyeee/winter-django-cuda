@@ -4,8 +4,6 @@ from jeju.models import JejuSchedule as jeju
 
 
 class JejuSerializer(serializers.Serializer):
-
-
     id = serializers.CharField()
     user = serializers.CharField()
     reg_date = serializers.DateTimeField()
@@ -25,7 +23,6 @@ class JejuSerializer(serializers.Serializer):
     shop = serializers.CharField()
     schedule = serializers.CharField()
     dday = serializers.DateField()
-
 
     class Meta:
         model = jeju

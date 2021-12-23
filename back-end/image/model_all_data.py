@@ -1,23 +1,17 @@
 import os
-
 from jeju_data.models import TourismCategory, Tourism, ActivityCategory, Activity, PlaneCategory, Plane, \
     RestaurantCategory, Restaurant, AccommodationCategory, Accommodation, Olle, Shop
-
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "api.settings")
-
 import django
 django.setup()
-
 import csv
 from sphinx.util import requests
 import json
-
 from image.models import Category, Image
 from user.models import Person
 
 
 class AllDbUploader:
-
     def insert_db_data(self):
         print('################ 1 init ################')
         category_csv = 'image/data/category.csv'
@@ -30,7 +24,6 @@ class AllDbUploader:
         jejuolle_csv = 'jeju_data/data/jejuolle.csv'
         persons_csv = 'user/data/persons.csv'
         user_csv = 'user/data/user.csv'
-
         print('################ 2 category ################')
         self.insert_category(category_csv)
         print('################ 3 image ################')
@@ -58,7 +51,6 @@ class AllDbUploader:
         print('################ 6 person ################')
         self.insert_category_person(persons_csv)
         print('################ 끝   끝   끝 ################')
-
 
     def insert_category(self, csvt):
         with open(f'{csvt}', newline='', encoding='utf8') as f:
@@ -385,4 +377,3 @@ class AllDbUploader:
             print('match값이 2개이상일때')
             x, y, address = '1', '1', '1'
             return 0
-
