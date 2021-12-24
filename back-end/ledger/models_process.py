@@ -39,6 +39,28 @@ class Processing:
         print(df)
         df.to_csv(self.csvfile)
 
+    def sales_process(self, s):
+        arr = []
+        t = Reservation.objects.get(pk=s)
+        total = t.total_price
+        price = t.price
+        date = t.reg_date
+        profit = total - price
+        arr.append(date)
+        arr.append('매출액')
+        arr.append(total)
+        arr.append(date)
+        arr.append('매출원가')
+        arr.append(price)
+        arr.append(date)
+        arr.append('매출총이익')
+        arr.append(profit)
+        n = 3
+        result = [arr[i * n:(i + 1) * n] for i in range((len(arr) + n - 1) // n)]
+        df = pd.DataFrame(result, columns=['date', 'category', 'price'])
+        print(df)
+        df.to_csv('ledger/data/get_sales.csv')
+
     def pre_cost(self):
         arr = []
 

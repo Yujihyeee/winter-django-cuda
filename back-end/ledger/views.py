@@ -6,7 +6,7 @@ from ledger.models_process import Processing
 
 @api_view(['GET'])
 @parser_classes([JSONParser])
-def sales(request):
+def pre_sales(request):
     Processing().pre_sales()
     return JsonResponse({'SALES': 'SUCCESS'})
 
@@ -30,3 +30,10 @@ def upload_sales(request):
 def upload_cost(request):
     Processing().insert_cost()
     return JsonResponse({'insert_cost': 'SUCCESS'})
+
+
+@api_view(['GET'])
+@parser_classes([JSONParser])
+def sales(request, pk):
+    Processing().sales_process(pk)
+    return JsonResponse({'SALES': 'SUCCESS'})
