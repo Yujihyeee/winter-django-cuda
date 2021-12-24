@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bbc6e459-6875-4cfb-9bdf-a0c48c722e5b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fin_reports/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeju/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/jeju/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeju/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/jeju/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/model_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/model_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +178,8 @@
       <workItem from="1640136456474" duration="4126000" />
       <workItem from="1640144971566" duration="22987000" />
       <workItem from="1640221780045" duration="14790000" />
-      <workItem from="1640243988343" duration="14514000" />
+      <workItem from="1640243988343" duration="14626000" />
+      <workItem from="1640317337797" duration="8590000" />
     </task>
     <servers />
   </component>

@@ -27,5 +27,3 @@ def get_mbti(request):
     user_data = UserSerializer(user_data, many=True).data
     report = {"report": user_data}
     return JsonResponse(data=report, safe=False)
-
-
