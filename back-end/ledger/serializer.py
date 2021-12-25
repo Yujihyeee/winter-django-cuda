@@ -3,8 +3,7 @@ from ledger.models import Ledger as ledger
 
 
 class LedgerSerializer(serializers.Serializer):
-
-    date = serializers.DateField()
+    # date = serializers.DateField()
     category = serializers.CharField()
     price = serializers.IntegerField()
 

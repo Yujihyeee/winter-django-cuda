@@ -2,6 +2,8 @@
 import csv
 import random
 import pandas as pd
+from django.db.models import Sum
+
 from ledger.models import Ledger
 from common.models import ValueObject, Reader, Printer
 from reservation.models import Reservation
@@ -60,6 +62,9 @@ class Processing:
         df = pd.DataFrame(result, columns=['date', 'category', 'price'])
         print(df)
         df.to_csv('ledger/data/get_sales.csv')
+
+    # def sum_profit(self):
+    #     c = '매출액'
 
     def pre_cost(self):
         arr = []

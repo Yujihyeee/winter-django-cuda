@@ -3,6 +3,7 @@ from rest_framework.parsers import JSONParser
 from rest_framework.decorators import api_view, parser_classes
 from fin_reports.models import FinReports
 from fin_reports.models_data import DbUploader
+from fin_reports.models_process import ReportProcessing
 from fin_reports.serializers import FinReportsSerializer
 
 

@@ -1,5 +1,5 @@
-from django.conf.urls import url, re_path
-from django.urls import path, re_path
+from django.conf.urls import url
+from django.urls import path
 from jeju import views_test, views
 
 urlpatterns = [
@@ -12,4 +12,3 @@ urlpatterns = [
     url(r'remove/(?P<pk>\w{0,500})$', views.del_list_by_user),
     path(r'update_dday', views.dday_up),
 ]
-

@@ -10,7 +10,7 @@ class DbUploader:
         reader = Reader()
         self.printer = Printer()
         vo.context = 'fin_reports/data/'
-        vo.fname='2020_PL_2.csv'
+        vo.fname='2020_PL_3.csv'
         self.csvfile = reader.new_file(vo)
 
     def insert_data(self):
@@ -26,8 +26,8 @@ class DbUploader:
             data_reader = csv.DictReader(f)
             for row in data_reader:
                 # if not FinReports.objects.filter(category=row['항목명']).exists():
-                fin_reports = FinReports.objects.create(year=2018,
+                fin_reports = FinReports.objects.create(year=2020,
                                                         category=row['항목명'],
-                                                        price=int(float(row['전전기'])))
+                                                        price=int(float(row['당기'])))
                 print(f'1 >>>> {fin_reports}')
         print('USER DATA UPLOADED SUCCESSFULLY!')

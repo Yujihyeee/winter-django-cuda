@@ -7,5 +7,6 @@ urlpatterns = {
     url(r'up_sales', views.upload_sales),
     url(r'up_cost', views.upload_cost),
     url(r'sales/(?P<pk>\w{0,50})$', views.sales),
-    url(r'profit', views.show_profit),
+    url(r'profit', views.profit),
+    url(r'month', views.profit_month),
 }
