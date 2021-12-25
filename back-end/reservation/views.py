@@ -1,3 +1,4 @@
+from django.db.models import Avg, Count
 from django.http import JsonResponse
 from rest_framework.parsers import JSONParser
 from rest_framework.decorators import api_view, parser_classes
@@ -39,12 +40,12 @@ def show_invoice(request):
     return JsonResponse(data=report, safe=False)
 
 
-# @api_view(['POST'])
-# @parser_classes([JSONParser])
-# def show_chart(request):
-#     print(f'hi : {request}')
-#     print(f'hello : {request.data}')
-#     chart2_data = Reservation.objects.all()
-#     invoice_data = ReservationSerializer(invoice_data, many=True).data
-#     report = {"report": invoice_data}
-#     return JsonResponse(data=report, safe=False)
+@api_view(['POST'])
+@parser_classes([JSONParser])
+def count_res(request):
+    print(f'hi : {request}')
+    print(f'hello : {request.data}')
+    count_data = Reservation.objects.filter(title__contains="reg_date").aggregate(like_avg=Count("reg_date"))
+    count_data = ReservationSerializer(count_data, many=True).data
+    report = {"report": count_data}
+    return JsonResponse(data=report, safe=False)
