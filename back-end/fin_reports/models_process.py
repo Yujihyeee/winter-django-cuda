@@ -1,5 +1,6 @@
 from common.models import ValueObject, Reader, Printer
 from fin_reports.models import FinReports
+from ledger.models import Ledger
 
 
 class ReportProcessing:
@@ -10,4 +11,10 @@ class ReportProcessing:
         self.price = FinReports.objects.filter()
 
     def process(self):
-        pass
+        for row in data_reader:
+            ledger = Ledger.objects.update(date=row['date'],
+                                           category=row['category'],
+                                           price=row['price'])
+            print(f'2 >>>> {ledger}')
+
+        print('DATA UPLOADED SUCCESSFULLY!')

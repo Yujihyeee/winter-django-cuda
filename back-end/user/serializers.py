@@ -1,5 +1,4 @@
 from rest_framework import serializers
-# pip install Django django-rest-framework
 from .models import User as user
 
 

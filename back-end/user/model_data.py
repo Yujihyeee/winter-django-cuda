@@ -4,13 +4,10 @@ import django
 django.setup()
 from datetime import datetime
 import csv
-import sys
 from common.models import ValueObject, Reader, Printer
 from user.models import Person, User
 from image.models import Category, Image
 from icecream import ic
-from sphinx.util import requests
-import json
 
 
 class DbUploader:

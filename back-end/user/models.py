@@ -1,11 +1,5 @@
-import os
-import django
-
 from django.db import models
-
-# Create your models here.
 from image.models import Category, Image
-
 
 
 class Person(models.Model):
@@ -15,7 +9,6 @@ class Person(models.Model):
     age = models.IntegerField()
     gender = models.BooleanField()
     mbti = models.TextField()
-
 
     class Meta:
         db_table = "person"

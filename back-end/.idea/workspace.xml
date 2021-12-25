@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbc6e459-6875-4cfb-9bdf-a0c48c722e5b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fin_reports/models_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/fin_reports/models_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/model_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/model_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,6 +191,7 @@
       <workItem from="1640221780045" duration="14790000" />
       <workItem from="1640243988343" duration="14626000" />
       <workItem from="1640317337797" duration="14214000" />
+      <workItem from="1640420654428" duration="6192000" />
     </task>
     <servers />
   </component>
@@ -195,7 +211,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/back_end$models_process.coverage" NAME="models_process Coverage Results" MODIFIED="1640157404927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fin_reports" />
     <SUITE FILE_PATH="coverage/back_end$models_data.coverage" NAME="models_data Coverage Results" MODIFIED="1640247214706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis" />
+    <SUITE FILE_PATH="coverage/back_end$models_process.coverage" NAME="models_process Coverage Results" MODIFIED="1640157404927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fin_reports" />
   </component>
 </project>
