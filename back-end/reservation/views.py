@@ -45,7 +45,6 @@ def show_invoice(request):
 def count_res(request):
     print(f'hi : {request}')
     print(f'hello : {request.data}')
-    count_data = Reservation.objects.filter(title__contains="reg_date").aggregate(like_avg=Count("reg_date"))
-    count_data = ReservationSerializer(count_data, many=True).data
-    report = {"report": count_data}
-    return JsonResponse(data=report, safe=False)
+    for i in range(10):
+        count_data = Reservation.objects.filter(reg_date__month='').aggregate(Count('id'))
+        return JsonResponse(data=count_data, safe=False)

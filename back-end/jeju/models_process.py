@@ -22,7 +22,7 @@ class JejuProcess:
         self.endday = datetime.strptime(option['date2'], '%Y-%m-%d')
         self.days = (self.endday - self.startday).days + 1
         self.people = option['Number']
-        self.user = User.objects.filter(id = option['user']).values()[0]
+        self.user = User.objects.filter(id=option['user']).values()[0]
         self.mbti = self.user['mbti']
         self.mbti_list = self.user['mbti_list']
         self.month = self.startday.month
@@ -443,7 +443,7 @@ class JejuProcess:
             # today = f"{str(today)[0:4]}-{str(today)[5:7]}-{str(today)[8:10]}"
             dday = self.startday - today
             save_day = JejuSchedule.objects.create(user=u, startday=self.startday, endday=self.endday, day=self.days, startloc=self.startloc, people=self.people, relationship=self.relationship, category=c,
-                                                   plane=p, acc=ac, activity=a, restaurant=r, tourism=t, shop=s, schedule=f"{dic}", dday=dday)
+                                                   plane=p, acc=ac, activity=a, restaurant=r, tourism=t, shop=s, schedule=f"{dic}", dday=dday, reg_date='2021-03-03')
             print(f' 1 >>>> {save_day}')
             startday = {"startday": self.startday}
             endday = {"endday": self.endday}
@@ -512,7 +512,7 @@ class JejuProcess:
             dday = self.startday - today
             # schedule_dic = {"plane" : plane_data} + {"acc": acc_data} + dic
             save_day = JejuSchedule.objects.create(user=u, startday=self.startday, endday=self.endday, day=self.days, startloc=self.startloc,
-                                                   people=self.people, relationship=self.relationship, category=c,
+                                                   people=self.people, relationship=self.relationship, category=c, reg_date='2021-03-03',
                                                    plane=p, acc=ac, activity=a, olle=o, restaurant=r, tourism=t, shop=s, schedule=f"{dic}", dday=dday)
             print(f' 1 >>>> {save_day}')
             startday = {"startday": self.startday}

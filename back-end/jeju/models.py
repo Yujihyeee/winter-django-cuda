@@ -1,7 +1,7 @@
 from datetime import datetime
 from django.db import models
-from django.db.models import IntegerField, CharField
-from django_mysql.models import ListCharField, ListTextField
+from django.db.models import CharField
+from django_mysql.models import ListTextField
 from image.models import Category
 from jeju_data.models import Accommodation
 from user.models import User
@@ -11,7 +11,7 @@ class JejuSchedule(models.Model):
     # days[0], plane, acc, activity, olle, restaurant, tourism, shop, startday, endday, day, people, user, relationship
     # Jeju_Schedule
     user = models.ForeignKey(User, on_delete=models.CASCADE)  # user
-    reg_date = models.DateTimeField(default=datetime.now())  # 생성일
+    reg_date = models.DateTimeField()  # 생성일
     startday = models.DateField()  # startday
     endday = models.DateField()  # endday
     day = models.IntegerField()  # day

@@ -2,7 +2,7 @@ import datetime
 from django.http import JsonResponse
 from rest_framework.parsers import JSONParser
 from rest_framework.decorators import api_view, parser_classes
-from jeju.model_data import DbUploader
+from jeju.models_data import DbUploader
 from jeju.models import JejuSchedule
 from jeju.models_process import JejuProcess
 from jeju.serializer import JejuSerializer
