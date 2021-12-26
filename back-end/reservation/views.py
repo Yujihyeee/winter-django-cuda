@@ -35,7 +35,8 @@ def insert_data(request):
 def show_invoice(request):
     print(f'hi : {request}')
     print(f'hello : {request.data}')
-    invoice_data = Reservation.objects.all()
+    invoice_data = request.data
+    print(invoice_data)
     invoice_data = ReservationSerializer(invoice_data, many=True).data
     report = {"report": invoice_data}
     return JsonResponse(data=report, safe=False)
@@ -47,7 +48,7 @@ def count_res(request):
     count_data = {}
     for i in range(1, 13):
         count = Reservation.objects.filter(reg_date__month=i).aggregate(Count('id'))
-        count_data[i] = count['id__count']
+        count_data[f"{i}_month"] = count['id__count']
     return JsonResponse(data=count_data, safe=False)
 
 

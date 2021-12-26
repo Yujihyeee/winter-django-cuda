@@ -44,11 +44,12 @@ def sales(request, pk):
     return JsonResponse({'SALES': 'SUCCESS'})
 
 
-@api_view(['POST'])
+@api_view(['GET'])
 @parser_classes([JSONParser])
 def profit(request):
     print(f'hi : {request}')
     print(f'hello : {request.data}')
     c = '매출액'
     sum_data = Ledger.objects.filter(category=c).aggregate(Sum('price'))
+    print(sum_data)
     return JsonResponse(data=sum_data, safe=False)

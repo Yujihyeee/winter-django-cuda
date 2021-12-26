@@ -9,3 +9,12 @@ from price.models_process import Processing
 def pre_price(request):
     Processing().price_process()
     return JsonResponse({'PRICE': 'SUCCESS'})
+
+
+@api_view(['POST'])
+@parser_classes([JSONParser])
+def get_price(request):
+    print(f'hi : {request}')
+    print(f'hello : {request.data}')
+    report = request.data[{'report': 'people'}, {'report': 'days'}, {'plane': 'id'}, {'acc': 'id'}, {'activity': 'id'}]
+    return JsonResponse(data=report, safe=False)

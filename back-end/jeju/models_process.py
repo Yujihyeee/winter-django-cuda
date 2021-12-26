@@ -443,7 +443,7 @@ class JejuProcess:
             # today = f"{str(today)[0:4]}-{str(today)[5:7]}-{str(today)[8:10]}"
             dday = self.startday - today
             save_day = JejuSchedule.objects.create(user=u, startday=self.startday, endday=self.endday, day=self.days, startloc=self.startloc, people=self.people, relationship=self.relationship, category=c,
-                                                   plane=p, acc=ac, activity=a, restaurant=r, tourism=t, shop=s, schedule=f"{dic}", dday=dday, reg_date='2021-03-03')
+                                                   plane=p, acc=ac, activity=a, restaurant=r, tourism=t, shop=s, schedule=f"{dic}", dday=dday, reg_date='2021-11-06')
             print(f' 1 >>>> {save_day}')
             startday = {"startday": self.startday}
             endday = {"endday": self.endday}
@@ -512,7 +512,7 @@ class JejuProcess:
             dday = self.startday - today
             # schedule_dic = {"plane" : plane_data} + {"acc": acc_data} + dic
             save_day = JejuSchedule.objects.create(user=u, startday=self.startday, endday=self.endday, day=self.days, startloc=self.startloc,
-                                                   people=self.people, relationship=self.relationship, category=c, reg_date='2021-03-03',
+                                                   people=self.people, relationship=self.relationship, category=c, reg_date='2021-11-06',
                                                    plane=p, acc=ac, activity=a, olle=o, restaurant=r, tourism=t, shop=s, schedule=f"{dic}", dday=dday)
             print(f' 1 >>>> {save_day}')
             startday = {"startday": self.startday}
