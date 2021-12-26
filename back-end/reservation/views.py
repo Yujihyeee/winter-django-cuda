@@ -48,8 +48,3 @@ def count_res(request):
         count = Reservation.objects.filter(reg_date__month=i).aggregate(Count('id'))
         count_data[i] = count['id__count']
     return JsonResponse(data=count_data, safe=False)
-
-#
-# @api_view(['POST'])
-# @parser_classes([JSONParser])
-# def
