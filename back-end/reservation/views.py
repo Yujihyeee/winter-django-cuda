@@ -43,8 +43,13 @@ def show_invoice(request):
 @api_view(['POST'])
 @parser_classes([JSONParser])
 def count_res(request):
-    print(f'hi : {request}')
-    print(f'hello : {request.data}')
-    for i in range(10):
-        count_data = Reservation.objects.filter(reg_date__month='').aggregate(Count('id'))
-        return JsonResponse(data=count_data, safe=False)
+    count_data = {}
+    for i in range(1, 13):
+        count = Reservation.objects.filter(reg_date__month=i).aggregate(Count('id'))
+        count_data[i] = count['id__count']
+    return JsonResponse(data=count_data, safe=False)
+
+#
+# @api_view(['POST'])
+# @parser_classes([JSONParser])
+# def

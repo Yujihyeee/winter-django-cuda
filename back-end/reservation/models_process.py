@@ -22,7 +22,7 @@ class Processing:
 
     def pre_process(self):
         arr = []
-        for i in range(1, 5):
+        for i in range(5, 9):
             pr = JejuSchedule.objects.get(id=i)
             print(pr)
             plane = Plane.objects.filter(id__in=pr.plane).values('economyCharge')
