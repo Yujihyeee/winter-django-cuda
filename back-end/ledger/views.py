@@ -53,3 +53,12 @@ def profit(request):
     sum_data = Ledger.objects.filter(category=c).aggregate(Sum('price'))
     print(sum_data)
     return JsonResponse(data=sum_data, safe=False)
+
+
+@api_view(['GET'])
+@parser_classes([JSONParser])
+def annual(request):
+    print(f'hi : {request}')
+    print(f'hello : {request.data}')
+    an_data = Ledger.objects.all()
+    return JsonResponse(data=an_data, safe=False)

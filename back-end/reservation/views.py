@@ -1,5 +1,7 @@
+import datetime
+
 import pandas as pd
-from django.db.models import Avg, Count, Sum
+from django.db.models import Count, Sum
 from django.http import JsonResponse
 from rest_framework.parsers import JSONParser
 from rest_framework.decorators import api_view, parser_classes
@@ -42,13 +44,15 @@ def show_invoice(request):
     return JsonResponse(data=report, safe=False)
 
 
-@api_view(['POST'])
+@api_view(['GET'])
 @parser_classes([JSONParser])
 def count_res(request):
     count_data = {}
-    for i in range(1, 13):
-        count = Reservation.objects.filter(reg_date__month=i).aggregate(Count('id'))
-        count_data[f"{i}_month"] = count['id__count']
+    for i in range(6):
+        today = datetime.date.today().month
+        # print(today)
+        count = Reservation.objects.filter(reg_date__month=today-i).aggregate(Count('id'))
+        count_data[i] = [f"{today-i}월", count['id__count']]
     return JsonResponse(data=count_data, safe=False)
 
 
