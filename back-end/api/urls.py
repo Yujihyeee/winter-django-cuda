@@ -26,5 +26,6 @@ urlpatterns = [
     path('api/image/', include('image.urls')),
     path('api/user/', include('user.urls')),
     path('api/ledger/', include('ledger.urls')),
-    path('api/analysis/', include('analysis.urls'))
+    path('api/analysis/', include('analysis.urls')),
+    path('api/price/', include('price.urls'))
 ]

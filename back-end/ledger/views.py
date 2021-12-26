@@ -53,15 +53,3 @@ def profit(request):
     sum_data = Ledger.objects.filter(category=c).aggregate(Sum('price'))
     report = {"report": sum_data}
     return JsonResponse(data=report, safe=False)
-
-
-@api_view(['POST'])
-@parser_classes([JSONParser])
-def profit_month(request):
-    print(f'hi : {request}')
-    print(f'hello : {request.data}')
-    month = {}
-    for i in month:
-        sum_data = Ledger.objects.filter(date__year=2021, date__month=i).aggregate(Sum('price'))
-        month[i] = sum_data['price']
-        return JsonResponse(data=sum_data, safe=False)

@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'analysis',
     'user',
     'ledger',
+    'price',
     'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',

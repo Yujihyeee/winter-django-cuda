@@ -63,9 +63,6 @@ class Processing:
         print(df)
         df.to_csv('ledger/data/get_sales.csv')
 
-    # def sum_profit(self):
-    #     c = '매출액'
-
     def pre_cost(self):
         arr = []
 
