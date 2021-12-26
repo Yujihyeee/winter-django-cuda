@@ -51,5 +51,4 @@ def profit(request):
     print(f'hello : {request.data}')
     c = '매출액'
     sum_data = Ledger.objects.filter(category=c).aggregate(Sum('price'))
-    report = {"report": sum_data}
-    return JsonResponse(data=report, safe=False)
+    return JsonResponse(data=sum_data, safe=False)

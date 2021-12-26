@@ -1,23 +1,19 @@
 import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "api.settings")
-
 import django
 django.setup()
 import csv
 import sys
 from common.models import ValueObject, Reader, Printer
-# system setup
-#
-# SET FOREIGN_KEY_CHECKS = 0;
 from image.models import Category, Image
 from jeju_data.models import Tourism, Activity, Plane, TourismCategory, ActivityCategory, Shop, PlaneCategory, \
     RestaurantCategory, Restaurant, AccommodationCategory, Accommodation, Olle
 from icecream import ic
-
 from sphinx.util import requests
 import json
 
-class DbUploader():
+
+class DbUploader:
     def __init__(self):
         vo = ValueObject()
         reader = Reader()

@@ -1,7 +1,7 @@
 from django.conf.urls import url
-from ledger import views
+from price import views
 
 urlpatterns = {
-    url(r'pre_sales', views.pre_sales),
+    url(r'price', views.pre_price),
 
 }
