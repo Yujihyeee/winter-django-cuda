@@ -63,7 +63,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
-CORS_ORIGIN_WHITELIST = ['http://127.0.0.1:3000', 'http://localhost:3000', 'http://192.168.36.51:3000', 'http://192.168.36.51:8000']
+CORS_ORIGIN_WHITELIST = ['http://127.0.0.1:3000', 'http://localhost:3000', 'http://192.168.0.75:8000', 'http://192.168.0.75:3000']
 CORS_ALLOW_CREDENTIALS = True
 
 MIDDLEWARE = [

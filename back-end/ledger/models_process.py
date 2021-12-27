@@ -22,7 +22,7 @@ class Processing:
         arr = []
         for t in range(1, 9):
             t = Reservation.objects.get(pk=t)
-            total = t.total_price
+            total = t.total_price - t.tax
             price = t.price
             date = t.reg_date
             profit = total - price
@@ -44,7 +44,7 @@ class Processing:
     def sales_process(self, s):
         arr = []
         t = Reservation.objects.get(pk=s)
-        total = t.total_price
+        total = t.total_price - t.tax
         price = t.price
         date = t.reg_date
         profit = total - price
