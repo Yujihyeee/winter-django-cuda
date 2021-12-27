@@ -38,6 +38,7 @@ def get_price(request):
     fee = {'fee': int(subtotal['subtotal'] * 0.2)}
     total_price = {'total_price': int(subtotal['subtotal'] + fee['fee'])}
     jeju_schedule_id = {'jeju_schedule_id': dic['id']}
+    
     return JsonResponse(data=(date, people, day, plane_unit, acc_unit, act_unit, plane_price, acc_price, price, tax,
                               subtotal, fee, total_price, jeju_schedule_id), safe=False)
     # arr.append(reg_date)
