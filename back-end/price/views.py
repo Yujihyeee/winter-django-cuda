@@ -1,9 +1,11 @@
+import pandas as pd
 from django.db.models import Sum
 from django.http import JsonResponse
 from rest_framework.parsers import JSONParser
 from rest_framework.decorators import api_view, parser_classes
 from price.models import Price
 from price.models_process import Processing
+from reservation.models import Reservation
 
 
 @api_view(['GET'])
@@ -29,32 +31,35 @@ def get_price(request):
     acc_unit = {'acc_unit': Price.objects.filter(category='accommodation', category_id=dic['acc_id']).values()[0]['price']}
     day = {'day': dic['day']}
     acc_price = {'acc_price': acc_unit['acc_unit'] * day['day']}
-    act_unit = {'acc_unit': Price.objects.filter(category_id__in=dic['activity'], category='activity').aggregate(Sum('price'))['price__sum']}
+    act_unit = {'act_unit': Price.objects.filter(category_id__in=dic['activity'], category='activity').aggregate(Sum('price'))['price__sum']}
     reg_date = {'reg_date': dic['reg_date']}
     date = {'reg_date': reg_date['reg_date'][:10]}
-    price = {'price': plane_price['plane_price'] + acc_price['acc_price'] + acc_unit['acc_unit']}
+    price = {'price': plane_price['plane_price'] + acc_price['acc_price'] + act_unit['act_unit']}
     tax = {'tax': int(price['price'] * 0.1)}
     subtotal = {'subtotal': int(price['price'] + tax['tax'])}
     fee = {'fee': int(subtotal['subtotal'] * 0.2)}
     total_price = {'total_price': int(subtotal['subtotal'] + fee['fee'])}
     jeju_schedule_id = {'jeju_schedule_id': dic['id']}
-    
-    return JsonResponse(data=(date, people, day, plane_unit, acc_unit, act_unit, plane_price, acc_price, price, tax,
-                              subtotal, fee, total_price, jeju_schedule_id), safe=False)
-    # arr.append(reg_date)
-    # arr.append(people)
-    # arr.append(day)
-    # arr.append(plane_unit)
-    # arr.append(acc_price.price)
-    # arr.append(act_price)
-    # arr.append(price)
-    # arr.append(int(tax))
-    # arr.append(int(subtotal))
-    # arr.append(int(fee))
-    # arr.append(int(total_price))
-    # arr.append(jeju_schedule_id)
-    # n = 12
-    # result = [arr[i * n:(i + 1) * n] for i in range((len(arr) + n - 1) // n)]
-    # df = pd.DataFrame(result, columns=['reg_date', 'people', 'day', 'plane_pr', 'acc_pr', 'act_pr', 'price', 'tax',
-    #                                    'subtotal', 'fees', 'total_price', 'jeju_schedule_id'])
-    # df.to_csv('reservation/data/get_price.csv')
+    keys = []
+    items = []
+    for i in [date, people, day, plane_unit, acc_unit, act_unit, plane_price, acc_price, price, tax, subtotal, fee, total_price, jeju_schedule_id]:
+        for j in i:
+            keys.append(j)
+            items.append(i[j])
+    result = dict(zip(keys, items))
+    # df = pd.DataFrame(result, index=['0'])
+    # print(df)
+    # reservation = Reservation.objects.create(reg_date=df['reg_date'],
+    #                                          people=df['people'],
+    #                                          day=df['day'],
+    #                                          plane_pr=df['plane_price'],
+    #                                          acc_pr=df['reg_date'],
+    #                                          act_pr=df['act_unit'],
+    #                                          price=df['price'],
+    #                                          tax=df['tax'],
+    #                                          subtotal=df['subtotal'],
+    #                                          fees=df['fee'],
+    #                                          total_price=df['total_price'],
+    #                                          jeju_schedule_id=df['jeju_schedule_id'])
+    # print(f'2 >>>> {reservation}')
+    return JsonResponse(data=result, safe=False)
