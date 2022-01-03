@@ -1,6 +1,4 @@
 import csv
-import pandas as pd
-from django.db.models import Count
 from common.models import ValueObject, Reader, Printer
 from user.models import User
 

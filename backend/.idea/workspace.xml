@@ -6,8 +6,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/62579f91-7c52-4af1-8fb9-512f411424eb/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/62579f91-7c52-4af1-8fb9-512f411424eb/entities/entities.dat.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat.values" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat.values.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/models_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/fin_reports/models_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fin_reports/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fin_reports/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +246,9 @@
       <workItem from="1641024846103" duration="290000" />
       <workItem from="1641025572682" duration="11279000" />
       <workItem from="1641040943674" duration="975000" />
-      <workItem from="1641095226143" duration="5240000" />
+      <workItem from="1641095226143" duration="22873000" />
+      <workItem from="1641140339131" duration="655000" />
+      <workItem from="1641180360300" duration="6990000" />
     </task>
     <servers />
   </component>

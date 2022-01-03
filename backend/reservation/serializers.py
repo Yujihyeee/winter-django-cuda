@@ -12,6 +12,7 @@ class ReservationSerializer(serializers.Serializer):
     acc_unit = serializers.IntegerField()
     acc_price = serializers.IntegerField()
     act_unit = serializers.IntegerField()
+    act_price = serializers.IntegerField()
     price = serializers.IntegerField()
     tax = serializers.IntegerField()
     subtotal = serializers.IntegerField()

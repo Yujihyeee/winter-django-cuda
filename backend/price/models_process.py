@@ -1,7 +1,4 @@
 import csv
-import random
-
-import pandas as pd
 from common.models import ValueObject, Reader, Printer
 from price.models import Price
 
@@ -45,33 +42,3 @@ class Processing:
                                              price=row['expense']
                                              )
                 print(f'2 >>>> {price}')
-
-    def count_random(self):
-        arr = []
-
-        def count():
-            return random.randint(50, 100)
-
-        def year():
-            for i in range(2001, 2022):
-                return f'{i}'
-
-        def month():
-            for month in range(1, 13):
-                if month < 10:
-                    month = f'0{month}'
-                else:
-                    continue
-            return month
-
-        def date():
-            return f'{year()}-{month()}'
-
-        for i in range(146):
-            arr.append(date())
-            arr.append(count())
-        n = 2
-        result = [arr[i * n:(i + 1) * n] for i in range((len(arr) + n - 1) // n)]
-        df = pd.DataFrame(result, columns=['date', 'count'])
-        print(df)
-        # df.to_csv('ledger/data/cost.csv')
