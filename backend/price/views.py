@@ -17,11 +17,6 @@ def pre_price(request):
 @api_view(['POST'])
 @parser_classes([JSONParser])
 def get_price(request):
-    # report = request.data
-    # print(report)
-    # arr = report[0]
-    # dic = arr[0]
-    print(request.data)
     dic = request.data
     plane_unit = {"plane_unit": Price.objects.filter(category_id__in=dic['plane'], category='plane').aggregate(Sum('price'))['price__sum']}
     people = {'people': dic['people']}

@@ -70,15 +70,18 @@ class Processing:
                                    - Ledger.objects.filter(date__year=2021, date__month=p, category='지급수수료').aggregate(Sum('price'))['price__sum']} for p in range(1, 13)]
         df = pd.DataFrame(total_profit)
         print(df)
+        df.insert(0, 'date', ['2021-01-31', '2021-02-28','2021-03-31','2021-04-30','2021-05-31','2021-06-30',
+                              '2021-07-31','2021-08-31','2021-09-30','2021-10-31','2021-11-30', '2021-12-31'], True)
         df.to_csv('ledger/data/get_profit.csv')
-        # with open('ledger/data/get_sales.csv', newline='', encoding='utf8') as f:
-        #     data_reader = csv.DictReader(f)
-        #     report = Ledger.objects.create(year=2021,
-        #                                    date='2021-12-31',
-        #                                    category='영업이익',
-        #                                    price=int(115991916),
-        #                                    )
-        #     print(f'1 >>>> {report}')
+        with open('ledger/data/get_profit.csv', newline='', encoding='utf8') as f:
+            data_reader = csv.DictReader(f)
+            for row in data_reader:
+                report = Ledger.objects.create(year=2021,
+                                               date=row['date'],
+                                               category='영업이익',
+                                               price=int(row['영업이익']),
+                                               )
+                print(f'1 >>>> {report}')
 
     def pre_cost(self):
         arr = []

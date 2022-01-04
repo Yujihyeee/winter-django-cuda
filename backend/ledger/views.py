@@ -89,3 +89,4 @@ def year_profit(request):
 def insert(request):
     Processing().insert()
     return JsonResponse({'insert': 'SUCCESS'})
+

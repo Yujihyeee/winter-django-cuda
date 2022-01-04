@@ -7,6 +7,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat.values" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +249,12 @@
       <workItem from="1641040943674" duration="975000" />
       <workItem from="1641095226143" duration="22873000" />
       <workItem from="1641140339131" duration="655000" />
-      <workItem from="1641180360300" duration="6990000" />
+      <workItem from="1641180360300" duration="9145000" />
+      <workItem from="1641202444188" duration="4466000" />
+      <workItem from="1641212310207" duration="5197000" />
+      <workItem from="1641234351722" duration="2569000" />
+      <workItem from="1641255220250" duration="197000" />
+      <workItem from="1641256936870" duration="7351000" />
     </task>
     <servers />
   </component>
