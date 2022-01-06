@@ -2,12 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbc6e459-6875-4cfb-9bdf-a0c48c722e5b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/62579f91-7c52-4af1-8fb9-512f411424eb/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/62579f91-7c52-4af1-8fb9-512f411424eb/entities/entities.dat.values" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/62579f91-7c52-4af1-8fb9-512f411424eb/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/62579f91-7c52-4af1-8fb9-512f411424eb/entities/entities.dat.values.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat.values" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6/entities/entities.dat.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/price/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/price/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/app/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/admin/components/AdminLogin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/admin/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/Budget.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/DashBoard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/LatestOrders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/MonthReports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/Navigation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/SalesByItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/TotalCustomers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/TotalProfit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/TotalProfit2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/layout/AppAppBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/layout/AppBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/layout/GlobalStyles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/layout/Toolbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminUser/components/UserList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminUser/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/counter/Counter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/counter/Counter.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/counter/counterAPI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/counter/counterSlice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/counter/counterSlice.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/chart/Chart1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/chart/Chart2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/chart/Chart3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/chart/Chart4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/chart/ChartData1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/chart/ChartData2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/chart/ChartData3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/chart/ChartData4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/components/FinancialReports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/components/SalesManagement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/components/table.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fronted-redux/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +110,7 @@
     <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
     <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/reservation/data" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -255,6 +310,11 @@
       <workItem from="1641234351722" duration="2569000" />
       <workItem from="1641255220250" duration="197000" />
       <workItem from="1641256936870" duration="7351000" />
+      <workItem from="1641285772052" duration="1674000" />
+      <workItem from="1641442205164" duration="612000" />
+      <workItem from="1641449716579" duration="172000" />
+      <workItem from="1641456162378" duration="63000" />
+      <workItem from="1641461055724" duration="1022000" />
     </task>
     <servers />
   </component>
@@ -275,8 +335,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/backend$models_process__1_.coverage" NAME="models_process (1) Coverage Results" MODIFIED="1640759119964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user" />
-    <SUITE FILE_PATH="coverage/backend$models_process__2_.coverage" NAME="models_process (2) Coverage Results" MODIFIED="1640917088508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reservation" />
-    <SUITE FILE_PATH="coverage/back_end$models_data.coverage" NAME="models_data Coverage Results" MODIFIED="1640247214706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis" />
     <SUITE FILE_PATH="coverage/back_end$models_process.coverage" NAME="models_process Coverage Results" MODIFIED="1640157404927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fin_reports" />
+    <SUITE FILE_PATH="coverage/back_end$models_data.coverage" NAME="models_data Coverage Results" MODIFIED="1640247214706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis" />
+    <SUITE FILE_PATH="coverage/backend$models_process__2_.coverage" NAME="models_process (2) Coverage Results" MODIFIED="1640917088508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reservation" />
   </component>
 </project>
