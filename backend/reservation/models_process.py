@@ -2,8 +2,8 @@
 import csv
 from datetime import datetime
 from django.db.models import Count, Sum
-from price.models import Price
-from reservation.models import Reservation, Pay
+from price.models import Price, Pay
+from reservation.models import Reservation
 from common.models import ValueObject, Reader, Printer
 from reservation.serializers import ReservationSerializer
 

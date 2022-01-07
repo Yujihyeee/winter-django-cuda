@@ -19,8 +19,8 @@ class ReportProcess:
         financial_loss = Ledger.objects.filter(date__year=2021, category='금융비용').aggregate(Sum('price'))['price__sum']
         df1 = pd.DataFrame((sales, cost_of_sales, gross_profit, selling_expenses, fees, operating_income, other_income,
                            other_loss, financial_income, financial_loss), columns=['price'])
-        df1.insert(0, '항목명', ['매출액', '매출원가','매출총이익','판매비와관리비','지급수수료','영업이익',
-                              '기타수익','기타비용','금융수익','금융비용'], True)
+        df1.insert(0, '항목명', ['매출액', '매출원가', '매출총이익', '판매비와관리비', '지급수수료', '영업이익',
+                              '기타수익', '기타비용', '금융수익', '금융비용'], True)
         # df1.to_csv('fin_reports/data/report.csv')
         # with open('fin_reports/data/reportreport.csv', newline='', encoding='utf8') as f:
         #     data_reader = csv.DictReader(f)

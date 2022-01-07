@@ -2,67 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbc6e459-6875-4cfb-9bdf-a0c48c722e5b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9af9b1df-f005-486a-928b-82ba5ebe31c6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/62579f91-7c52-4af1-8fb9-512f411424eb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/62579f91-7c52-4af1-8fb9-512f411424eb.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/price/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/price/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/jsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/app/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/admin/components/AdminLogin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/admin/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/Budget.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/DashBoard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/LatestOrders.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/MonthReports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/Navigation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/SalesByItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/TotalCustomers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/TotalProfit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/TotalProfit2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/components/grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/layout/AppAppBar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/layout/AppBar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/layout/GlobalStyles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminCommon/layout/Toolbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminUser/components/UserList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/adminUser/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/counter/Counter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/counter/Counter.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/counter/counterAPI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/counter/counterSlice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/counter/counterSlice.spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/chart/Chart1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/chart/Chart2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/chart/Chart3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/chart/Chart4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/chart/ChartData1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/chart/ChartData2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/chart/ChartData3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/chart/ChartData4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/components/FinancialReports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/components/SalesManagement.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/components/table.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/features/financial/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fronted-redux/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fin_reports/models_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/fin_reports/models_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation/models_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation/models_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,7 +258,9 @@
       <workItem from="1641442205164" duration="612000" />
       <workItem from="1641449716579" duration="172000" />
       <workItem from="1641456162378" duration="63000" />
-      <workItem from="1641461055724" duration="1022000" />
+      <workItem from="1641461055724" duration="1702000" />
+      <workItem from="1641534811095" duration="594000" />
+      <workItem from="1641539649488" duration="1313000" />
     </task>
     <servers />
   </component>
