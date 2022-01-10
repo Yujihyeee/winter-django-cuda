@@ -1,16 +1,8 @@
 import csv
-from common.models import ValueObject, Reader, Printer
 from price.models import Price
 
 
 class Processing:
-    def __init__(self):
-        vo = ValueObject()
-        reader = Reader()
-        self.printer = Printer()
-        vo.context = 'price/data/'
-        vo.fname = 'price.csv'
-        self.csvfile = reader.new_file(vo)
 
     def price_process(self):
         with open('price/data/plane.csv', newline='', encoding='utf8') as f:

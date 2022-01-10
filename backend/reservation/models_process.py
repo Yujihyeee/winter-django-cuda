@@ -4,18 +4,9 @@ from datetime import datetime
 from django.db.models import Count, Sum
 from price.models import Price, Pay
 from reservation.models import Reservation
-from common.models import ValueObject, Reader, Printer
-from reservation.serializers import ReservationSerializer
 
 
 class Processing:
-    def __init__(self):
-        vo = ValueObject()
-        reader = Reader()
-        self.printer = Printer()
-        vo.context = 'reservation/data/'
-        vo.fname = 'price.csv'
-        self.csvfile = reader.new_file(vo)
 
     def insert_data(self):
         self.insert_reservation()
