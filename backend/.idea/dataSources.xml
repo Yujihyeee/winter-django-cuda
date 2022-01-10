@@ -8,11 +8,11 @@
       <jdbc-url>jdbc:mariadb://tripn-mariadb.cj7pgkq6vjwv.ap-northeast-2.rds.amazonaws.com:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="localhost" uuid="62579f91-7c52-4af1-8fb9-512f411424eb">
+    <data-source source="LOCAL" name="mariadb" uuid="8a6083a4-290e-47bf-b00f-ac51cbc724fa">
       <driver-ref>mariadb</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mariadb://localhost:3306</jdbc-url>
+      <jdbc-url>jdbc:mariadb://localhost:3306/mariadb</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
