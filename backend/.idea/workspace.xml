@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbc6e459-6875-4cfb-9bdf-a0c48c722e5b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/price/models_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/price/models_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation/models_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservation/models_process.py" afterDir="false" />
-    </list>
+    <list default="true" id="bbc6e459-6875-4cfb-9bdf-a0c48c722e5b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -261,7 +258,7 @@
       <workItem from="1641552884460" duration="31000" />
       <workItem from="1641628239548" duration="956000" />
       <workItem from="1641804577112" duration="3695000" />
-      <workItem from="1641814959298" duration="395000" />
+      <workItem from="1641814959298" duration="432000" />
     </task>
     <servers />
   </component>
