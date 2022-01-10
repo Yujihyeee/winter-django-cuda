@@ -4,18 +4,10 @@ import random
 import pandas as pd
 from django.db.models import Sum
 from ledger.models import Ledger
-from common.models import ValueObject, Reader, Printer
 from reservation.models import Reservation
 
 
 class Processing:
-    def __init__(self):
-        vo = ValueObject()
-        reader = Reader()
-        self.printer = Printer()
-        vo.context = 'ledger/data/'
-        vo.fname = 'sales.csv'
-        self.csvfile = reader.new_file(vo)
 
     def report_process(self):
         with open('ledger/data/2020_PL_3.csv', newline='', encoding='utf8') as f:
@@ -62,7 +54,7 @@ class Processing:
         result = [arr[i * n:(i + 1) * n] for i in range((len(arr) + n - 1) // n)]
         df = pd.DataFrame(result, columns=['date', 'category', 'price'])
         print(df)
-        df.to_csv(self.csvfile)
+        df.to_csv('ledger/data/sales.csv')
 
     def sales_process(self):
         total_profit = [{f'영업이익': Ledger.objects.filter(date__year=2021, date__month=p, category='매출총이익').aggregate(Sum('price'))['price__sum']

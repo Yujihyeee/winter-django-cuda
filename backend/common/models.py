@@ -6,7 +6,7 @@ import json
 
 
 @dataclass
-class ValueObject(object):
+class ValueObject:
     train: object
     test: object
     id: str
